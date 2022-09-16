@@ -241,20 +241,44 @@
             </ul>
           </li>
           <li class="numbered visible">
-            <a href="102.html" data-alt-hash="home-page"><span class="number">3.</span>ホーム＆メニュー（Home Page)</a>
+            <a href="102.html" data-alt-hash="mb-home-menu"><span class="number">3.</span>【MB】 ホーム＆メニュー（Home Menu)</a>
             <ul>
               <li class="numbered invisible">
-                <a href="102.html#screenname"><span class="number">3.1.</span>「Screen＿Name」</a>
+                <a href="102.html#-home"><span class="number">3.1.</span>ホーム Home</a>
                 <ul>
                   <li class="numbered invisible">
                     <a href="102.html#item-event-definition"><span class="number">3.1.1.</span>項目／イベント定義（Item Event Definition）</a>
                     <ul>
-                      <li class="unnumbered invisible"><a href="102.html#-field-name-field-type">項目名 Field Name field type</a></li>
+                      <li class="numbered invisible">
+                        <a href="102.html#-visiter"><span class="number">3.1.1.1.</span>ホーム visiter</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="102.html#-proceed-to-plan-contract-button">プラン契約へすすむ Proceed to plan contract Button</a></li>
+                          <li class="unnumbered invisible"><a href="102.html#hp-check-details-on-hp-button">HPで詳細を確認する Check details on HP Button</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="102.html#id-124b7339cea3884381a5c0731bbc83bf0425dff0"><span class="number">3.1.1.2.</span>ホーム Home</a></li>
                     </ul>
                   </li>
-                  <li class="numbered invisible"><a href="102.html#error-list"><span class="number">3.1.2.</span>エラー一覧（Error List）</a></li>
+                  <li class="numbered invisible">
+                    <a href="102.html#error-list"><span class="number">3.1.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="102.html#item-error"><span class="number">3.1.2.1.</span>項目エラー（Item Error）</a></li>
+                      <li class="numbered invisible"><a href="102.html#screen-error"><span class="number">3.1.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
+              <li class="numbered invisible"><a href="102.html#-menu"><span class="number">3.2.</span>設定画面 MENU</a></li>
+              <li class="numbered invisible"><a href="102.html#-customer-support"><span class="number">3.3.</span>カスタマーサポート Customer support</a></li>
+              <li class="numbered invisible"><a href="102.html#-checkchange-account-information"><span class="number">3.4.</span>アカウント情報の確認/変更 Check/change account information</a></li>
+              <li class="numbered invisible"><a href="102.html#-change-plan"><span class="number">3.5.</span>プランの変更 Change plan</a></li>
+              <li class="numbered invisible"><a href="102.html#-change-password"><span class="number">3.6.</span>パスワードの変更 change Password</a></li>
+              <li class="numbered invisible"><a href="102.html#-change-credit-card"><span class="number">3.7.</span>クレジットカードの変更 change credit card</a></li>
+              <li class="numbered invisible"><a href="102.html#-change-phone-number"><span class="number">3.8.</span>電話番号の変更 change phone number</a></li>
+              <li class="numbered invisible"><a href="102.html#-terms-of-service"><span class="number">3.9.</span>利用規約 terms of service</a></li>
+              <li class="numbered invisible"><a href="102.html#-privacy-policy"><span class="number">3.10.</span>プライバシーポリシー privacy policy</a></li>
+              <li class="numbered invisible"><a href="102.html#-notifications"><span class="number">3.11.</span>お知らせ一覧 Notifications</a></li>
+              <li class="numbered invisible"><a href="102.html#-confirmation-of-charge"><span class="number">3.12.</span>料金の確認 Confirmation of charge</a></li>
             </ul>
           </li>
           <li class="numbered visible">
@@ -671,5 +695,13 @@
     <script src="js\highlight.js"></script>
     <script src="js\application.js"></script>
     <script src="js\my.js"></script>
+    <script>
+      if (window.WebSocket) {
+        var socket = new WebSocket("ws://localhost:57981/");
+        socket.onmessage = function () {
+          location.reload();
+        };
+      }
+    </script>
   </body>
 </html>
