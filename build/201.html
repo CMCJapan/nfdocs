@@ -987,7 +987,7 @@
             <h3 id="item-event-definition"><span class="number">6.1.1.</span>項目／イベント定義（Item Event Definition）</h3>
             <h5 id="-machine-number-number">マシン番号 <code>Machine number</code> <strong>Number</strong></h5>
             <ul>
-              <li>required</li>
+              <li>required, max:255</li>
             </ul>
             <h5 id="-setting-button">設定する <code>Setting</code> <strong>Button</strong></h5>
             <ul>
@@ -1001,6 +1001,10 @@
               <li>if already have camera permission, then go to <strong>QRコードスキャン</strong> <code>Scan QR code</code> screen</li>
             </ul>
             <h3 id="error-list"><span class="number">6.1.2.</span>エラー一覧（Error List）</h3>
+            <dl>
+              <dt>MAX:255char</dt>
+              <dd><code>マシン番号は255文字以内で入力してください</code></dd>
+            </dl>
             <h4 id="screen-error"><span class="number">6.1.2.1.</span>画面エラー（Screen Error）</h4>
             <dl>
               <dt>INVALID MACHINE NUMBER</dt>
@@ -1099,7 +1103,7 @@
             <h3 id="id-3b8a724f533c633d031aecdbdcbe3695b73b1e91"><span class="number">6.7.1.</span>項目／イベント定義（Item Event Definition）</h3>
             <h5 id="-machine-sequence-number-number">マシン番号 <code>Machine sequence number</code> <strong>Number</strong></h5>
             <ul>
-              <li>required</li>
+              <li>required, number, max:5</li>
             </ul>
             <h5 id="id-aceb026d52fbfffc1b512e36fb4557b0d7deeeb0">設定する <code>Setting</code> <strong>Button</strong></h5>
             <ul>
@@ -1110,6 +1114,8 @@
             <h3 id="id-3f57070d4948242770a5fa0b1e86ff9b472d2aa5"><span class="number">6.7.2.</span>エラー一覧（Error List）</h3>
             <h4 id="id-95ee5785347da06b2214902525987f91bad7f7ec"><span class="number">6.7.2.1.</span>画面エラー（Screen Error）</h4>
             <dl>
+              <dt>MAX:5char</dt>
+              <dd><code>マシン番号は数字5桁まで入力してください</code></dd>
               <dt>INVALID MACHINE NUMBER</dt>
               <dd><code>入力した ID 番号が間違っています。この ID 番号のマシンは見つかりませんでした。もう一度やり直してください。</code></dd>
             </dl>
