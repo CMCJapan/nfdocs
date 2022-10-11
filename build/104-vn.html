@@ -942,7 +942,7 @@
         <div class="content-container">
           <div class="content-nav content-nav-top">
           </div>
-          <div class="page-toc" style="display:none">
+          <div class="page-toc">
             <ul>
               <li class="unnumbered visible">
                 <a href="#mb-check-in">【MB】 Check-in</a>
@@ -1047,6 +1047,7 @@
                       <li class="unnumbered visible">
                         <a href="#id-b9f47d37718fe596103ead9782cc37536f0802d5">Định nghĩa các thành phần có Action</a>
                         <ul>
+                          <li class="unnumbered visible"><a href="#xc-nhn-thng-tin-m-khoblock">Xác nhận thông tin mơ khoá　Block</a></li>
                           <li class="unnumbered visible"><a href="#id-2acc8253e24af567b6376b9526f9d2329b7f5031">使用する Button</a></li>
                           <li class="unnumbered visible"><a href="#id-6e05f248bfe31d5da42b32497c956d53e7f699d0">戻る Button</a></li>
                         </ul>
@@ -1060,6 +1061,7 @@
                       <li class="unnumbered visible">
                         <a href="#id-3ebc48846cb3e80f72474e63d44a0024e96ffbc6">Định nghĩa các thành phần có Action</a>
                         <ul>
+                          <li class="unnumbered visible"><a href="#id-e03540798dc3ad1f2474f518d0fb03a74514367c">Xác nhận thông tin mơ khoá　Block</a></li>
                           <li class="unnumbered visible"><a href="#id-603b835869fa6a1de3aa94126a12d7a60b94c785">使用する Button</a></li>
                           <li class="unnumbered visible"><a href="#id-4729a05ca53699e668cc441ed6e85b2e45f95ce2">戻る　Button</a></li>
                         </ul>
@@ -1186,10 +1188,16 @@
             </ul>
             <h5 id="xc-nhn-thng-tin-vo-cablock-nn-mu-xanh-dng">Xác nhận thông tin vào cửa　<code>Block nền màu xanh dương</code></h5>
             <ul>
-              <li>Case １・３・４：Hiển thị như design</li>
-              <li>Case ２：</li>
+              <li>Case 1- API data：</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
+              <li>Case ２- API data：</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
               <li><code>12:32</code>：Thời gian chage tiền và check-in lần đầu</li>
               <li><code>16:32</code>：Thời gian cuối cùng có thể mở cửa vào free</li>
+              <li>Case ３- API data：</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
+              <li>Case 4- API data：</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
             </ul>
             <h5 id="thng-tin-mc-tin-ti-a-block-nn-mu-xanh-l">Thông tin mức tiền tối đa <code>Block nền màu xanh lá</code></h5>
             <ul>
@@ -1264,6 +1272,7 @@
             <ul>
               <li>Chỉ có ở case 2</li>
               <li>API data</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
               <li><code>500</code>： Số tiền charge nếu sử dụng. Trong trường hợp user đã charge thành công trước đó, nếu trong vòng 4h thì hiển thị là <code>0</code></li>
             </ul>
             <h5 id="change-plan-button">Change plan <code>Button</code></h5>
@@ -1293,6 +1302,11 @@
               <li>Case ２：User chưa đăng kí option water. Trường hợp này thì sẽ không mở khoá nước được</li>
             </ul>
             <h3 id="id-b9f47d37718fe596103ead9782cc37536f0802d5">Định nghĩa các thành phần có Action</h3>
+            <h5 id="xc-nhn-thng-tin-m-khoblock">Xác nhận thông tin mơ khoá　<code>Block</code></h5>
+            <ul>
+              <li>API data：</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
+            </ul>
             <h5 id="id-2acc8253e24af567b6376b9526f9d2329b7f5031">使用する <code>Button</code></h5>
             <ul>
               <li>Chỉ có ở case 1</li>
@@ -1309,6 +1323,11 @@
             <h2 id="mn-hnh-xc-nhn-s-dng-dch-v---ca-ra">Màn hình <strong>Xác nhận sử dụng dịch vụ - Cửa ra</strong></h2>
             <p><img src="image\jp\mb\104check-in\exit-flow.png" alt="nf"/></p>
             <h3 id="id-3ebc48846cb3e80f72474e63d44a0024e96ffbc6">Định nghĩa các thành phần có Action</h3>
+            <h5 id="id-e03540798dc3ad1f2474f518d0fb03a74514367c">Xác nhận thông tin mơ khoá　<code>Block</code></h5>
+            <ul>
+              <li>API data：</li>
+              <li><code>松山姫原店</code>：Tên phòng gym</li>
+            </ul>
             <h5 id="id-603b835869fa6a1de3aa94126a12d7a60b94c785">使用する <code>Button</code></h5>
             <ul>
               <li>Khi tap nút này thì sẽ xử lí các logic theo thứ tự như sau:</li>
