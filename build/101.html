@@ -1375,22 +1375,23 @@
             <h5 id="-kana-name-text">名前（カタカナ） <code>Kana name</code> <strong>Text</strong></h5>
             <ul>
               <li>required, kana string, max:25char</li>
+              <li>full-width kana、haft-width, full-width space（正規表現チェック regex [ァ-ヴ]）</li>
             </ul>
             <h5 id="-year-number">生年月日(年) <code>Year</code> <strong>Number</strong></h5>
             <ul>
-              <li>required, must be 4 char</li>
+              <li>required, must be 4 char　（when eror just hightling eror box, no display eror message）</li>
             </ul>
             <h5 id="-month-number">生年月日(月) <code>Month</code> <strong>Number</strong></h5>
             <ul>
-              <li>required, must be 2 char</li>
+              <li>required, must be 2 char　（when eror just hightling eror box, no display eror message）</li>
             </ul>
             <h5 id="-day-number">生年月日(日) <code>Day</code> <strong>Number</strong></h5>
             <ul>
-              <li>required, must be 2 char</li>
+              <li>required, must be 2 char　（when eror just hightling eror box, no display eror message）</li>
             </ul>
             <h5 id="-gender-select">性別 <code>Gender</code> <strong>Select</strong></h5>
             <ul>
-              <li>required, default no select</li>
+              <li>required, default <strong>male</strong></li>
             </ul>
             <h5 id="-addres-text">住所 <code>Addres</code> <strong>Text</strong></h5>
             <ul>
@@ -1422,7 +1423,7 @@
             </ul>
             <h5 id="-where-did-you-hear-about-pocket-fitness-dropdown">ポケットフィットネスをどこで知りましたか? <code>Where did you hear about Pocket Fitness?</code> <strong>Dropdown</strong></h5>
             <ul>
-              <li>required, default: first element, multiselect</li>
+              <li>required, default: first element, <strong>single-select</strong></li>
             </ul>
             <h5 id="id-67fc3df53404ff0926e5e3f36df8b8a64aa6b6c4">次へ進む <code>Continue</code> <strong>Button</strong></h5>
             <ul>
@@ -1487,7 +1488,7 @@
             <h5 id="id-bcb4e48c5c6120d1d4aa6e186e2d41ec0be727af">住所 <code>Addres</code> <strong>Text</strong></h5>
             <dl>
               <dt>REQUIRED</dt>
-              <dd><code>入力が必要です</code></dd>
+              <dd><code>住所の入力が必要です</code></dd>
             </dl>
             <h5 id="id-d092f7514bb33b72fa816a7ad7d3ba7fa0dc718b">ご利用開始日 <code>Usage start date</code> <strong>Dropdown</strong></h5>
             <dl>
