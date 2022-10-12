@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>1. ログイン機能（Login - Gaiden</title>
+    <title>【MB】 Tính năng phụ - Gaiden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\font-awesome.min.css">
@@ -948,107 +948,52 @@
         <div class="content-handle"></div>
         <div class="content-container">
           <div class="content-nav content-nav-top">
-            <a class="next-page" href="101.html">
-            <span class="number">2.</span>
-            会員登録（Member registration）
-            <i class="fa fa-angle-right"></i>
-            </a>
           </div>
           <div class="page-toc">
             <ul>
-              <li class="numbered visible">
-                <a href="#mb--login"><span class="number">1.</span>【MB】 ログイン機能 Login</a>
+              <li class="unnumbered visible">
+                <a href="#mb-tnh-nng-ph">【MB】 Tính năng phụ</a>
                 <ul>
-                  <li class="numbered visible">
-                    <a href="#-onboarding"><span class="number">1.1.</span>アプリ起動 Onboarding</a>
-                    <ul>
-                      <li class="numbered invisible">
-                        <a href="#item-event-definition"><span class="number">1.1.1.</span>項目／イベント定義（Item Event Definition）</a>
-                        <ul>
-                          <li class="unnumbered invisible"><a href="#-create-account-button">無料アカウントを作成する Create Account button</a></li>
-                          <li class="unnumbered invisible"><a href="#-login-button">ログイン Login button</a></li>
-                        </ul>
-                      </li>
-                      <li class="numbered invisible"><a href="#error-list"><span class="number">1.1.2.</span>エラー一覧（Error List）</a></li>
-                    </ul>
-                  </li>
-                  <li class="numbered visible">
-                    <a href="#-create-account"><span class="number">1.2.</span>アカウント作成 Create Account</a>
-                    <ul>
-                      <li class="numbered invisible"><a href="#id-960f8422057bd2734a0565f517b42b72714ed61f"><span class="number">1.2.1.</span>項目／イベント定義（Item Event Definition）</a></li>
-                      <li class="numbered invisible"><a href="#id-22322c0ed51671b2d380e00cef9b4950ba6b5cc6"><span class="number">1.2.2.</span>エラー一覧（Error List）</a></li>
-                    </ul>
-                  </li>
-                  <li class="numbered visible">
-                    <a href="#-login"><span class="number">1.3.</span>ログイン Login</a>
-                    <ul>
-                      <li class="numbered invisible"><a href="#id-9092322477a32bee8237e7e7d593cb67f7003209"><span class="number">1.3.1.</span>項目／イベント定義（Item Event Definition）</a></li>
-                      <li class="numbered invisible"><a href="#id-41bbed63e8233f2d1cfa00fc6b4c26bb78371bfd"><span class="number">1.3.2.</span>エラー一覧（Error List）</a></li>
-                    </ul>
-                  </li>
+                  <li class="unnumbered visible"><a href="#t-ng-tr-v-mn-hnh-home">Tự động trờ về màn hình Home</a></li>
+                  <li class="unnumbered visible"><a href="#t-ng-cp-nhp-video-">Tự động cập nhập video 機能</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="main-content">
-            <h1 id="mb--login"><span class="number">1.</span>【MB】 <strong>ログイン機能</strong> <code>Login</code></h1>
-            <h2 id="-onboarding"><span class="number">1.1.</span><strong>アプリ起動</strong> <code>Onboarding</code></h2>
+            <h1 id="mb-tnh-nng-ph">【MB】 <strong>Tính năng phụ</strong></h1>
+            <h2 id="t-ng-tr-v-mn-hnh-home"><strong>Tự động trờ về màn hình Home</strong></h2>
             <ul>
-              <li>1 <a href=""><img src="image\jp\mb\100login\Onboarding.png" alt="1"/></a> <a href=""><img src="image\en\mb\100login\Onboarding.png" alt="1"/></a></li>
-            </ul>
-            <h3 id="item-event-definition"><span class="number">1.1.1.</span>項目／イベント定義（Item Event Definition）</h3>
-            <h5 id="-create-account-button">無料アカウントを作成する <code>Create Account</code> <strong>button</strong></h5>
-            <ul>
-              <li>Goto <strong>アカウント作成</strong> <code>Create Account</code> Screen by webview</li>
               <li>
-                On Account created success screen when click button <code>Login</code>「ログインする」and success
+                Ngoại trừ 3 màn hình sau đây, nếu user không có thao tác gì trên màn hình sau 15s sẽ tự động back lại màn hình <strong>ホーム</strong>：
                 <ul>
-                  <li>If user just only registed Goto 「会員登録（Member registration）」</li>
-                  <li>If user is member Goto 「ホーム（Home）」screen</li>
+                  <li>メンテナンス - Màn hình Maintenance, sau khi user báo cáo sự cố</li>
+                  <li>Màn hình khi đang play video</li>
+                  <li>Màn hình khi đang chạy stopwatch</li>
+                </ul>
+              </li>
+              <li>
+                Ví dụ các màn hình nếu user không có thao tác gì trên màn hình sau 15s sẽ tự động back lại màn hình <strong>ホーム</strong>：
+                <ul>
+                  <li>List video</li>
+                  <li>Màn hình báo cáo sự cố</li>
+                  <li>Màn hình kết thúc video</li>
+                  <li>Màn hình khi stopwatch không chạy</li>
                 </ul>
               </li>
             </ul>
-            <h5 id="-login-button">ログイン <code>Login</code> <strong>button</strong></h5>
+            <h2 id="t-ng-cp-nhp-video-"><strong>Tự động cập nhập video</strong> 機能</h2>
             <ul>
-              <li>Goto「ログイン（Login)」Screen by webview</li>
               <li>
-                On Account created success screen when click button 「ログインする」and success
+                Vào lúc 4h sáng Jp sẽ tự dộng cập nhật video nếu như có thay đổi bên admin site
                 <ul>
-                  <li>If user just only registed Goto 「会員登録（Member registration）」</li>
-                  <li>If user is member Goto 「ホーム（Home）」screen</li>
+                  <li>Khi video đang cập nhập thì user vẫn có thể xem được video cũ</li>
+                  <li>Sau khi cập nhật xong thì sẽ thay video cũ, và cập nhật lại List video</li>
                 </ul>
               </li>
             </ul>
-            <h3 id="error-list"><span class="number">1.1.2.</span>エラー一覧（Error List）</h3>
-            <p><code>None</code></p>
-            <h2 id="-create-account"><span class="number">1.2.</span><strong>アカウント作成</strong> <code>Create Account</code></h2>
-            <ul>
-              <li>
-                <p>1 <a href=""><img src="image\jp\mb\100login\CreateAccount.png" alt="1"/></a> <a href=""><img src="image\en\mb\100login\CreateAccount.png" alt="1"/></a></p>
-              </li>
-              <li>
-                <p>2 <a href=""><img src="image\jp\mb\100login\Success.png" alt="2"/></a> <a href=""><img src="image\en\mb\100login\Success.png" alt="2"/></a></p>
-              </li>
-            </ul>
-            <h3 id="id-960f8422057bd2734a0565f517b42b72714ed61f"><span class="number">1.2.1.</span>項目／イベント定義（Item Event Definition）</h3>
-            <p><code>define in pwa site</code></p>
-            <h3 id="id-22322c0ed51671b2d380e00cef9b4950ba6b5cc6"><span class="number">1.2.2.</span>エラー一覧（Error List）</h3>
-            <p><code>define in pwa site</code></p>
-            <h2 id="-login"><span class="number">1.3.</span><strong>ログイン</strong> <code>Login</code></h2>
-            <ul>
-              <li>1 <a href=""><img src="image\jp\mb\100login\Login.png" alt="1"/></a> <a href=""><img src="image\en\mb\100login\Login.png" alt="1"/></a></li>
-            </ul>
-            <h3 id="id-9092322477a32bee8237e7e7d593cb67f7003209"><span class="number">1.3.1.</span>項目／イベント定義（Item Event Definition）</h3>
-            <p><code>define in pwa site</code></p>
-            <h3 id="id-41bbed63e8233f2d1cfa00fc6b4c26bb78371bfd"><span class="number">1.3.2.</span>エラー一覧（Error List）</h3>
-            <p><code>define in pwa site</code></p>
           </div>
           <div class="content-nav content-nav-bottom">
-            <a class="next-page" href="101.html">
-            <span class="number">2.</span>
-            会員登録（Member registration）
-            <i class="fa fa-angle-right"></i>
-            </a>
           </div>
           <div class="footer">
             <p class="credit text-muted">Powered by <a href="https://github.com/kobo/gaiden">Gaiden</a></p>
