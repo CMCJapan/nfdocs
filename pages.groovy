@@ -4,6 +4,7 @@
 "102.md"(title: "ホーム＆メニュー（Home Page)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "103-jp.md"(title: "ジム詳細", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "104-jp.md"(title: "チェックイン", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"105-jp.md"(title: "本日のトレーニングメーニュー", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "106-jp.md"(title: "オラインビデオ", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 
 // Tablet app
