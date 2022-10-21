@@ -1,8 +1,9 @@
 // Mobile app
-"100.md"(title: "ログイン機能（Login", numbering: true, documentTocDepth: 1, pageTocDepth:2)
-"101.md"(title: "会員登録（Member registration）", numbering: true, documentTocDepth: 1, pageTocDepth:2)
-"103-jp.md"(title: "退会とアカウント削除（Unsubscribe & account deletion)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
-"105-jp.md"(title: "ホーム＆メニュー（Home & Menu)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"100.md"(title: "ログイン機能 (Login", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"101.md"(title: "会員登録 (Member registration)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"102-jp.md"(title: "再入会 (Re-register)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"103-jp.md"(title: "退会とアカウント削除 (Unsubscribe & account deletion)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"105-jp.md"(title: "ホーム＆メニュー (Home & Menu)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "106-jp.md"(title: "ジム詳細 (Gym Information)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "107-jp.md"(title: "チェックイン (Check-in)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "108-jp.md"(title: "本日のトレーニングメーニュー (Training menu)", numbering: true, documentTocDepth: 1, pageTocDepth:2)
@@ -15,4 +16,4 @@
 "202.md"(title: "Kioskモードオペレーション", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "299-jp.md"(title: "サイド機能", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 
-"999.md"(title: "ホーム＆メニュー（Template)", numbering: false, documentTocDepth: 1, pageTocDepth:3)
+"999.md"(title: "ホーム&メニュー(Template)", numbering: false, documentTocDepth: 1, pageTocDepth:3)
