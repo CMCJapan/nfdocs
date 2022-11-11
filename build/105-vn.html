@@ -436,9 +436,8 @@
                         <a href="105-jp.html#id-5ae60ad0f4d6c95739f16d5b95e8d338093e9f46"><span class="number">5.2.1.1.</span>お知らせ一覧 ボタン</a>
                         <ul>
                           <li class="unnumbered invisible"><a href="105-jp.html#id-ab50a07809abebb9a4254807a7b18573bac8eaa0">設定画面 ボタン</a></li>
-                          <li class="unnumbered invisible"><a href="105-jp.html#id-6e5fd86f0fc076c6b12863d0dd1da79318d89c33">ユーザーのバーコード区画</a></li>
-                          <li class="unnumbered invisible"><a href="105-jp.html#id-f36332f0dac466a50a341a09e8e4137234a09708">バーコードで入室 ボタン</a></li>
-                          <li class="unnumbered invisible"><a href="105-jp.html#id-bf304419f57fb34ec8ec8866544b98ba7b7dda53">スキャンして入室 ボタン</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#qr">ユーザーのQRコード区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#qrtap-">カメラでQRコードを読み取る場合はこちらをTAP ボタン</a></li>
                           <li class="unnumbered invisible"><a href="105-jp.html#id-1b83d67a394ca593e0c8039131f6ea9ce3d75459">現在お客様がご利用中の月額プラン 区画</a></li>
                           <li class="unnumbered invisible"><a href="105-jp.html#id-a48f16b9b6c73de13762ce1ce88a0c1d14f6d26f">現在お客様がご利用中の月額プラン-基本料金 区画</a></li>
                           <li class="unnumbered invisible"><a href="105-jp.html#id-2cd78367de27ce77757b23cd715d74345410b2bc">現在お客様がご利用中の月額プラン-水素水・手ぶら 区画</a></li>
@@ -679,6 +678,18 @@
                       <li class="numbered invisible"><a href="105-jp.html#id-bacd908df23a097866928c6df405d399c4928e03"><span class="number">5.15.2.1.</span>画面エラー（Screen Error）</a></li>
                     </ul>
                   </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-93d80c833f5b23665b164fa66e12a03d0965ed88"><span class="number">5.16.</span>ブロックユーザー 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-09e9b0f28e6b274a6dbbf4609e3073f0ff4f8882"><span class="number">5.16.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-736102766ab2696c44dba0f1ad619fa24655ca9a">サポート問い合わせ先 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-f0705dcd01088734e750195d13fbc3dc91129a24"><span class="number">5.16.2.</span>エラー一覧（Error List）</a></li>
                 </ul>
               </li>
             </ul>
@@ -1726,6 +1737,18 @@
                       </li>
                     </ul>
                   </li>
+                  <li class="unnumbered visible">
+                    <a href="#mn-hnh-block-user">Màn hình Block user</a>
+                    <ul>
+                      <li class="unnumbered visible">
+                        <a href="#id-1efe6d223c0237a9b6e7e2f9db56b1aeb1f46e4e">Định nghĩa các thành phần có Action</a>
+                        <ul>
+                          <li class="unnumbered visible"><a href="#---customer-support-button">サポート問い合わせ先 - Customer support Button</a></li>
+                        </ul>
+                      </li>
+                      <li class="unnumbered visible"><a href="#id-73f2b53a377bae7fc3327b4ae68be18a5924cdc8">Error List</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -2267,7 +2290,7 @@
                 Case １- API data
                 <ul>
                   <li><code>水素水</code> ・ <code>手ぶらde会員</code> : tên option</li>
-                  <li><code>0月0日</code> : mm月dd日　ngày bắt đầu sử dụng dịch vụ sau khi đăng kí</li>
+                  <li><code>0月0日</code> : mm月dd日　ngày cuối cùng sử dụng dịch vụ sau khi đăng kí</li>
                   <li><code>000円</code> : Tiền charge cho lần đăng kí này. Số tiền được tính như sau: (Tiền option 1 ngày) x (số ngày sử dụng tính từ ngày đăng kí đến ngày tự động charge tiền tháng tiếp theo - lấy theo monthly plan)</li>
                 </ul>
               </li>
@@ -2494,6 +2517,19 @@
               <li>Nhập mã OTP sai：　<code>コードが誤っています。もう一度入力してください</code></li>
               <li>Qúa số lần gửi trong ngày： <code>SMSコードの送信回数が10回を超えた為、一時的にロックしました。恐れ入りますがカスタマサポートへお問い合わせください。</code></li>
             </ul>
+            <h2 id="mn-hnh-block-user">Màn hình <strong>Block user</strong></h2>
+            <ul>
+              <li>Nếu user đang bị block, sau khi login hoặc mở app (nếu user đã login trước đó) thì sẽ bị redirect qua màn hình này</li>
+            </ul>
+            <p><img src="image\jp\mb\101member\block-user.png" alt="nf"/></p>
+            <h3 id="id-1efe6d223c0237a9b6e7e2f9db56b1aeb1f46e4e">Định nghĩa các thành phần có Action</h3>
+            <h5 id="---customer-support-button">サポート問い合わせ先 - Customer support <code>Button</code></h5>
+            <ul>
+              <li>tap nút này sẽ mở app Line tài khoản Pocket Fitness.</li>
+              <li>URL [https://lin.ee/6AI17uM]</li>
+            </ul>
+            <h3 id="id-73f2b53a377bae7fc3327b4ae68be18a5924cdc8">Error List</h3>
+            <p><code>None</code></p>
           </div>
           <div class="content-nav content-nav-bottom">
           </div>
