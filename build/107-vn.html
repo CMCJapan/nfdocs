@@ -617,7 +617,7 @@
                       <li class="unnumbered invisible"><a href="105-jp.html#id-daf8509f6cf4f51b00557774784cb5a71101190c">戻る ボタン</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-670be7a31ea2a4c5dc5266511a5c891be1102203">フォームタイトル 区画</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-3828daf14a80e2e9abd7c7dabff78bf601f96bc7">入力フォーム 区画</a></li>
-                      <li class="unnumbered invisible"><a href="105-jp.html#id-0a81a7ed5568020d9580f7d1eed30f8f9e5a3940">登録 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-192dcd27aa66f931ead90af286b1178fedc5754d">登録・変更 ボタン</a></li>
                     </ul>
                   </li>
                   <li class="numbered invisible"><a href="105-jp.html#id-42224062dde2e519a0178b4db36255e37055a3a9"><span class="number">5.12.2.</span>エラー一覧（Error List）</a></li>
@@ -632,7 +632,6 @@
                       <li class="unnumbered invisible"><a href="105-jp.html#id-0300f716779de7fd1d90aa01030c6ee42de08408">戻る ボタン</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-37cc4e3c28b7ce00a64d93cc62809191582f6abd">サブカード 区画</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-2930be064fc00f7e549c2311e4975c3eddc0b8f3">メインカードに変更する ボタン</a></li>
-                      <li class="unnumbered invisible"><a href="105-jp.html#id-20a7bf48650abdca65a877b70b86d08102ded10f">サブカードを変更する ボタン</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-9ce6158cc096da6f4b7b066e8d3ab722bbea502f">サブカードを削除する ボタン</a></li>
                     </ul>
                   </li>
@@ -655,6 +654,7 @@
                     <a href="105-jp.html#id-95dc4459504731266101e8be887741593b801cc7"><span class="number">5.14.2.</span>エラー一覧（Error List）</a>
                     <ul>
                       <li class="numbered invisible"><a href="105-jp.html#id-5ae76502ddd1b79954919105530e6998609747f3"><span class="number">5.14.2.1.</span>項目エラー（Item Error）</a></li>
+                      <li class="numbered invisible"><a href="105-jp.html#id-48acd56d9a7993807fc630aa64e60800c529c5ac"><span class="number">5.14.2.2.</span>画面エラー（Screen Error）</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -771,7 +771,12 @@
                       <li class="unnumbered invisible"><a href="107-jp.html#qr">QRコードスキャンフレームフレーム</a></li>
                     </ul>
                   </li>
-                  <li class="numbered invisible"><a href="107-jp.html#error-list"><span class="number">7.1.2.</span>エラー一覧（Error List）</a></li>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#error-list"><span class="number">7.1.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="107-jp.html#screen-error"><span class="number">7.1.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li class="numbered invisible">
@@ -804,7 +809,7 @@
                   <li class="numbered invisible">
                     <a href="107-jp.html#id-ff662eab46a39a43572657cbb2b0c8262d155061"><span class="number">7.3.2.</span>エラー一覧（Error List）</a>
                     <ul>
-                      <li class="numbered invisible"><a href="107-jp.html#screen-error"><span class="number">7.3.2.1.</span>画面エラー（Screen Error）</a></li>
+                      <li class="numbered invisible"><a href="107-jp.html#id-a80b1811ffd1d0f754874b5e298164fee704615b"><span class="number">7.3.2.1.</span>画面エラー（Screen Error）</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -1476,7 +1481,12 @@
                           <li class="unnumbered visible"><a href="#scan-qr-code-frame">Scan QR code Frame</a></li>
                         </ul>
                       </li>
-                      <li class="unnumbered visible"><a href="#error-list">Error List</a></li>
+                      <li class="unnumbered visible">
+                        <a href="#error-list">Error List</a>
+                        <ul>
+                          <li class="unnumbered visible"><a href="#screen-error">画面エラー（Screen Error）</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li class="unnumbered visible">
@@ -1509,7 +1519,7 @@
                       <li class="unnumbered visible">
                         <a href="#id-0cfa03762965a29bdc3ec891309b7ada4f262f6a">Error List</a>
                         <ul>
-                          <li class="unnumbered visible"><a href="#screen-error">Screen Error</a></li>
+                          <li class="unnumbered visible"><a href="#id-34f332ff653fe81638c29c3823713bcd10e6a903">Screen Error</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -1584,6 +1594,8 @@
             <h5 id="scan-qr-code-frame">Scan QR code <code>Frame</code></h5>
             <ul>
               <li>Khi vào màn hình này thì sẽ tự động quét mã QR.</li>
+              <li>Nếu user quét mã QR không hợp lệ thì sẽ hiển thị popup lỗi. Tap nào nút <code>戻る</code> thì sẽ quay lại màn hình <strong>Quét mã QR</strong></li>
+              <li>Nếu user chưa đến ngày sử dụng dịch vụ quét mã QR hợp lệ thì sẽ hiển thị popup lỗi. Tap nào nút <code>戻る</code> thì sẽ quay lại màn hình <strong>Quét mã QR</strong></li>
               <li>
                 Sau khi quét mã QR thành công, sẽ redirect qua màn hình <strong>Xác nhận sử dụng dịch vụ</strong> . Tuỳ vào từng mã QR mà sẽ redirect qua các màn hình khác nhau. Có 4 loại mã QR như sau:
                 <ul>
@@ -1595,7 +1607,11 @@
               </li>
             </ul>
             <h3 id="error-list">Error List</h3>
-            <p><code>None</code></p>
+            <h4 id="screen-error">画面エラー（Screen Error）</h4>
+            <ul>
+              <li>Lỗi mã QR không hợp lệ: <code>QRコードが無効です</code></li>
+              <li>Lỗi user chưa đến ngày sử dụng dịch vụ quét mã QR: Hiển thị lỗi từ bên API trả về. Message lỗi: &ldquo;利用開始日より前は利用できません&rdquo;</li>
+            </ul>
             <h2 id="mn-hnh-xc-nhn-s-dng-dch-v---ca-vo">Màn hình <strong>Xác nhận sử dụng dịch vụ - Cửa vào</strong></h2>
             <p><img src="image\jp\mb\104check-in\entry-flow.png" alt="nf"/></p>
             <ul>
@@ -1709,7 +1725,7 @@
               <li>Giống như khi bấm nút mở khoá ở màn hình trước đó</li>
             </ul>
             <h3 id="id-0cfa03762965a29bdc3ec891309b7ada4f262f6a">Error List</h3>
-            <h4 id="screen-error">Screen Error</h4>
+            <h4 id="id-34f332ff653fe81638c29c3823713bcd10e6a903">Screen Error</h4>
             <ul>
               <li>Lỗi kết nối smart-lock：<code>内部サーバーエラー</code></li>
               <li>Lỗi thanh toán：Hiển thị thông báo lỗi Stripe từ kết quả APi trả về</li>
