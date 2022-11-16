@@ -1829,6 +1829,7 @@
                   <li><code>次の10秒</code>ボタンをタップしたら、動画を次の10秒進む</li>
                   <li><code>10秒前</code>ボタンをタップしたら、動画を10秒前戻る</li>
                   <li><code>動画終了</code>ボタンをタップしたら、動画を終了して、 <strong>ホーム - ビジター用</strong> 画面にに戻る</li>
+                  <li>動画のタイムラインをタップすると、タップした時間に動画が再生されます</li>
                 </ul>
               </li>
               <li>
@@ -1836,6 +1837,7 @@
                 <ul>
                   <li><code>再生</code>ボタンをタップしたら、動画を再生する。</li>
                   <li><code>動画終了</code>ボタンをタップしたら、動画を終了して、 <strong>ホーム - ビジター用</strong> 画面にに戻る</li>
+                  <li>動画のタイムラインをタップすると、タップした時間に動画が再生されます</li>
                 </ul>
               </li>
             </ul>
@@ -1952,6 +1954,7 @@
                   <li><code>次の10秒</code>ボタンをタップしたら、動画を次の10秒進む</li>
                   <li><code>10秒前</code>ボタンをタップしたら、動画を10秒前戻る</li>
                   <li><code>動画終了</code>ボタンをタップしたら、動画を終了して、 <strong>ホーム</strong> 画面にに戻る</li>
+                  <li>動画のタイムラインをタップすると、タップした時間に動画が再生されます</li>
                 </ul>
               </li>
               <li>
@@ -1959,6 +1962,7 @@
                 <ul>
                   <li><code>再生</code>ボタンをタップしたら、動画を再生する。</li>
                   <li><code>動画終了</code>ボタンをタップしたら、動画を終了して、 <strong>ホーム</strong> 画面にに戻る</li>
+                  <li>動画のタイムラインをタップすると、タップした時間に動画が再生されます</li>
                 </ul>
               </li>
             </ul>
@@ -2332,10 +2336,12 @@
             <h5 id="id-0dc2f6b496730dc832dca3272c42228fde250af9">以前のパスワード <code>インプット</code></h5>
             <ul>
               <li>必要、８−１６文字以内、小文字、大文字、数字が含まれる</li>
+              <li>16文字以上入力できない</li>
             </ul>
             <h5 id="id-db5860daeac253ec4237839e0f9b7740da704353">新しいパスワード <code>インプット</code></h5>
             <ul>
               <li>必要、８−１６文字以内、小文字、大文字、数字が含まれる</li>
+              <li>16文字以上入力できない</li>
             </ul>
             <h5 id="id-6846d140f1bc464c82c6e27ec3a955add19f2b65">目アイコン <code>ボタン</code></h5>
             <ul>
@@ -2362,7 +2368,6 @@
             <h4 id="screen-error"><span class="number">5.10.2.2.</span>画面エラー（Screen Error）</h4>
             <ul>
               <li>以前のパスワードが一致しません：　<code>以前のパスワードが一致しません</code></li>
-              <li>入力されたパスワードが一致しません：<code>入力されたパスワードが一致しません</code></li>
             </ul>
             <h2 id="id-3185f0228e3138a703105444253d7c6c20e1ecd8"><span class="number">5.11.</span><strong>クレジットカードの変更</strong> 画面</h2>
             <p><img src="image\jp\mb\102mypage\change-credit.png" alt="nf"/></p>
@@ -2457,13 +2462,15 @@
             </ul>
             <h5 id="id-66440f31a40ff78a74b64f80a0416a1d1a7536b7">古い電話番号 <code>インプット</code></h5>
             <ul>
-              <li>必要、数字と (-) のみ</li>
+              <li>必要、数字のみ</li>
               <li>10−11桁、070、080、090スタート</li>
+              <li>11桁以上入力できない</li>
             </ul>
             <h5 id="id-a4fe5c3b8d9ad650b53d5c499557693c15ba8581">新しい電話番号 <code>インプット</code></h5>
             <ul>
-              <li>必要、数字と (-) のみ</li>
+              <li>必要、数字のみ</li>
               <li>10−11桁、070、080、090スタート</li>
+              <li>11桁以上入力できない</li>
             </ul>
             <h5 id="id-9b78aca50151d0af5b0a491f713e97e7e0ab9e14">電話番号を更新する <code>ボタン</code></h5>
             <ul>
@@ -2480,7 +2487,7 @@
             <h4 id="id-48acd56d9a7993807fc630aa64e60800c529c5ac"><span class="number">5.14.2.2.</span>画面エラー（Screen Error）</h4>
             <ul>
               <li>以前の電話番号が一致しません：　<code>以前の電話番号が一致しません</code></li>
-              <li>入力された電話番号が一致しません：<code>入力された電話番号が一致しません</code></li>
+              <li>以前の電話番号が存在しています：　<code>この電話(090XXXXXXXXX)は既に存在しています</code></li>
             </ul>
             <h2 id="id-fb9ef0f1ee638a3ae7b7f80bef3f4256204edd7a"><span class="number">5.15.</span><strong>認証コード確認</strong> 画面</h2>
             <p><img src="image\jp\mb\102mypage\confirm-otp.png" alt="nf"/></p>

@@ -1819,6 +1819,7 @@
                   <li>Tap nút <code>Next 10s</code> thì sẽ tua video 10s tới</li>
                   <li>Tap nút <code>Next 10s</code> thì sẽ back lại video 10s trước</li>
                   <li>Tap nút <code>Close video</code> thì sẽ tắt video và quay lại màn hình <strong>Home - visiter</strong></li>
+                  <li>Tap vào timeline video thì sẽ play lại video đó ngay thời gian đã tap</li>
                 </ul>
               </li>
               <li>
@@ -1826,6 +1827,7 @@
                 <ul>
                   <li>Tap nút <code>Replay</code> thì sẽ play lại video này</li>
                   <li>Tap nút <code>Close video</code> thì sẽ tắt video và quay lại màn hình <strong>Home - visiter</strong></li>
+                  <li>Tap vào timeline video thì sẽ play lại video đó ngay thời gian đã tap</li>
                 </ul>
               </li>
             </ul>
@@ -1944,6 +1946,7 @@
                   <li>Tap nút <code>Next 10s</code> thì sẽ tua video 10s tới</li>
                   <li>Tap nút <code>Next 10s</code> thì sẽ back lại video 10s trước</li>
                   <li>Tap nút <code>Close video</code> thì sẽ tắt video và quay lại màn hình <strong>Home</strong></li>
+                  <li>Tap vào timeline video thì sẽ play lại video đó ngay thời gian đã tap</li>
                 </ul>
               </li>
               <li>
@@ -1951,6 +1954,7 @@
                 <ul>
                   <li>Tap nút <code>Replay</code> thì sẽ play lại video này</li>
                   <li>Tap nút <code>Close video</code> thì sẽ tắt video và quay lại màn hình <strong>Home</strong></li>
+                  <li>Tap vào timeline video thì sẽ play lại video đó ngay thời gian đã tap</li>
                 </ul>
               </li>
             </ul>
@@ -2329,10 +2333,12 @@
             <h5 id="--pass-c-input">以前のパスワード- Pass cũ <code>Input</code></h5>
             <ul>
               <li>Required, 8-16 kí tự, và bao gôm chữ thường, chữ hoa, số, kí tự đặc biệt</li>
+              <li>Không nhập được quá 16 kí tự</li>
             </ul>
             <h5 id="---pass-mi-input">新しいパスワード - Pass mới <code>Input</code></h5>
             <ul>
               <li>Required, 8-16 kí tự, và bao gôm chữ thường, chữ hoa, số, kí tự đặc biệt</li>
+              <li>Không nhập được quá 16 kí tự</li>
             </ul>
             <h5 id="--eye-iocn-button">目アイコン- Eye iocn <code>Button</code></h5>
             <ul>
@@ -2358,8 +2364,7 @@
             </ul>
             <h4 id="screen-error">画面エラー（Screen Error）</h4>
             <ul>
-              <li>Password cũ không đúng：　<code>以前のパスワードが一致しません</code></li>
-              <li>Password không match nhau：<code>入力されたパスワードが一致しません</code></li>
+              <li>Password cũ không match nhau：　<code>以前のパスワードが一致しません</code></li>
             </ul>
             <h2 id="mn-hnh-change-credit-card">Màn hình <strong>Change credit card</strong></h2>
             <p><img src="image\jp\mb\102mypage\change-credit.png" alt="nf"/></p>
@@ -2458,13 +2463,15 @@
             </ul>
             <h5 id="---sdt-c-input">古い電話番号 - sdt cũ <code>Input</code></h5>
             <ul>
-              <li>Required, chỉ được nhập số và (-)</li>
+              <li>Required, chỉ được nhập số</li>
               <li>10-11 kí tự, bắt đầu bằng 070,080,090</li>
+              <li>Không nhập được quá 11 kí tự</li>
             </ul>
             <h5 id="-input">新しい電話番号 <code>Input</code></h5>
             <ul>
-              <li>Required, chỉ được nhập số và (-)</li>
+              <li>Required, chỉ được nhập số</li>
               <li>10-11 kí tự, bắt đầu bằng 070,080,090</li>
+              <li>Không nhập được quá 11 kí tự</li>
             </ul>
             <h5 id="---change-sdt-button">電話番号を更新する - Change sdt <code>Button</code></h5>
             <ul>
@@ -2481,7 +2488,7 @@
             <h4 id="id-43aa2d3db553583fded07af1ecdd5b2d4d03a110">Screen Error）</h4>
             <ul>
               <li>Sdt cũ không đúng：　<code>以前の電話番号が一致しません</code></li>
-              <li>Sdt không match nhau：<code>入力された電話番号が一致しません</code></li>
+              <li>Sdt cũ đã tồn tại: <code>この電話(090XXXXXXXXX)は既に存在しています</code></li>
             </ul>
             <h2 id="mn-hnh-otp-confirmation">Màn hình <strong>OTP confirmation</strong></h2>
             <p><img src="image\jp\mb\102mypage\confirm-otp.png" alt="nf"/></p>
