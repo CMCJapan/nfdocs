@@ -16,4 +16,5 @@
 "202.md"(title: "Kioskモードオペレーション", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "299-jp.md"(title: "サイド機能", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 
+"900.md"(title: "Gate-Kepper&DoorMan", numbering: true, documentTocDepth: 1, pageTocDepth:3)
 "999.md"(title: "ホーム&メニュー(Template)", numbering: false, documentTocDepth: 1, pageTocDepth:3)
