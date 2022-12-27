@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>【CMS-MANAGER】 トレーニングマシン Training machine - Gaiden</title>
+    <title>【CMS】 ジム一覧 画面 - Gaiden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\font-awesome.min.css">
@@ -1490,73 +1490,106 @@
           <div class="page-toc">
             <ul>
               <li class="unnumbered visible">
-                <a href="#cms-manager--training-machine">【CMS-MANAGER】 トレーニングマシン Training machine</a>
+                <a href="#cms--">【CMS】 ジム一覧 画面</a>
                 <ul>
                   <li class="unnumbered visible">
-                    <a href="#-">マシン一覧 画面</a>
+                    <a href="#1">　1．ジム一覧画面</a>
                     <ul>
                       <li class="unnumbered visible">
-                        <a href="#id-d5b4628d8301cb9cff6e908a86189a1becf4bfdf">項目／イベント定義</a>
+                        <a href="#11-">1.1 一覧表示モードの項目／イベント定義</a>
                         <ul>
-                          <li class="unnumbered visible"><a href="#id-a73d20cf1fc46959aeecc58fb2093095c37cee96">新規作成 ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-a2595cfec08bc099d6b45ac3a453a66fe7ea1567">現在利用中のマシン一覧 区画</a></li>
-                          <li class="unnumbered visible"><a href="#id-d34807bc0a09882abbf902f895081682f38fa615">削除されたマシン一覧 区画</a></li>
+                          <li class="unnumbered visible"><a href="#111-api">1.1.1 APIデータ：</a></li>
+                          <li class="unnumbered visible"><a href="#112--">1.1.2 各 ボタン</a></li>
                         </ul>
                       </li>
-                      <li class="unnumbered visible"><a href="#error-list">エラー一覧（Error List）</a></li>
+                      <li class="unnumbered visible"><a href="#12-">1.2 マップ表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#13-error-list">1.3 エラー一覧（Error List）</a></li>
                     </ul>
                   </li>
                   <li class="unnumbered visible">
-                    <a href="#id-55b48c0c0066ae60a4f7e7ffc28ff3cd13ba76c2">トレートレーニングマシン詳細 画面</a>
+                    <a href="#2">　2．ジム詳細一覧画面</a>
                     <ul>
-                      <li class="unnumbered visible">
-                        <a href="#id-55aeac03472fc5ba94138bf85ca36046bcaee674">項目／イベント定義</a>
-                        <ul>
-                          <li class="unnumbered visible"><a href="#id-e56ea4756836381f678622c59c7781af16757b8c">トレーニングマシン一覧に戻る ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-ebe1ab3a7ff1808486380a8c51fdafb0d83d9910">変更 ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-7b9716ed65add044bb6bcd0784f35181d6206715">削除 ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-88baccf63951faf973f72a063d1ba730a39a0aab">利用中に戻す ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-a373a0bb1198bcac2981542e6861cf99acd86854">完全に削除する ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-bb98cd4daf206ee5c2f48224a4706c9c7d3fd6b8">マシン詳細 区画</a></li>
-                          <li class="unnumbered visible"><a href="#id-e34edf212199363aaf91e8e7581eae5e2c1b21cc">マシンとリンクされた動画一覧 区画</a></li>
-                        </ul>
-                      </li>
-                      <li class="unnumbered visible"><a href="#id-bc9d1b84132542cd3c27574b537b449ccc2f6328">エラー一覧（Error List）</a></li>
+                      <li class="unnumbered visible"><a href="#21-">2.1 店舗名エリア</a></li>
+                      <li class="unnumbered visible"><a href="#22-">2.2 イメージエリア</a></li>
+                      <li class="unnumbered visible"><a href="#23-">2.3 ジム詳細エリア</a></li>
+                      <li class="unnumbered visible"><a href="#24-">2.4 プランエリア</a></li>
+                      <li class="unnumbered visible"><a href="#25-">2.5 オプションエリア</a></li>
+                      <li class="unnumbered visible"><a href="#26-">2.6 プライシング設計エリア</a></li>
+                      <li class="unnumbered visible"><a href="#27-">2.7 会員一覧エリア</a></li>
+                      <li class="unnumbered visible"><a href="#28-">2.8 トレーニングマシンエリア</a></li>
+                      <li class="unnumbered visible"><a href="#29-">2.9 トレーニング種目一覧エリア</a></li>
+                      <li class="unnumbered visible"><a href="#210--">2.10 戻る ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#211--">2.11 編集 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#212--">2.12 ジムを削除 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#213--">2.13 すべて表示 ボタン</a></li>
                     </ul>
                   </li>
                   <li class="unnumbered visible">
-                    <a href="#id-2bc1f94919917d15900dcbdea1f6c78846e9e30c">マシン新規追加 画面</a>
+                    <a href="#3_step1">　3．ジム基本情報入力_STEP1</a>
                     <ul>
                       <li class="unnumbered visible">
-                        <a href="#id-ced77772a0d185d7831346e9b52a234f7dfacc3b">項目／イベント定義</a>
+                        <a href="#31-">3.1 一覧表示モードの項目／イベント定義</a>
                         <ul>
-                          <li class="unnumbered visible"><a href="#id-56a357c0dde8f38efbedf7dfa1cafd2939a3a39c">トレーニングマシンを新規追加する ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-2822397009932082f889ed68afe5e8693016ec81">有酸素マシンを新規追加する ボタン</a></li>
+                          <li class="unnumbered visible"><a href="#id-3d712f1dcfd0b550ad9570dbef6da78b21555b1c">ステップバー</a></li>
+                          <li class="unnumbered visible"><a href="#id-b2da5d583611d93098bcd023f0b4d6d3bc4c91c6">入力エリア</a></li>
                         </ul>
                       </li>
-                      <li class="unnumbered visible"><a href="#id-1b5c101375e766cedfe1c26d6586f72c1c2a4a0b">エラー一覧（Error List）</a></li>
+                      <li class="unnumbered visible"><a href="#32-">3.2 各ボタン</a></li>
+                      <li class="unnumbered visible">
+                        <a href="#33-">3.3 エラー一覧</a>
+                        <ul>
+                          <li class="unnumbered visible"><a href="#id-e1b625eddd16c94a869a61903b16923df040bd08">　未入力の場合</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li class="unnumbered visible">
-                    <a href="#id-7e41fc23c96d6024ceabda49ced6eca85e12f780">トレーニングマシン追加・変更 フォーム</a>
+                    <a href="#4_step2">　4．メディア入力_STEP2</a>
                     <ul>
-                      <li class="unnumbered visible">
-                        <a href="#id-0092a691fbfdc3c69b0eaab4e447128a264665ce">項目／イベント定義</a>
-                        <ul>
-                          <li class="unnumbered visible"><a href="#id-ba0a7879848f7d18d9826116396b60b166cc9464">画像追加 ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-2529512d154bb3ee7fa52163c79f1539d3ed57c9">マシン名 インプット</a></li>
-                          <li class="unnumbered visible"><a href="#id-d5a0ca64afabae2ce1ccb0d700a33501c987fb27">モデル インプット</a></li>
-                          <li class="unnumbered visible"><a href="#id-a9fe9b39089820415080844a3f122ca518513cfc">詳細 インプット</a></li>
-                          <li class="unnumbered visible"><a href="#id-078f0ff03ba7da09e2cdb4f86d7235e828b3c3de">戻る ボタン</a></li>
-                          <li class="unnumbered visible"><a href="#id-d541ebabf30d78898f65094f50208d0394f79c7b">保存 ボタン</a></li>
-                        </ul>
-                      </li>
-                      <li class="unnumbered visible">
-                        <a href="#id-d50a100bce9fa0cba4e09eff5590d0ce64a6e248">エラー一覧（Error List）</a>
-                        <ul>
-                          <li class="unnumbered visible"><a href="#item-error">項目エラー（Item Error）</a></li>
-                        </ul>
-                      </li>
+                      <li class="unnumbered visible"><a href="#41-">4.1 一覧表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#42--">4.2 各 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#43-">4.3 エラー一覧</a></li>
+                    </ul>
+                  </li>
+                  <li class="unnumbered visible">
+                    <a href="#5_step3">　5．その他のご案内入力_STEP3</a>
+                    <ul>
+                      <li class="unnumbered visible"><a href="#51-">5.1 一覧表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#52--">5.2 各 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#53-">5.3 エラー一覧</a></li>
+                    </ul>
+                  </li>
+                  <li class="unnumbered visible">
+                    <a href="#6_step4">　6．プラン入力_STEP4</a>
+                    <ul>
+                      <li class="unnumbered visible"><a href="#61-">6.1 一覧表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#62--">6.2 各 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#63-">6.3 エラー一覧</a></li>
+                    </ul>
+                  </li>
+                  <li class="unnumbered visible">
+                    <a href="#7_step5">　7．設備入力_STEP5</a>
+                    <ul>
+                      <li class="unnumbered visible"><a href="#71-">7.1 一覧表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#72--">7.2 各 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#73-">7.3 エラー一覧</a></li>
+                    </ul>
+                  </li>
+                  <li class="unnumbered visible">
+                    <a href="#8_step6">　8．設備入力_STEP6</a>
+                    <ul>
+                      <li class="unnumbered visible"><a href="#81-">8.1 一覧表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#82-">8.2 各ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#id-e3afb34246b69619f59c79f2c075211f9308dbbf">マシンの台数入力ポップアップ:</a></li>
+                      <li class="unnumbered visible"><a href="#83-">8.3 エラー一覧</a></li>
+                    </ul>
+                  </li>
+                  <li class="unnumbered visible">
+                    <a href="#9_step7">　9．単価入力_STEP7</a>
+                    <ul>
+                      <li class="unnumbered visible"><a href="#91-">9.1 一覧表示モードの項目／イベント定義</a></li>
+                      <li class="unnumbered visible"><a href="#92--">9.2 各 ボタン</a></li>
+                      <li class="unnumbered visible"><a href="#93-">9.3 エラー一覧</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -1564,202 +1597,740 @@
             </ul>
           </div>
           <div class="main-content">
-            <h1 id="cms-manager--training-machine">【CMS-MANAGER】 <strong>トレーニングマシン</strong> <code>Training machine</code></h1>
+            <h1 id="cms--">【CMS】 <strong>ジム一覧</strong> 画面</h1>
+            <h2 id="1">　1．ジム一覧画面</h2>
+            <p>ジム一覧を表示する画面である。この画面での操作により、ジムを新規作成、ジムの下書きを編集することができる。</p>
+            <p>表示モードは一覧とマップとして２つがある。</p>
+            <h3 id="11-">1.1 一覧表示モードの項目／イベント定義</h3>
+            <p><img src="image\jp\cms\302\Gyms-List.png" alt="nf"/></p>
+            <h4 id="111-api">1.1.1 APIデータ：</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>値 </th>
+                  <th>説明 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>ジム一覧</code> </td>
+                  <td>なし </td>
+                  <td>一覧の名称 </td>
+                </tr>
+                <tr>
+                  <td><code>店舗名</code> </td>
+                  <td>松山姫原店</td>
+                  <td>店舗名と店舗の画像 </td>
+                </tr>
+                <tr>
+                  <td><code>住所</code> </td>
+                  <td>791-8012 栄姫県松山市姫原2-4-28ラジ2F </td>
+                  <td>店舗の郵便番号と住所 </td>
+                </tr>
+                <tr>
+                  <td><code>1回料金</code> </td>
+                  <td>¥300 </td>
+                  <td>1回の入室料金 </td>
+                </tr>
+                <tr>
+                  <td><code>上限金額</code> </td>
+                  <td>¥2500 </td>
+                  <td>最大の入室料金 </td>
+                </tr>
+                <tr>
+                  <td><code>駐車場台数</code> </td>
+                  <td>30台 </td>
+                  <td>店舗の駐車場の台数 </td>
+                </tr>
+              </tbody>
+            </table>
             <ul>
-              <li>全店共通のトレーニングマシンを管理する機能です。</li>
-            </ul>
-            <h2 id="-"><strong>マシン一覧</strong> 画面</h2>
-            <p><img src="image\jp\cms\303\training-machine-list.png" alt="nf"/></p>
-            <h3 id="id-d5b4628d8301cb9cff6e908a86189a1becf4bfdf">項目／イベント定義</h3>
-            <h4 id="id-a73d20cf1fc46959aeecc58fb2093095c37cee96">新規作成 <code>ボタン</code></h4>
-            <ul>
-              <li>ボタンをタップしたら、 <strong>マシン新規追加</strong> 画面に移動される。</li>
-            </ul>
-            <h4 id="id-a2595cfec08bc099d6b45ac3a453a66fe7ea1567">現在利用中のマシン一覧 <code>区画</code></h4>
-            <ul>
-              <li>ステータスがアクティブなマシン（トレーニングマシン・有酸素マシン）のリストが含まれます。</li>
-              <li>現在利用中のマシン一覧はページに分かれており、1ページには5件のマシンが含まれています</li>
-              <li>マシンのどこかをクリックすると、その <strong>トレーニングマシン詳細</strong> 画面に遷移される。</li>
               <li>
-                各マシンのAPIデータ：
-                <ul>
-                  <li>マシン画像</li>
-                  <li><code>インクライン チェスト プレス</code>：マシン名</li>
-                  <li><code>SHUA69シリーズで一番人気のアイテム！ 腕が描くので…</code>：マシン詳細。最大２行まで詳細が表示され、長すぎかったら、最後に。。。を表示する</li>
-                  <li><code>SH-G6901</code>：モデル番号</li>
-                  <li><code>トレーニングマシン</code>：機種</li>
-                  <li><code>2022/10/24</code>：更新日。フォーマット：<code>YYYY年mm月dd日</code></li>
-                </ul>
+                <p>店舗のレコードを押下すると <strong>2．ジム詳細一覧画面</strong> に遷移する。</p>
+              </li>
+              <li>
+                <p>1画面の最大レコード数：10件</p>
               </li>
             </ul>
-            <h4 id="id-d34807bc0a09882abbf902f895081682f38fa615">削除されたマシン一覧 <code>区画</code></h4>
+            <h4 id="112--">1.1.2 各 <code>ボタン</code></h4>
+            <p>①　ジム一覧をリストモードで表示させる <code>ボタン</code> ②　ジム一覧をマップモードで表示させる <code>ボタン</code> →　リストモーにある場合、① <code>ボタン</code>が青で、押下不可で、② <code>ボタン</code>がグレーで、押下可能である。 　 マップモードにある場合、①<code>ボタン</code>がグレーで、押下可能で、②<code>ボタン</code>が青で、押下不可である。 ③　新規店舗作成 <code>ボタン</code>：新規店舗作成ページにリダイレクトさせるボタン ④　下書きを編集 <code>ボタン</code>:一時保存されているステップのページにリダイレクトさせるボタン。店舗の情報が一時保存だでなく、 <strong>保存</strong>されたとき、このボタンを非表示になること。 ⑤　前/次のページを表示させる<code>ページネーション</code></p>
+            <h3 id="12-">1.2 マップ表示モードの項目／イベント定義</h3>
+            <p><img src="image\jp\cms\302\Gyms-Map.png" alt="nf"/></p>
+            <p><img src="image\jp\cms\302\Store_Icon.PNG" alt="nf"/>は店舗の位置である。押下すると店舗の紹介情報のポップアップを表示する。</p>
             <ul>
-              <li>ステータスが削除済みのマシン（トレーニングマシン・有酸素マシン）のリストが含まれます</li>
-              <li>削除されたマシン一覧はページに分かれており、1ページには5件のマシンが含まれています</li>
-              <li>マシンのどこかをクリックすると、その <strong>トレーニングマシン詳細</strong> 画面に遷移される。</li>
               <li>
-                各マシンのAPIデータ：
+                <p>APIデータ：</p>
                 <ul>
-                  <li>マシン画像</li>
-                  <li><code>インクライン チェスト プレス</code>：マシン名</li>
-                  <li><code>SHUA69シリーズで一番人気のアイテム！ 腕が描くので…</code>：マシン詳細。最大２行まで詳細が表示され、長すぎかったら、最後に。。。を表示する</li>
-                  <li><code>SH-G6901</code>：モデル番号</li>
-                  <li><code>トレーニングマシン</code>：機種</li>
-                  <li><code>2022/10/24</code>：削除日。フォーマット：<code>YYYY年mm月dd日</code></li>
+                  <li><code>松山姫原店</code>：店舗名</li>
+                  <li><code>791-8012 栄姫県松山市姫原2-4-28 フジ２F</code>: 店舗の住所</li>
+                  <li><code>140名</code>: 現利用中の人数。誰も使っていない場合、0を表示する。</li>
+                  <li><code>300</code>: 入室の料金である。料金が設定されていない場合、<code>未設定</code>を表示する</li>
                 </ul>
               </li>
+              <li>
+                <p>詳細→ <code>ボタン</code>を押下すると <strong>2．ジム詳細一覧画面</strong> に遷移する。</p>
+              </li>
+              <li>
+                <p>別の店舗をクリックする場合、表示さているポップアップが消えて、キリックした店舗のポップアップを表示する。</p>
+              </li>
+              <li>
+                <p>店舗の位置でない箇所をクリックする場合、表示しているポップアップを非表示にする。</p>
+              </li>
             </ul>
-            <h3 id="error-list">エラー一覧（Error List）</h3>
+            <h3 id="13-error-list">1.3 エラー一覧（Error List）</h3>
             <p><code>None</code></p>
-            <h2 id="id-55b48c0c0066ae60a4f7e7ffc28ff3cd13ba76c2"><strong>トレートレーニングマシン詳細</strong> 画面</h2>
-            <p><img src="image\jp\cms\303\training-machine-detail.png" alt="nf"/></p>
-            <h3 id="id-55aeac03472fc5ba94138bf85ca36046bcaee674">項目／イベント定義</h3>
-            <h4 id="id-e56ea4756836381f678622c59c7781af16757b8c">トレーニングマシン一覧に戻る <code>ボタン</code></h4>
-            <ul>
-              <li>ボタンをタップしたら、 <strong>マシン一覧</strong> 画面に戻る</li>
-            </ul>
-            <h4 id="id-ebe1ab3a7ff1808486380a8c51fdafb0d83d9910">変更 <code>ボタン</code></h4>
-            <ul>
-              <li><code>変更</code>ボタンは、現在利用中のマシン詳細ページにのみ表示されます</li>
-              <li><code>変更</code>ボタンをクリックしたら、 <strong>トレーニングマシン追加・変更</strong> フォームに遷移する。</li>
-            </ul>
-            <h4 id="id-7b9716ed65add044bb6bcd0784f35181d6206715">削除 <code>ボタン</code></h4>
-            <ul>
-              <li><code>削除</code>ボタンは、現在利用中のマシン詳細ページにのみ表示されます</li>
-              <li><code>削除</code>ボタンをクリックしたら、削除かどうかのポップアップが表示される。</li>
-              <li><code>はい、削除します</code>ボタンをクリックしたら、マシンのステータスを削除済みに変更して、 <strong>マシン一覧</strong> 画面に遷移する。</li>
-              <li><code>キャンセル</code>ボタンをクリックしたら、 削除せずに <strong>トレートレーニングマシン詳細</strong> に戻る。</li>
-            </ul>
-            <h4 id="id-88baccf63951faf973f72a063d1ba730a39a0aab">利用中に戻す <code>ボタン</code></h4>
-            <ul>
-              <li><code>利用中に戻す</code>ボタンは、削除済みのマシン詳細ページにのみ表示されます</li>
-              <li><code>利用中に戻す</code>ボタンをクリックしたら、マシンのステータスをアクティブに変更して、 <strong>マシン一覧</strong> 画面に遷移する。</li>
-            </ul>
-            <h4 id="id-a373a0bb1198bcac2981542e6861cf99acd86854">完全に削除する <code>ボタン</code></h4>
-            <ul>
-              <li><code>完全に削除する</code>ボタンは、削除済みのマシン詳細ページにのみ表示されます</li>
-              <li><code>完全に削除する</code>ボタンをクリックしたら、削除かどうかのポップアップが表示される。</li>
-              <li><code>はい、削除します</code>ボタンをクリックしたら、マシンのデータを完全に削除して、 <strong>マシン一覧</strong> 画面に遷移する。</li>
-              <li><code>キャンセル</code>ボタンをクリックしたら、 削除せずに <strong>トレートレーニングマシン詳細</strong> 画面に戻る。</li>
-            </ul>
-            <h4 id="id-bb98cd4daf206ee5c2f48224a4706c9c7d3fd6b8">マシン詳細 <code>区画</code></h4>
+            <h2 id="2">　2．ジム詳細一覧画面</h2>
+            <p>ジムの詳細情報の画面である。ジム作成のSTEP1~STEP7までの情報がここに表示される。</p>
+            <p><img src="image\jp\cms\302\Gyms-Detail.png" alt="nf"/></p>
+            <h4 id="21-">2.1 店舗名エリア</h4>
+            <p>STEP1の入力情報が反映されるエリアである。</p>
             <ul>
               <li>
-                マシンのAPIデータ：
+                APIデータ：
                 <ul>
-                  <li>マシン画像</li>
-                  <li><code>インクラインチェストプレス</code>：マシン名</li>
-                  <li><code>SH-XXXX</code>：モデル番号</li>
-                  <li><code>2022/4/5</code>：更新日。フォーマット：<code>YYYY年mm月dd日</code></li>
-                  <li><code>トレーニングマシン</code>：機種</li>
-                  <li><code>SHUA69シリーズで一番人気のアイテム！ 腕が描くので…</code>：マシン詳細</li>
+                  <li><code>店舗名</code>：店舗名</li>
+                  <li><code>791-8012 栄姫県松山市姫原2-4-28 フジ２F</code>: 店舗の住所</li>
+                  <li><code>詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細詳細</code>: 詳細内容</li>
                 </ul>
               </li>
             </ul>
-            <h4 id="id-e34edf212199363aaf91e8e7581eae5e2c1b21cc">マシンとリンクされた動画一覧 <code>区画</code></h4>
+            <h4 id="22-">2.2 イメージエリア</h4>
+            <p>STEP2にてアップロードしたジムの画像が反映されるエリアである。</p>
             <ul>
-              <li>トレーニングマシンとリンクされたトレーニングビデオ一覧を表示される</li>
-              <li>有酸素マシンは動画がリンクされないので、この区画が表示されない</li>
-              <li>ビデオをクリックしたら、その <strong>トレーニングビデオ詳細</strong> 画面に遷移する。 <strong>トレーニングビデオ</strong> 参考</li>
-            </ul>
-            <h3 id="id-bc9d1b84132542cd3c27574b537b449ccc2f6328">エラー一覧（Error List）</h3>
-            <p><code>None</code></p>
-            <h2 id="id-2bc1f94919917d15900dcbdea1f6c78846e9e30c"><strong>マシン新規追加</strong> 画面</h2>
-            <p><img src="image\jp\cms\303\add-new-machine.png" alt="nf"/></p>
-            <h3 id="id-ced77772a0d185d7831346e9b52a234f7dfacc3b">項目／イベント定義</h3>
-            <h4 id="id-56a357c0dde8f38efbedf7dfa1cafd2939a3a39c">トレーニングマシンを新規追加する <code>ボタン</code></h4>
-            <ul>
-              <li>ボタンをタップしたら、 <strong>トレーニングマシン追加・変更</strong> フォームに遷移する。</li>
-            </ul>
-            <h4 id="id-2822397009932082f889ed68afe5e8693016ec81">有酸素マシンを新規追加する <code>ボタン</code></h4>
-            <ul>
-              <li>ボタンをタップしたら、 <strong>トレーニングマシン追加・変更</strong> フォームに遷移する。</li>
-            </ul>
-            <h3 id="id-1b5c101375e766cedfe1c26d6586f72c1c2a4a0b">エラー一覧（Error List）</h3>
-            <p><code>None</code></p>
-            <h2 id="id-7e41fc23c96d6024ceabda49ced6eca85e12f780"><strong>トレーニングマシン追加・変更</strong> フォーム</h2>
-            <p><img src="image\jp\cms\303\add-edit-machine-form.png" alt="nf"/></p>
-            <h3 id="id-0092a691fbfdc3c69b0eaab4e447128a264665ce">項目／イベント定義</h3>
-            <h4 id="id-ba0a7879848f7d18d9826116396b60b166cc9464">画像追加 <code>ボタン</code></h4>
-            <ul>
-              <li>ボタンをタップしたら、マシンの画像のアップロードを行う。画像アップロードできたら、このボタンが非表示になり、アップロードした画像が表示する。</li>
               <li>
-                アップロードした画像の上に画像変更・削除ボタンが表示される
+                <p>画像の最大数：５つ</p>
+              </li>
+              <li>
+                <p>こちらのエリアの小さい画像をクリックする場合、上の大きい画像エリアに拡大されて表示されること。</p>
+              </li>
+            </ul>
+            <h4 id="23-">2.3 ジム詳細エリア</h4>
+            <p>STEP3の入力情報が反映されるエリアである。</p>
+            <ul>
+              <li>
+                APIデータ：
                 <ul>
-                  <li>左ボタンをタップしたら、画像を再アップロードする</li>
-                  <li>右ボタンをクリックしたら、アップロードした画像を削除する。画像を削除したら、<code>画像追加</code>ボタンが表示される</li>
+                  <li><code>2022/10/24</code>：開店予定日である。すでにオープンされているジムの場合、空白とする。</li>
+                  <li><code>34</code>: ジム駐車場の台数</li>
+                  <li><code>140</code>: ジムの会員総数（active、unsub、blockedのすべて）</li>
+                  <li><code>56</code>: ジムのトレーニングマシン総数</li>
                 </ul>
               </li>
             </ul>
-            <h4 id="id-2529512d154bb3ee7fa52163c79f1539d3ed57c9">マシン名 <code>インプット</code></h4>
-            <ul>
-              <li>必要、25文字以下</li>
-              <li>25文字以上入力できない</li>
-            </ul>
-            <h4 id="id-d5a0ca64afabae2ce1ccb0d700a33501c987fb27">モデル <code>インプット</code></h4>
-            <ul>
-              <li>必要、25文字以下</li>
-              <li>25文字以上入力できない</li>
-            </ul>
-            <h4 id="id-a9fe9b39089820415080844a3f122ca518513cfc">詳細 <code>インプット</code></h4>
-            <ul>
-              <li>必要、255文字以下</li>
-              <li>255文字以上入力できない</li>
-            </ul>
-            <h4 id="id-078f0ff03ba7da09e2cdb4f86d7235e828b3c3de">戻る <code>ボタン</code></h4>
+            <h4 id="24-">2.4 プランエリア</h4>
+            <p>STEP4の入力情報が反映されるエリアである。</p>
             <ul>
               <li>
-                ボタンを押下したら、
+                基本プランのAPIデータ：
                 <ul>
-                  <li>追加の場合は、 <strong>マシン一覧</strong> 画面に戻る。</li>
-                  <li>変更の場合は、 <strong>トレートレーニングマシン詳細</strong> 画面に戻る。</li>
+                  <li><code>1650</code>：ジム利用の定期料金である。</li>
+                  <li><code>1ヶ月分の定額料金となります。料金は1ヶ月事に自動でお引き落としが発生します。定額料金は1ヶ月分を先払いとなっています。
+                    料金お支払い後1ヶ月間のご利用権利が付与され、施設への入室が可能になります。</code>: 定期料金の説明情報である。
+                  </li>
+                  <li><code>550</code>: 入室の料金である。</li>
+                  <li><code>※ 表示の金額は松山姫原店の1回の平均利用額になります。施設事にジムの混雑状況によって、利用金額が変動金額が変動します。施設入室時に自動で決済が発生し、入室が可能です。</code>: 入室料金の説明情報である。</li>
                 </ul>
               </li>
             </ul>
-            <h4 id="id-d541ebabf30d78898f65094f50208d0394f79c7b">保存 <code>ボタン</code></h4>
+            <h4 id="25-">2.5 オプションエリア</h4>
+            <p>STEP5の入力情報が反映されるエリアである。</p>
             <ul>
               <li>
-                ボタンを押下する時にバリデーションチェックを行う。
+                APIデータ：
                 <ul>
-                  <li>バリデーションチェックが通らなかったら、不良なインプットの下にエラーメッセージを表示される</li>
-                </ul>
-              </li>
-              <li>
-                バリデーションエラーがなかったら、入力されたデータを保存して、
-                <ul>
-                  <li>追加の場合は、 <strong>マシン一覧</strong> 画面に戻る。</li>
-                  <li>変更の場合は、 <strong>トレートレーニングマシン詳細</strong> 画面に戻る。</li>
+                  <li><code>1500</code>：手ぶらde会員の定期料金である。</li>
+                  <li><code>シャワーや3DBODYSCANの測定が使い放題。＊1回のみの利用の場合は、500円の課金でご使用が可能です。</code>: 手ぶらde会員の説明情報である。</li>
+                  <li><code>900</code>: 水素水の定期料金である。</li>
+                  <li><code>フィットネスの効果を高める水素水が飲み放題。より健康で美しい身体を手に入れることができます！※ 専用のボトルの別途購入をお願いしています。</code>: 水素水の説明情報である。</li>
                 </ul>
               </li>
             </ul>
-            <h3 id="id-d50a100bce9fa0cba4e09eff5590d0ce64a6e248">エラー一覧（Error List）</h3>
-            <h4 id="item-error">項目エラー（Item Error）</h4>
+            <h4 id="26-">2.6 プライシング設計エリア</h4>
+            <p>STEP7の入力情報が反映されるエリアである。</p>
             <ul>
               <li>
-                <p>画像</p>
+                APIデータ：
                 <ul>
-                  <li>必要： <code>画像をアップロードしてください</code></li>
-                </ul>
-              </li>
-              <li>
-                <p>マシン名</p>
-                <ul>
-                  <li>必要： <code>マシン名を入力してください</code></li>
-                </ul>
-              </li>
-              <li>
-                <p>モデル</p>
-                <ul>
-                  <li>必要： <code>モデルを入力してください</code></li>
-                </ul>
-              </li>
-              <li>
-                <p>詳細</p>
-                <ul>
-                  <li>必要： <code>詳細を入力してください</code></li>
+                  <li><code>人数</code>：表示のみ。編集不可。STEP7を参照。</li>
+                  <li><code>料金</code>：表示のみ。編集不可。STEP7を参照。</li>
+                  <li><code>混雑状況の表示</code>: 混雑レベル。表示のみ。編集不可。STEP7を参照。</li>
+                  <li><code>ジム利用料金上限金額（税込）</code>: 表示のみ。編集不可。STEP7を参照。</li>
                 </ul>
               </li>
             </ul>
+            <h4 id="27-">2.7 会員一覧エリア</h4>
+            <p>ジムのユーザ一覧の先行3レコードを表示する。</p>
+            <ul>
+              <li>
+                <p>APIデータ：</p>
+                <ul>
+                  <li><code>ユーザー</code> : ユーザーの名前</li>
+                  <li><code>会員状況</code> : 会員/退会予定/退会者/ブロック</li>
+                  <li>会員: 活性ユーザー。基本料金プランを契約している。</li>
+                  <li>退会予定：基本料金プランを解約しているが、まだ利用期間中である。</li>
+                  <li>退会者：基本料金プランを解約していて、利用期間が完全に終了した。</li>
+                  <li>ブロック: ブロックされるユーザー</li>
+                  <li><code>契約プラン</code> : 基本料金/手ぶらde会員/水素水</li>
+                  <li><code>電話番号</code> : ユーザーの電話番号 |</li>
+                </ul>
+              </li>
+              <li>
+                <p>すべて表示<code>ボタン</code>を押下すると、ユーザーがすべて表示される画面にリダイレクトすること。 　 <img src="image\jp\cms\302\Gyms-Detail-Members.png" alt="nf"/></p>
+              </li>
+              <li>
+                <p>検索欄：自由のキーワードでカテゴリー関係なくユーザーを検索する欄。例えば、<code>水素水</code>で検索したら、水素水オプションを契約しているユーザーがソートされる。</p>
+              </li>
+            </ul>
+            <p>&lt;Phần tìm kiếm này như vậy đúng không anh?&gt;</p>
+            <ul>
+              <li>
+                <p>APIデータ：</p>
+                <ul>
+                  <li><code>5236</code> : ユーザーの総数。会員、退会予定、退会者、ブロックの合計になる。</li>
+                  <li><code>3220</code> : 活性会員人数</li>
+                  <li><code>1016</code> : 退会予定者の人数</li>
+                  <li><code>220</code> : 退会者の人数</li>
+                  <li><code>6</code> : ブロックされる会員の人数</li>
+                </ul>
+              </li>
+              <li>
+                <p>メンバー一覧エリアはユーザーのレコードをカテゴリー別で表示するエリアである。１画面にカテゴリーごとに最大7レコードを表示できる。それ以上は下部分の前/次のページを表示させる<code>ページネーション</code>で表示させる。</p>
+              </li>
+              <li>
+                <p>ユーザーのレコードをクリックすると、そのユーザーの詳細情報ページにリダイレクトする。</p>
+              </li>
+            </ul>
+            <p><img src="image\jp\cms\302\Gyms-Detail-Member-Detail.png" alt="nf"/></p>
+            <p>&lt;To anh Sinh: Bữa nào call giải thích cho em về màn hình này với ạ.&gt;</p>
+            <ul>
+              <li>支払歴<code>ボタン</code>を押下すると、そのユーザーの支払詳細履歴画面にリダイレクトする。</li>
+            </ul>
+            <p><img src="image\jp\cms\302\Gyms-Detail-Member-Detail-Payment.png" alt="nf"/></p>
+            <p>&lt;To anh Sinh: Bữa nào call giải thích cho em về màn hình này với ạ.&gt;</p>
+            <h4 id="28-">2.8 トレーニングマシンエリア</h4>
+            <p>ジムのトレーニングマシンの先行3レコードを表示する。</p>
+            <ul>
+              <li>
+                <p>APIデータ：</p>
+                <ul>
+                  <li><code>機械</code>: 機械の名称と写真</li>
+                  <li><code>種類</code>：機械の種類</li>
+                  <li><code>モデル</code>：機械のモデル</li>
+                  <li><code>台数</code>：機械の台数</li>
+                </ul>
+              </li>
+              <li>
+                <p>すべて表示<code>ボタン</code>を押下すると、トレーニングマシンがすべて表示される画面にリダイレクトすること。</p>
+              </li>
+            </ul>
+            <p>&lt;sửa lại phần này, thiếu button thu gọn&gt;</p>
+            <p><img src="image\jp\cms\302\Gyms-Detail-Machines.png" alt="nf"/></p>
+            <ul>
+              <li>
+                <p>現在利用中のマシンを表示するエリアである。１画面に最大5レコードを表示できる。それ以上は下部分の前/次のページを表示させる<code>ページネーション</code>で表示させる。</p>
+              </li>
+              <li>
+                <p>APIデータ：</p>
+                <ul>
+                  <li><code>機械</code>：同上</li>
+                  <li><code>種類</code>：同上</li>
+                  <li><code>モデル</code>：同上</li>
+                  <li><code>台数</code>：同上</li>
+                  <li><code>更新日</code>:マシンの情報が更新された日</li>
+                </ul>
+              </li>
+            </ul>
+            <h4 id="29-">2.9 トレーニング種目一覧エリア</h4>
+            <p>トレーニング種目のビデオを最大5件表示する。すべて表示<code>ボタン</code>を押下すると、トレーニング種目のビデオがすべて表示される画面にリダイレクトする。</p>
+            <p>&lt;To anh Sinh: Mấy video này được up lên từ đâu vậy anh?&gt;</p>
+            <p><img src="image\jp\cms\302\Gyms-Detail-Videos-Detail.png" alt="nf"/></p>
+            <ul>
+              <li>トレニンーグ種目のビデオを表示するエリアである。１画面に最大8レコードを表示できる。それ以上は下部分の前/次のページを表示させる<code>ページネーション</code>で表示させる。</li>
+            </ul>
+            <h4 id="210--">2.10 戻る <code>ボタン</code></h4>
+            <ul>
+              <li>戻る <code>ボタン</code>を押下すると、 <strong>ジム一覧画面</strong> にリダイレクトする。</li>
+            </ul>
+            <h4 id="211--">2.11 編集 <code>ボタン</code></h4>
+            <ul>
+              <li>編集 <code>ボタン</code>を押下すると、STEP1の画面にリダイレクトされる。編集モードでSTEP1~STEP7の画面に入力していた情報を表示する。情報を編集したいステップまで行き、情報を修正する。最後のSTEP7の保存<code>ボタン</code>を押下することで、編集した情報が保存される。</li>
+            </ul>
+            <h4 id="212--">2.12 ジムを削除 <code>ボタン</code></h4>
+            <ul>
+              <li>ジムを削除 <code>ボタン</code>を押下すると、</li>
+            </ul>
+            <h4 id="213--">2.13 すべて表示 <code>ボタン</code></h4>
+            <ul>
+              <li>各エリアを参照。</li>
+            </ul>
+            <h2 id="3_step1">　3．ジム基本情報入力_STEP1</h2>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step1.png" alt="nf"/></p>
+            <h3 id="31-">3.1 一覧表示モードの項目／イベント定義</h3>
+            <h4 id="id-3d712f1dcfd0b550ad9570dbef6da78b21555b1c">ステップバー</h4>
+            <ul>
+              <li>ジム作成の各ステップである。 <strong>01　ジムの基本情報/ 02　メディア/ 03　その他のご案内/ 04　プラン/ 05　設備/ 06　マシン/ 07　単価</strong> の7ステップがある。</li>
+              <li>
+                色分け：
+                <ul>
+                  <li>青：現在のステップ</li>
+                  <li>グレー：現在のステップではない、かつ、未完了のステップ</li>
+                  <li>緑：現在のステップではない、かつ、未完了のステップ</li>
+                </ul>
+              </li>
+            </ul>
+            <p>例1：ステップ1で入力中、ステップ2以降は未完了</p>
+            <p><img src="image\jp\cms\302\Gyms-Step-Bar1.PNG" alt="nf"/></p>
+            <p>例2：ステップ1が完了で、ステップ2で入力中、ステップ3以降は未完了</p>
+            <p><img src="image\jp\cms\302\Gyms-Step-Bar2.png" alt="nf"/></p>
+            <h4 id="id-b2da5d583611d93098bcd023f0b4d6d3bc4c91c6">入力エリア</h4>
+            <ul>
+              <li>
+                インプットデータはすべて必須入力である。
+                <ul>
+                  <li><code>店舗名</code>：ジム名</li>
+                  <li><code>詳細</code>：ジムの詳細。最低オプションはフォントサイズ、フォント スタイル: レギュラー、ボールド、イタリック、テキストの配置: 左、中央、右、テキストの色が必要とする。</li>
+                  <li><code>郵便番号</code>：ジムの住所の郵便番号。必須入力以外、有効な郵便番号かチェックする。</li>
+                  <li><code>県</code>：ジムの住所の県</li>
+                  <li><code>市区町村以下</code>：ジムの住所の市区町村以降</li>
+                  <li><code>経度</code>:ジムの位置の経度</li>
+                  <li><code>緯度</code>:ジムの位置の緯度</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="32-">3.2 各<code>ボタン</code></h3>
+            <ul>
+              <li>
+                <p>X <code>ボタン</code>：このボタンを押下すると、入力した情報をすべて破棄して、ジム一覧画面に戻ること。</p>
+              </li>
+              <li>
+                <p>一時保存 <code>ボタン</code>：このボタンを押下すると、すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> に戻ること。</p>
+              </li>
+              <li>
+                <p>次へ <code>ボタン</code>：このボタンを押下すると、すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、現在のステップの情報を保存し、 STEP <strong>02　メディア</strong> にリダイレクトすること。</p>
+              </li>
+            </ul>
+            <h3 id="33-">3.3 エラー一覧</h3>
+            <h4 id="id-e1b625eddd16c94a869a61903b16923df040bd08">　未入力の場合</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>エラーメッセージ </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>店舗名</code> </td>
+                  <td><code>店舗名を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td><code>詳細</code> </td>
+                  <td><code>詳細を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td><code>郵便番号</code> </td>
+                  <td><code>郵便番号を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td><code>県</code> </td>
+                  <td><code>県を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td><code>市区町村以下</code> </td>
+                  <td><code>市区町村以下を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td><code>経度</code> </td>
+                  <td><code>経度を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td><code>緯度</code> </td>
+                  <td><code>緯度を入力してください</code> </td>
+                </tr>
+              </tbody>
+            </table>
+            <p><code>郵便番号</code>のみ、有効チェックがあるので、有効でない場合、<code>郵便番号が無効です</code>と表示する。</p>
+            <h2 id="4_step2">　4．メディア入力_STEP2</h2>
+            <p><strong>デフォルト表示：</strong> <img src="image\jp\cms\302\Gyms-Create-Step2-Default.png" alt="nf"/></p>
+            <h3 id="41-">4.1 一覧表示モードの項目／イベント定義</h3>
+            <ul>
+              <li>
+                <p>デフォルトは「ドラッグ＆ドロップ　ファイルを選択」の画像アップロードコマを表示する。このコマから画像をアップロードすることができること。</p>
+              </li>
+              <li>
+                <p>アップロードできる最大画像数は５つである。5つの画像がアップロードされたら、「ドラッグ＆ドロップ　ファイルを選択」の画像アップロードコマを非表示にする。</p>
+              </li>
+              <li>
+                <p><strong>画像をアップロードした時の表示：</strong> <img src="image\jp\cms\302\Gyms-Create-Step2.png" alt="nf"/></p>
+                <ul>
+                  <li>アップロードした画像に編集・削除アイコンを設定する。</li>
+                  <li>編集アイコンはアップロードした画像を別の画像に変更することがでる。</li>
+                  <li>削除アイコンはアップロードした画像を削除することができる。</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="42--">4.2 各 <code>ボタン</code></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ボタン名 </th>
+                  <th>動作 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X <code>ボタン</code> </td>
+                  <td>入力した情報をすべて破棄して、ジム一覧画面に戻ること </td>
+                </tr>
+                <tr>
+                  <td>一時保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>次へ <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、現在のステップの情報を保存し、 STEP <strong>03　その他のご案内</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>戻る<code>ボタン</code> </td>
+                  <td>　STEP <strong>01　ジム基本情報入力</strong> にリダイレクトすること </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="43-">4.3 エラー一覧</h3>
+            <ul>
+              <li>画像が１つもアップロードされない場合のエラーメッセージ：<code>少なくとも 1 つの画像をアップロードしてください</code></li>
+            </ul>
+            <h2 id="5_step3">　5．その他のご案内入力_STEP3</h2>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step3.png" alt="nf"/></p>
+            <h3 id="51-">5.1 一覧表示モードの項目／イベント定義</h3>
+            <ul>
+              <li>
+                APIデータ：
+                <ul>
+                  <li><code>OPEN日</code>：必須入力。ジムの開店日。</li>
+                  <li><code>駐車場台数</code>：必須入力。ジムの駐車場の台数</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="52--">5.2 各 <code>ボタン</code></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ボタン名 </th>
+                  <th>動作 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X <code>ボタン</code> </td>
+                  <td>入力した情報をすべて破棄して、ジム一覧画面に戻ること </td>
+                </tr>
+                <tr>
+                  <td>一時保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>次へ <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、現在のステップの情報を保存し、 STEP <strong>04　プラン</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>戻る <code>ボタン</code> </td>
+                  <td>　STEP <strong>02　メディア</strong> にリダイレクトすること </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="53-">5.3 エラー一覧</h3>
+            <p>いずれかの項目が <strong>未入力</strong> の場合、エラーメッセージを表示する。</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>エラーメッセージ </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>OPEN日 </td>
+                  <td><code>OPEN日を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td>駐車場台数 </td>
+                  <td><code>駐車場台数を入力してください</code> </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="6_step4">　6．プラン入力_STEP4</h2>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step4.png" alt="nf"/></p>
+            <h3 id="61-">6.1 一覧表示モードの項目／イベント定義</h3>
+            <ul>
+              <li>
+                APIデータ：
+                <ul>
+                  <li><code>ジム利用料金</code>：必須入力。一回のジム利用料金</li>
+                  <li><code>説明</code>：必須入力。一回のジム利用料金の説明</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="62--">6.2 各 <code>ボタン</code></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ボタン名 </th>
+                  <th>動作 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X <code>ボタン</code> </td>
+                  <td>入力した情報をすべて破棄して、ジム一覧画面に戻ること </td>
+                </tr>
+                <tr>
+                  <td>一時保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>次へ <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、現在のステップの情報を保存し、 STEP <strong>05　設備</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>戻る <code>ボタン</code> </td>
+                  <td>　STEP <strong>03　その他のご案内</strong> にリダイレクトすること </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="63-">6.3 エラー一覧</h3>
+            <p>いずれかの項目が <strong>未入力</strong> の場合、エラーメッセージを表示する。</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>エラーメッセージ </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ジム利用料金 </td>
+                  <td><code>ジム利用料金を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td>説明 </td>
+                  <td><code>説明を入力してください</code> </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="7_step5">　7．設備入力_STEP5</h2>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step5.png" alt="nf"/></p>
+            <h3 id="71-">7.1 一覧表示モードの項目／イベント定義</h3>
+            <ul>
+              <li>
+                APIデータ：
+                <ul>
+                  <li>手ぶらde会員の <code>詳細</code>：必須入力。手ぶらde会員の説明</li>
+                  <li>水素水の<code>説明</code>：必須入力。水素水の説明</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="72--">7.2 各 <code>ボタン</code></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ボタン名 </th>
+                  <th>動作 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X <code>ボタン</code> </td>
+                  <td>入力した情報をすべて破棄して、ジム一覧画面に戻ること </td>
+                </tr>
+                <tr>
+                  <td>一時保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>次へ <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、現在のステップの情報を保存し、 STEP <strong>06　マシン</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>戻る <code>ボタン</code> </td>
+                  <td>　STEP <strong>04　プラン</strong> にリダイレクトすること </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="73-">7.3 エラー一覧</h3>
+            <p>いずれかの項目が <strong>未入力</strong> の場合、エラーメッセージを表示する。</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>エラーメッセージ </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>手ぶらde会員の <code>詳細</code> </td>
+                  <td><code>手ぶらde会員詳細を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td>水素水の<code>説明</code> </td>
+                  <td><code>水素水詳細を入力してください</code> </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="8_step6">　8．設備入力_STEP6</h2>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step6.png" alt="nf"/></p>
+            <h3 id="81-">8.1 一覧表示モードの項目／イベント定義</h3>
+            <ul>
+              <li>
+                APIデータ：
+                <ul>
+                  <li><code>機械</code>：2.8と同じ</li>
+                  <li><code>種類</code>：2.8と同じ</li>
+                  <li><code>モデル</code>：2.8と同じ</li>
+                  <li><code>台数</code>：2.8と同じ</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="82-">8.2 各<code>ボタン</code></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ボタン名 </th>
+                  <th>動作 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X <code>ボタン</code> </td>
+                  <td>入力した情報をすべて破棄して、ジム一覧画面に戻ること </td>
+                </tr>
+                <tr>
+                  <td>一時保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>次へ <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、現在のステップの情報を保存し、 STEP <strong>07　単価</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>戻る <code>ボタン</code> </td>
+                  <td>　STEP <strong>05　設備</strong> にリダイレクトすること </td>
+                </tr>
+                <tr>
+                  <td>詳細を見る→ <code>ボタン</code> </td>
+                  <td>　該当のマシンの台数入力ポップアップをすること </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="id-e3afb34246b69619f59c79f2c075211f9308dbbf">マシンの台数入力ポップアップ:</h3>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step6-Popup.png" alt="nf"/></p>
+            <ul>
+              <li>
+                APIデータ：
+                <ul>
+                  <li><code>機械</code>: 2.8と同じ</li>
+                  <li><code>種類</code>: 2.8と同じ</li>
+                  <li><code>マシン番号</code>: マシン一つ一つの番号</li>
+                  <li><code>タブレットマシン番号</code>: タブレットマシン一つ一つの番号</li>
+                </ul>
+              </li>
+              <li>戻る <code>ボタン</code> を押下すると、保存せずにSTEP6の画面にリダイレクトする</li>
+              <li>保存 <code>ボタン</code> を押下すると、保存して、STEP6の画面にリダイレクトする</li>
+              <li>台数追加 <code>ボタン</code> ??</li>
+              <li>エラーメッセージ：??</li>
+            </ul>
+            <h3 id="83-">8.3 エラー一覧</h3>
+            <p>マシンが <strong>いずれも未入力</strong> の場合、<code>少なくとも１つマシンを選択してください</code>のエラーメッセージを表示する。</p>
+            <h2 id="9_step7">　9．単価入力_STEP7</h2>
+            <p>ジムの利用人数に応じる一回の入室料金を設定するステップである。ここで設定するデータはモバイルアプリのジム詳細に表示される。人数が多ければ多いほど一回の入室料金が高くなる設定になること。</p>
+            <p><img src="image\jp\cms\302\Gyms-Create-Step7.png" alt="nf"/> (Cần thay thành ảnh có dấu X)</p>
+            <h3 id="91-">9.1 一覧表示モードの項目／イベント定義</h3>
+            <ul>
+              <li>
+                APIデータ：
+                <ul>
+                  <li><code>人数</code>：必須入力。0より大きい数字、かつ、上昇で入力すること。</li>
+                  <li><code>料金</code>：必須入力。０以上の数字、かつ、上昇で入力すること。</li>
+                  <li><code>混雑状況の表示</code>: 混雑レベル</li>
+                  <li><code>ジム利用料金上限金額（税込）</code>: 1っか月のジム利用料金上限金額。毎回の合計料金がこの金額になるとそれ以降課金されなくなること。</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="92--">9.2 各 <code>ボタン</code></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ボタン名 </th>
+                  <th>動作 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X <code>ボタン</code> </td>
+                  <td>入力した情報をすべて破棄して、ジム一覧画面に戻ること </td>
+                </tr>
+                <tr>
+                  <td>一時保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、青と緑のステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>保存 <code>ボタン</code> </td>
+                  <td>すべての入力項目のバリデーションをチェックする。エラーが発生する場合、該当の項目の下にエラーメッセージを表示する。エラーが発生しない場合、すべてのステップの情報を保存し、 <strong>ジム一覧画面</strong> にリダイレクトすること。 </td>
+                </tr>
+                <tr>
+                  <td>戻る <code>ボタン</code> </td>
+                  <td>　STEP <strong>06　プラン</strong> にリダイレクトすること </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="93-">9.3 エラー一覧</h3>
+            <ul>
+              <li>いずれかの項目が <strong>未入力</strong> の場合、エラーメッセージを表示する。</li>
+            </ul>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>エラーメッセージ </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>人数 </td>
+                  <td><code>人数を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td>料金 </td>
+                  <td><code>単価情報を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td>ジム利用料金上限金額（税込） </td>
+                  <td><code>ジム利用料金上限金額を入力してください</code> </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li>昇順で入力していない場合、エラーメッセージを表示する。</li>
+            </ul>
+            <table>
+              <thead>
+                <tr>
+                  <th>項目名 </th>
+                  <th>エラーメッセージ </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>人数 </td>
+                  <td><code>昇順で人数を入力してください</code> </td>
+                </tr>
+                <tr>
+                  <td>料金 </td>
+                  <td><code>昇順で単価を入力してください</code> </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="content-nav content-nav-bottom">
           </div>

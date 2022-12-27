@@ -474,6 +474,7 @@
                     <ul>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-775a9a28c354b26deab05ccee506d2d4bf58801a">戻る ボタン</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-3a889fe97ec795bf2f29c5c3acabd54cb9cc2131">お知らせ詳細 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#line--">Line で直接相談する ボタン</a></li>
                     </ul>
                   </li>
                   <li class="numbered invisible"><a href="105-jp.html#id-777f9b11ef747ee4214b5e8d2e317f5df3ee73fe"><span class="number">5.4.2.</span>エラー一覧（Error List）</a></li>
@@ -524,7 +525,7 @@
                     <a href="105-jp.html#id-f106fafb2706601912c8b591154e502924c943cd"><span class="number">5.7.1.</span>項目／イベント定義</a>
                     <ul>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-2d543dfdf1a651bbd4a436784b3607b45264422b">戻る ボタン</a></li>
-                      <li class="unnumbered invisible"><a href="105-jp.html#line--">Line で直接相談する ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-e5013d14703608b8fc7a95563b6d57a81b064359">Line で直接相談する ボタン</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#faq-">FAQカテゴリ一覧 スライダー</a></li>
                       <li class="unnumbered invisible"><a href="105-jp.html#id-720f76ce53f5827e0faf030843d0f19a80b11894">FAQ 区画</a></li>
                     </ul>
@@ -1556,6 +1557,7 @@
                         <ul>
                           <li class="unnumbered visible"><a href="#id-46e9377c00be657cd93fb50711b3e37b040afef9">戻る - Back Button</a></li>
                           <li class="unnumbered visible"><a href="#---notification-detail-block">お知らせ詳細 - Notification detail Block</a></li>
+                          <li class="unnumbered visible"><a href="#line--button">Line で直接相談する Button</a></li>
                         </ul>
                       </li>
                       <li class="unnumbered visible"><a href="#id-ea13b77991290c560164eeee8b313dd435999ec0">Error List</a></li>
@@ -1606,7 +1608,7 @@
                         <a href="#id-98aaf63d15447330893d319db6d9c65aaeefc87d">Định nghĩa các thành phần có Action</a>
                         <ul>
                           <li class="unnumbered visible"><a href="#id-f1d59e6c8597dd3696ce22877f6156828d7adef4">戻る - Back Button</a></li>
-                          <li class="unnumbered visible"><a href="#line--button">Line で直接相談する Button</a></li>
+                          <li class="unnumbered visible"><a href="#id-8c07478e4a224fab4daf1da9018c875cd54e17a8">Line で直接相談する Button</a></li>
                           <li class="unnumbered visible"><a href="#faq--list-faq-category-slider">FAQカテゴリ一覧- List FAQ category Slider</a></li>
                           <li class="unnumbered visible"><a href="#faq-block">FAQ Block</a></li>
                         </ul>
@@ -2007,9 +2009,9 @@
               <li>
                 Có 3 loại noti. Tuỳ vào mỗi loại mà icon, title sẽ hiển thị khác nhau
                 <ul>
-                  <li>店舗からのお知らせ - Noti từ Pocket Fitness</li>
-                  <li>アプリ関連こお知らせ - Noti từ cửa hàng</li>
-                  <li>クレジットのお知らせ - Noti liên quan đến thẻ credit</li>
+                  <li>PocketFitnessからのお知らせ - Noti từ Pocket Fitness, noti này gửi từ manager</li>
+                  <li>店舗からのお知らせ - Noti từ cửa hàng, thay 店舗 thành tên cửa hàng. Noti này gửi từ admin. User đăng kí cửa hàng yêu thích cũng sẽ nhận được noti từ cửa hàng yêu thích đó</li>
+                  <li>クレジットのお知らせ - Noti liên quan đến thẻ credit. Khi BE nhận thông báo lỗi thanh toán từ webhook Stripe, thì BE sẽ bắn 1 noti đến cho user credi. Hiện tại có 2 lỗi thanh toán từ Stripe: lỗi thanh toán sau khi checkin/ charge tiền option tebura hoặc lỗi thanh toán subscription định kì</li>
                 </ul>
               </li>
             </ul>
@@ -2023,6 +2025,7 @@
                   <li><code>松山姫原店</code>： cửa hàng phát hành</li>
                 </ul>
               </li>
+              <li>Tile của loại クレジットのお知らせ là: <code>未決済の支払いについて</code></li>
               <li>Tap vào noti thì sẽ redirect qua màn hình <strong>Notification detail</strong> đó</li>
             </ul>
             <h3 id="id-430e8807fd0f4fc3b2592bf48e024b625b8f157c">Error List</h3>
@@ -2037,13 +2040,42 @@
             <h5 id="---notification-detail-block">お知らせ詳細 - Notification detail <code>Block</code></h5>
             <ul>
               <li>
-                Hiển thị chi tiết của noti. API data :
+                <p>Hiển thị chi tiết của noti khi được gửi từ manager hoặc admin. API data :</p>
                 <ul>
                   <li><code>チェックイン方法のリニューアルを実施。</code>： Title</li>
                   <li><code>2022/09/10</code>： ngày phát hành</li>
                   <li>お知らせ詳細 - chi tiết: không có layout cụ thể. Bên admin chỉnh sao thì hiển thị trên mobile app như vậy</li>
                 </ul>
               </li>
+              <li>
+                <p>Về phần nội dung và title của loại クレジットのお知らせ sẽ có format như sau</p>
+                <ul>
+                  <li>Title: <code>未決済の支払いについて</code></li>
+                  <li>Nội dung noti:</li>
+                </ul>
+                <p><code>0月0日の****の支払いが確認ができませんでした。支払いの確認ができるまで施設のご利用を一時的に停止しています。</code></p>
+                <p><code>支払いに関するご質問や未払金のお支払いはLineからカスタマーサポートへお問い合わせください。また未払いの決済内容は自動的に支払いの要求が行われる為、支払い完了とこちらのお知らせと行き違いとなる可能性がございますのでご了承ください。</code></p>
+                <p><code>未払いの内容に関しては、ホーム画面の「料金の確認はこちら」より確認が可能です。</code></p>
+                <p><code>Lineでサポートスタッフへご相談はこちら</code></p>
+              </li>
+              <li>
+                <p>Nội dung sẽ thay đổi tuỳ vào các case khác nhau</p>
+                <ul>
+                  <li><code>0月0日</code> : ngày thanh toán lỗi, format mm月dd日</li>
+                  <li><code>****</code>: nội dung thanh toán, sẽ có các case như sau:</li>
+                  <li>tiền check-in: <code>店舗名のジム利用料金</code>.店舗名 thay bằng tên cửa hàng</li>
+                  <li>tiền sử dụng option tebura khi chưa đăng kí:<code>店舗名の手ぶら利用料金</code></li>
+                  <li>subscription basic plan: <code>基本料金</code></li>
+                  <li>subscription option tebura: <code>手ぶら</code></li>
+                  <li>subscription option nước: <code>水素</code></li>
+                </ul>
+              </li>
+            </ul>
+            <h5 id="line--button">Line で直接相談する <code>Button</code></h5>
+            <ul>
+              <li>nút này chỉ hiển thị ở trang chi tiết noti liên quan đến thanh toán lỗi Stripe</li>
+              <li>tap nút này sẽ mở app Line tài khoản Pocket Fitness.</li>
+              <li>URL [https://lin.ee/6AI17uM]</li>
             </ul>
             <h3 id="id-ea13b77991290c560164eeee8b313dd435999ec0">Error List</h3>
             <p><code>None</code></p>
@@ -2201,7 +2233,7 @@
             <ul>
               <li>Tap nút này sẽ quay lại màn hình <strong>Setting menu</strong></li>
             </ul>
-            <h5 id="line--button">Line で直接相談する <code>Button</code></h5>
+            <h5 id="id-8c07478e4a224fab4daf1da9018c875cd54e17a8">Line で直接相談する <code>Button</code></h5>
             <ul>
               <li>tap nút này sẽ mở app Line tài khoản Pocket Fitness.</li>
               <li>URL [https://lin.ee/6AI17uM]</li>
