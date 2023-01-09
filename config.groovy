@@ -1,5 +1,5 @@
 // The title of this document
-// title = "Pocket App Require Document"
+title = "Pocket App Require Document"
 
 // The version of this document
 //version = ""
@@ -8,5 +8,5 @@
 //sourceDirectoryPath = "."
 
 // The path of directory to be outputted a document
-// outputDirectoryPath = "docs"
+outputDirectoryPath = "docs"
 // readmeToIndex = false
