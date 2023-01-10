@@ -17,6 +17,11 @@
 "299-jp.md"(title: "サイド機能", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 
 // CMS
+"300-jp.md"(title: "アプリのアップデート", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"301-jp.md"(title: "FAQ", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"302-jp.md"(title: "ジム一覧", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"303-jp.md"(title: "トレーニングマシン", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"304-jp.md"(title: "トレーニングビデオ", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "306-jp.md"(title: "クーポン", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 
 "900.md"(title: "Gate-Kepper&DoorMan", numbering: true, documentTocDepth: 1, pageTocDepth:3)
