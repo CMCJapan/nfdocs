@@ -1903,13 +1903,7 @@
                       <li class="numbered invisible"><a href="306-jp.html#id-918f780cc56e1fa6c8909e04f523db4ad6caf04c"><span class="number">20.3.1.5.</span>クーポンを発行する ボタン</a></li>
                     </ul>
                   </li>
-                  <li class="numbered invisible">
-                    <a href="306-jp.html#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a>
-                    <ul>
-                      <li class="numbered invisible"><a href="306-jp.html#id-e25e74262f8305b1282111c28dcbf3332267322a"><span class="number">20.3.2.1.</span>項目エラー（Item Error）</a></li>
-                      <li class="numbered invisible"><a href="306-jp.html#screen-error"><span class="number">20.3.2.2.</span>画面エラー（Screen Error）</a></li>
-                    </ul>
-                  </li>
+                  <li class="numbered invisible"><a href="306-jp.html#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a></li>
                 </ul>
               </li>
               <li class="numbered invisible">
@@ -2046,12 +2040,7 @@
                           <li class="unnumbered visible"><a href="#---pht-hnh-coupon---button">クーポンを発行する - Phát hành coupon - Button</a></li>
                         </ul>
                       </li>
-                      <li class="unnumbered visible">
-                        <a href="#id-a5a5ab82dc5b180c86d7235c2e34a427d78e1565">Error List</a>
-                        <ul>
-                          <li class="unnumbered visible"><a href="#screen-error">Screen Error</a></li>
-                        </ul>
-                      </li>
+                      <li class="unnumbered visible"><a href="#id-a5a5ab82dc5b180c86d7235c2e34a427d78e1565">Error List</a></li>
                     </ul>
                   </li>
                   <li class="unnumbered visible">
@@ -2152,8 +2141,8 @@
             </ul>
             <h4 id="---coupon-name-input">クーポン名 - Coupon name <code>Input</code></h4>
             <ul>
-              <li>Required, max 25 kí tự</li>
-              <li>Không nhập được quá 25 kí tự</li>
+              <li>Required, max 255 kí tự</li>
+              <li>Không nhập được quá 255 kí tự</li>
               <li>Nếu coupon chưa hết hạn thì có thể edit input này</li>
             </ul>
             <h4 id="30180--s-ngy-free-checkin-select-box">利用開始日からのジム利用料金無料日数を選択してください(30~180日）- Số ngày free checkin <code>Select box</code></h4>
@@ -2167,6 +2156,7 @@
             <ul>
               <li>Required</li>
               <li>Nếu coupon đã start thì input này không edit được</li>
+              <li>Thời gian bắt đầu của campaign không được nằm trong khoảng thời gian hiệu lực của các coupon khác</li>
             </ul>
             <h4 id="---end-date-input">クーポン終了日 - End date <code>Input</code></h4>
             <ul>
@@ -2175,8 +2165,8 @@
             </ul>
             <h4 id="-input">詳細 <code>Input</code></h4>
             <ul>
-              <li>Required, max 255 kí tự</li>
-              <li>Không nhập được quá 255 kí tự</li>
+              <li>Required, max 1000 kí tự</li>
+              <li>Không nhập được quá 1000 kí tự</li>
               <li>Nếu coupon chưa hết hạn thì có thể edit input này</li>
             </ul>
             <h4 id="-button">次へ <code>Button</code></h4>
@@ -2197,6 +2187,7 @@
                 <p>Start date</p>
                 <ul>
                   <li>Required: <code>クーポン開始日を入力してください</code></li>
+                  <li>The start time is within the validity period of another campaign: <code>別のキャンペーンが実施されているため、作成できませんでした</code></li>
                 </ul>
               </li>
               <li>
@@ -2246,16 +2237,12 @@
             </ul>
             <h4 id="---pht-hnh-coupon---button">クーポンを発行する - Phát hành coupon - <code>Button</code></h4>
             <ul>
-              <li>Nếu chưa có gym nào đang đhowcj chọn thì disabled nút này</li>
+              <li>Nếu chưa có gym nào đang được chọn thì disabled nút này</li>
               <li>Click nút này sẽ tạo/ lưu coupon. Sau khi xử lí xong thì redirect qua màn hình <strong>List coupon</strong></li>
               <li>Coupon code range: 9XX XXX XXX</li>
-              <li>Mỗi gym tại 1 thời điểm chỉ được tạo 1 coupon</li>
             </ul>
             <h3 id="id-a5a5ab82dc5b180c86d7235c2e34a427d78e1565">Error List</h3>
-            <h4 id="screen-error">Screen Error</h4>
-            <ul>
-              <li>Lỗi 1 cửa hàng tạo 2 coupon: <code>店舗につき、クーポンが１つ以上発行できません</code></li>
-            </ul>
+            <p><code>None</code></p>
             <h2 id="mn-hnh-coupon-detail">Màn hình <strong>Coupon detail</strong></h2>
             <p><img src="image\jp\cms\306\coupon-detail.png" alt="nf"/></p>
             <h3 id="id-41e7878c64533de08854fc38fde6538405af3ea9">Định nghĩa các thành phần có Action</h3>

@@ -1903,13 +1903,7 @@
                       <li class="numbered invisible"><a href="306-jp.html#id-918f780cc56e1fa6c8909e04f523db4ad6caf04c"><span class="number">20.3.1.5.</span>クーポンを発行する ボタン</a></li>
                     </ul>
                   </li>
-                  <li class="numbered invisible">
-                    <a href="306-jp.html#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a>
-                    <ul>
-                      <li class="numbered invisible"><a href="306-jp.html#id-e25e74262f8305b1282111c28dcbf3332267322a"><span class="number">20.3.2.1.</span>項目エラー（Item Error）</a></li>
-                      <li class="numbered invisible"><a href="306-jp.html#screen-error"><span class="number">20.3.2.2.</span>画面エラー（Screen Error）</a></li>
-                    </ul>
-                  </li>
+                  <li class="numbered invisible"><a href="306-jp.html#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a></li>
                 </ul>
               </li>
               <li class="numbered invisible">
@@ -2056,13 +2050,7 @@
                           <li class="numbered invisible"><a href="#id-918f780cc56e1fa6c8909e04f523db4ad6caf04c"><span class="number">20.3.1.5.</span>クーポンを発行する ボタン</a></li>
                         </ul>
                       </li>
-                      <li class="numbered invisible">
-                        <a href="#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a>
-                        <ul>
-                          <li class="numbered invisible"><a href="#id-e25e74262f8305b1282111c28dcbf3332267322a"><span class="number">20.3.2.1.</span>項目エラー（Item Error）</a></li>
-                          <li class="numbered invisible"><a href="#screen-error"><span class="number">20.3.2.2.</span>画面エラー（Screen Error）</a></li>
-                        </ul>
-                      </li>
+                      <li class="numbered invisible"><a href="#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a></li>
                     </ul>
                   </li>
                   <li class="numbered visible">
@@ -2164,8 +2152,8 @@
             </ul>
             <h4 id="id-535a9ce1ad843d19bd565b6f38e247cb9f7abb3d"><span class="number">20.2.1.4.</span>クーポン名 <code>インプット</code></h4>
             <ul>
-              <li>必要、25文字以下</li>
-              <li>25文字以上入力できない</li>
+              <li>必要、255文字以下</li>
+              <li>255文字以上入力できない</li>
               <li>終了日前であればタイトルを変更できます</li>
             </ul>
             <h4 id="30180-"><span class="number">20.2.1.5.</span>利用開始日からのジム利用料金無料日数を選択してください(30~180日） <code>選択肢</code></h4>
@@ -2179,6 +2167,7 @@
             <ul>
               <li>必要</li>
               <li>クーポン開始日がスタートしたら開始日の変更はできない。</li>
+              <li>キャンペーンの開始日は、他のキャンペーンの有効期間内にすることはできません</li>
             </ul>
             <h4 id="id-6b937bd976bb84b22551b6778398729aa83e89a0"><span class="number">20.2.1.7.</span>クーポン終了日 <code>インプット</code></h4>
             <ul>
@@ -2187,8 +2176,8 @@
             </ul>
             <h4 id="id-78ef7b2160f3f28569a80fcf6c68172e84d2c7dd"><span class="number">20.2.1.8.</span>詳細 <code>インプット</code></h4>
             <ul>
-              <li>必要、255文字以下</li>
-              <li>255文字以上入力できない</li>
+              <li>必要、1000文字以下</li>
+              <li>1000文字以上入力できない</li>
               <li>終了日前であれば説明を変更できます</li>
             </ul>
             <h4 id="id-f340154340c093a831a2c67dc047fab3c3858a78"><span class="number">20.2.1.9.</span>次へ <code>ボタン</code></h4>
@@ -2209,6 +2198,7 @@
                 <p>クーポン開始日</p>
                 <ul>
                   <li>必要： <code>クーポン開始日を入力してください</code></li>
+                  <li>開始日が他のキャンペーンの有効期間内である: <code>別のキャンペーンが実施されているため、作成できませんでした</code></li>
                 </ul>
               </li>
               <li>
@@ -2266,14 +2256,9 @@
                   <li>一般クーポン： 9XX XXX XXX</li>
                 </ul>
               </li>
-              <li>一度にクーポンは1店舗につき1枚のみ発行できる</li>
             </ul>
             <h3 id="id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</h3>
-            <h4 id="id-e25e74262f8305b1282111c28dcbf3332267322a"><span class="number">20.3.2.1.</span>項目エラー（Item Error）</h4>
-            <h4 id="screen-error"><span class="number">20.3.2.2.</span>画面エラー（Screen Error）</h4>
-            <ul>
-              <li>店舗で１つ以上のクーポン発売: <code>店舗につき、クーポンが１つ以上発行できません</code></li>
-            </ul>
+            <p><code>None</code></p>
             <h2 id="id-489a6636002dd1f6bf45b336415fa1f522dd41fe"><span class="number">20.4.</span><strong>クーポン詳細</strong> 画面</h2>
             <p><img src="image\jp\cms\306\coupon-detail.png" alt="nf"/></p>
             <h3 id="id-7357f192dbb11d9ae06c1c490708bca5ec7c3637"><span class="number">20.4.1.</span>項目／イベント定義</h3>
