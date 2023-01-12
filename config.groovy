@@ -10,3 +10,6 @@ title = "Pocket App Require Document"
 // The path of directory to be outputted a document
 outputDirectoryPath = "docs"
 // readmeToIndex = false
+
+documentTocDepth: 1
+pageTocDepth:2

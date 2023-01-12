@@ -1,0 +1,2229 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>24. Kioskモードオペレーション - Gaiden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\font-awesome.min.css">
+    <link rel="stylesheet" href="css\highlight.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\print.css" media="print">
+    <link rel="stylesheet" href="css\my.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <i class="fa fa-bars sidebar-toggle"></i>
+        <span class="title"><a href="100.html">Gaiden</a></span>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li class="numbered visible">
+            <a href="100.html" data-alt-hash="mb--login"><span class="number">1.</span>【MB】 ログイン機能 Login</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="100.html#-onboarding"><span class="number">1.1.</span>アプリ起動 Onboarding</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="100.html#item-event-definition"><span class="number">1.1.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="100.html#-create-account-button">無料アカウントを作成する Create Account button</a></li>
+                      <li class="unnumbered invisible"><a href="100.html#-login-button">ログイン Login button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="100.html#error-list"><span class="number">1.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="100.html#-create-account"><span class="number">1.2.</span>アカウント作成 Create Account</a>
+                <ul>
+                  <li class="numbered invisible"><a href="100.html#id-960f8422057bd2734a0565f517b42b72714ed61f"><span class="number">1.2.1.</span>項目／イベント定義（Item Event Definition）</a></li>
+                  <li class="numbered invisible"><a href="100.html#id-22322c0ed51671b2d380e00cef9b4950ba6b5cc6"><span class="number">1.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="100.html#-login"><span class="number">1.3.</span>ログイン Login</a>
+                <ul>
+                  <li class="numbered invisible"><a href="100.html#id-9092322477a32bee8237e7e7d593cb67f7003209"><span class="number">1.3.1.</span>項目／イベント定義（Item Event Definition）</a></li>
+                  <li class="numbered invisible"><a href="100.html#id-41bbed63e8233f2d1cfa00fc6b4c26bb78371bfd"><span class="number">1.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="101.html" data-alt-hash="mb--member-registration"><span class="number">2.</span>【MB】 会員登録 Member registration</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="101.html#-member-registration"><span class="number">2.1.</span>会員登録 Member registration</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#item-event-definition"><span class="number">2.1.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#pocketfitness-join-pocket-fitness-popup">PocketFitnessへ入会する Join Pocket Fitness Popup</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-share-you-localtion-popup">位置情報の共有 Share you localtion Popup</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="101.html#error-list"><span class="number">2.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-select-gym"><span class="number">2.2.</span>店舗選択 Select Gym</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-cd635507f772e45de23040c75f04ac2cd87c2f99"><span class="number">2.2.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#-nearest-store-drop-down">最寄りの店舗 nearest store Drop-down</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-select-nearest-store-popup">最寄りの店舗を選択 Select nearest store Popup</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-gym-map-popup">店舗地図 Gym Map Popup</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-gym-image-image-slide">店舗写真 Gym Image Image Slide</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-address-text-area">住所 Address Text Area</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-continue-button">次へ進む Continue Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="101.html#id-984d2b02daa846db43929bdd88cd64fc29707302"><span class="number">2.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-select-plan"><span class="number">2.3.</span>プラン選択 Select Plan</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-fee173e524ef3c0472db81c509116255dc739f28"><span class="number">2.3.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#-back-icon">戻り Back Icon</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-flat-rate-block">定額料金 Flat Rate Block</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-gym-usage-fee-as-much-as-you-use-block">ジム利用料金（使った分だけ） Gym usage fee (as much as you use) Block</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-price-image">料金説明 price Image</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#id-ffbe35f35efa198f5bf585be7d6940fc6d5e3ce2">次へ進む Continue Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="101.html#id-c8e84f02dbff9111d1f4ef944dfbe13607e5d5f0"><span class="number">2.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-select-option"><span class="number">2.4.</span>オプション選択 Select Option</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-a6d4cd64f10c29854fc781775d27319b15fe72a9"><span class="number">2.4.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#id-3b150fe5f1f08b87b281b1bec134fcd8cc09550f">戻り Back Icon</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#de-tebura-de-membership-option-block">手ぶらde会員 Tebura de Membership Option Block</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-hydrogen-water-option-block">水素水 Hydrogen Water Option Block</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#id-2ecceacd93b8682992a9e6e30fdef0e0338e9c2b">次へ進む Continue Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-472331a9aa4e310011cdd4ee64b05a7ebfd79598"><span class="number">2.4.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="101.html#item-error"><span class="number">2.4.2.1.</span>項目エラー（Item Error）</a></li>
+                      <li class="numbered invisible"><a href="101.html#screen-error"><span class="number">2.4.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-select-campaigns"><span class="number">2.5.</span>キャンペーン選択 Select Campaigns</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-3bd89def3c4395a04bf8c7982ff714c989ef4077"><span class="number">2.5.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#id-ff3a8656326f399ddbe27ae5da6f5b89f9535f86">戻り Back Icon</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-campaigns-block">キャンペーン詳細 Campaigns Block</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#id-afb7b0dff111881f176b7369239122e86c67130c">次へ進む Continue Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="101.html#id-b7faf0dba5a4c9769e57d0148fef751e4d5949a2"><span class="number">2.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-user-information"><span class="number">2.6.</span>ユーザー情報 User Information</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-0bcc7ffe3b6ae21999bbe9549bdb909659e53cef"><span class="number">2.6.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#id-250a9beda0e157b3ad0a65ae9e303bebc5861e05">戻り Back Icon</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-full-name-text">名前（漢字） Full name Text</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-kana-name-text">名前（カタカナ） Kana name Text</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-year-number">生年月日(年) Year Number</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-month-number">生年月日(月) Month Number</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-day-number">生年月日(日) Day Number</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-gender-select">性別 Gender Select</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-addres-text">住所 Addres Text</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-usage-start-date-dropdown">ご利用開始日 Usage start date Dropdown</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-where-did-you-hear-about-pocket-fitness-dropdown">ポケットフィットネスをどこで知りましたか? Where did you hear about Pocket Fitness? Dropdown</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#id-67fc3df53404ff0926e5e3f36df8b8a64aa6b6c4">次へ進む Continue Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-bcd85ccadaa5b895b4545e0b241d4088da4644f3"><span class="number">2.6.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="101.html#id-ab7c666b28c7836040f3e4d72d81be6899b93046"><span class="number">2.6.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="101.html#id-ec607b4dd257f99fcc51162aaced26ddd5e102e1">名前（漢字） Full name Text</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-adf985c3cbe0453f6711285d3a291935fede3a15">名前（カタカナ） Kana name Text</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-d33a469a3f58e3fa5954825300817e6b8fbbd231">生年月日(年) Year Number</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-a919db3f4ba7c2cfcfa402b8631db9fa03e9ef47">生年月日(月) Month Number</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-df01c2285594a5a1bddbf98ca4c1bf0a7e76f2ba">生年月日(日) Day Number</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#-date-of-birth-date">生年月日 Date of Birth Date</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-b7d22c10d6bf6016f93565987de64e7ceae2c0b4">性別 Gender Select</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-bcb4e48c5c6120d1d4aa6e186e2d41ec0be727af">住所 Addres Text</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-d092f7514bb33b72fa816a7ad7d3ba7fa0dc718b">ご利用開始日 Usage start date Dropdown</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-b9ef5a57fee1adfe4a2b2937d184609f6ff97e81">ポケットフィットネスをどこで知りましたか? Where did you hear about Pocket Fitness? Dropdown</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-payment"><span class="number">2.7.</span>チェックと支払い Payment</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-a4f19a0ae14a8dba26c3dbd4aff3560463a3282e"><span class="number">2.7.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#id-d417d58c3bf7307b44024616c3298de6b537fd58">戻り Back Icon</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-card-number-number">カード番号 Card Number Number</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-cardholder-name-text">名前 Cardholder Name TEXT</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-cvv-number">安全コード CVV Number</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-expiry-number">締切時間 Expiry Number</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#id-47a04d70ddd7cbbad05518a7e666a5fde4553e61">次へ進む Continue Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-ea516c6ecd6d261f8de7d8c26148d60be5fe069c"><span class="number">2.7.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="101.html#id-196935d2bebad8cad2dda4aae043af27e9592bec"><span class="number">2.7.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="101.html#id-7dc3247398614f807ca491c4cd8e581131de9623">カード番号 Card Number Number</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-567c0e1e0de76bef60899820dd15f627a0846292">名前 Cardholder Name TEXT</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-0814a4efc8297e9c706faab8a81e2c2f770c12f8">安全コード CVV Number</a></li>
+                          <li class="unnumbered invisible"><a href="101.html#id-cca0b81622d086ba329c74ff5aa7f61a240e53fb">締切時間 Expiry Number</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="101.html#id-b73222ac707c51c5c4c459b4dfaa68f59b9dbbba"><span class="number">2.7.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-review-and-checkout"><span class="number">2.8.</span>レビューとチェックアウト Review and Checkout</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-33f96608484ccea9f737c136a7d0e44286beb53f"><span class="number">2.8.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#id-c42a5bd8080cc70e9d3c9b3ba257bd570b555408">戻り Back Icon</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-change-option-link">オプション変更 Change Option Link</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#-change-campaigns-link">キャンペーンの変更 Change Campaigns Link</a></li>
+                      <li class="unnumbered invisible"><a href="101.html#xxxx-pay-xxxx-button">X,XXX円を支払う Pay ¥X,XXX Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-43b96efcbbfc90992660ab73281b78f423d0d53e"><span class="number">2.8.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="101.html#id-dc4fd036107037219f3191116ffc3ebfe0eaa050"><span class="number">2.8.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="101.html#-success"><span class="number">2.9.</span>会員登録完了 Success</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="101.html#id-5085276f19b1bcd0dfdae02fbde84e12557cb2c8"><span class="number">2.9.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="101.html#pocketfitness-start-pocketfitness-drop-down">PocketFitnessを始める Start PocketFitness Drop-down</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="101.html#id-5de4ed92c713f8137426efb676764a56ee223d90"><span class="number">2.9.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="102-jp.html" data-alt-hash="mb--re-register"><span class="number">3.</span>【MB】 再入会 Re-register</a>
+            <ul>
+              <li class="numbered invisible"><a href="102-jp.html#-"><span class="number">3.1.</span>店舗選択 画面</a></li>
+              <li class="numbered invisible"><a href="102-jp.html#id-58d23ac8c40524d0287de404ae3d40bc32374768"><span class="number">3.2.</span>プラン選択 画面</a></li>
+              <li class="numbered invisible">
+                <a href="102-jp.html#id-b904d83b475e84925c8f7194951e7031ffafbd62"><span class="number">3.3.</span>オプション選択 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-b9a8b603abe7f01da5c56c5225e7707462fbd616"><span class="number">3.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-c05e2eef3ff8e78e8d04abea641068bbc7b3983d">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#de-">手ぶらde会員 区画</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-163bd271cca384671db1942fddf3af4dfca9cdce">水素水 区画</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-1bb29041ed366d935ec0101305d5bd41227da7ad">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="102-jp.html#error-list"><span class="number">3.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="102-jp.html#id-e4a971466f58007fe466916dce013df21c7451b0"><span class="number">3.4.</span>クーポンコード入力 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-1476fb3cbc8923b4a2222c6e397659fbf8f2379d"><span class="number">3.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-fe4b9dd1aff4b118281f42f6a1eba349de9e64f0">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-9c380888497fb260e4669596facc1918535eb5b4">クーポン入力 インプット</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-373dd3d2eb38da113c4546a9e163998ae5063008">クーポン詳細 区画</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-665ec2238c4d454c9b80798da56ccf6dd4ff8d75">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-b06a2c0edfcd0416f724d983134e14f9f03391e9"><span class="number">3.4.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="102-jp.html#item-error"><span class="number">3.4.2.1.</span>項目エラー（Item Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="102-jp.html#id-f3830f9b4a95ae4389ba035da9a47506e9e56da6"><span class="number">3.5.</span>チェックと支払い 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-3cf7d378a9d0d80af7de7328b20b101f5bc345f3"><span class="number">3.5.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-b0bc6308347d7939d317d7496e77f5c780886ab2">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-c90297ddb7189d842cb8ae1447ccb8e3c304744b">カード番号 数字</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-af9cdad1a1ac0d90593881cc1f0569c80a8a6984">名前 テキスト</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#cvc-">CVC 数字</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-fad633b99cd16d5b40d6e8f42ed62c5d94a87203">有効期限 日付</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-e723b0395bd816a216ec36da0d207f11fdfab373">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-6023b28cc34ac6dacf839a1c35ca861089efb1dc"><span class="number">3.5.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="102-jp.html#id-ce9133ed9081fd784fc6ada061f77f8cae4fea09"><span class="number">3.5.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="102-jp.html#-card-number-">カード番号 Card Number 数字</a></li>
+                          <li class="unnumbered invisible"><a href="102-jp.html#id-92d7e9fcfb6e4e498a7411e9bc18880983fb64e8">名前 テキスト</a></li>
+                          <li class="unnumbered invisible"><a href="102-jp.html#id-4a040839c811361bde673ea379a26b44625f3d73">CVC 数字</a></li>
+                          <li class="unnumbered invisible"><a href="102-jp.html#id-e3921c80404623e19acd1641793775e9346d573e">有効期限 日付</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="102-jp.html#screen-error"><span class="number">3.5.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="102-jp.html#id-6de087dccbdbbb38d352e05d3578df7143e4f8ac"><span class="number">3.6.</span>レビューとチェックアウト 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-9c0ca7a37d0445655ac18b13b13e8604bdc9b631"><span class="number">3.6.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-eed933e32d2044152ee29ea3c9eebbe0aa12000e">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-53acdd21148d2ec8994d4dbfef2efb2c55d150c4">支払い方法 区画</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-a9f7c8c3b1e931c73b3fee787473237a8a432296">サブスクリプション 区画</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#id-c2a2c18ad1b22244d5637006e905fc164e41b825">支払い 区画</a></li>
+                      <li class="unnumbered invisible"><a href="102-jp.html#xxxx-">XXXX円を支払う ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="102-jp.html#id-0746372a014049aaba97e2df3aafb52793cc77ca"><span class="number">3.6.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="102-jp.html#id-5b6581cd73d52daa192d8e08b9ad4cdd8d606832"><span class="number">3.6.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible"><a href="102-jp.html#id-85262fd63eefcb83fb5b6fde9d51513d7383322c"><span class="number">3.7.</span>会員登録完了 画面</a></li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="103-jp.html" data-alt-hash="mb--unsubscribe--account-deletion"><span class="number">4.</span>【MB】 退会とアカウント削除 Unsubscribe &amp; account deletion</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="103-jp.html#-"><span class="number">4.1.</span>退会ステップ１ 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#id-35b08d45a14a38c3efa207cf80f8d5e4a1b67688"><span class="number">4.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-52c16951402b62c8b23ab77c10fe373e26f15f5d">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-22cc3362ddef8c728e7772a99c9046b3aca15b09">理由一覧 選択肢</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-7626632e24d2bbb9557f3ab6f2d3f00f3b31a2b2">その他 インプット</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-375bb8daa9bcb9f3f76d60427ae56320c74a800d">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#error-list"><span class="number">4.1.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="103-jp.html#item-error"><span class="number">4.1.2.1.</span>項目エラー（Item Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="103-jp.html#id-17779aaff642b5638dc1f9d3115a8a405934044c"><span class="number">4.2.</span>退会ステップ２ 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#id-c5595822e699f94aa768839a05a6dc679ab36f4f"><span class="number">4.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-e50cf4b57a7c5c82fed4720fb7d167f563f7bc9c">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-fe67268f0e6d741c6ebc740a274686e8ed04c9ee">退会前のプラン確認 区画</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-7f3045cf7a8d85c1cbcbd44bfbb44138bcd18094">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="103-jp.html#id-60587afd51ffca1350ed467595cfff6de4be4f19"><span class="number">4.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="103-jp.html#id-2694c6a2653a4e8cc25e790af33092b11c0995e6"><span class="number">4.3.</span>退会完了 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#id-4865870ada7075063cf28853bf6ac984f2908a2a"><span class="number">4.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-f650fac481643b6a77ab4d948ff321435cfbb788">アカウント削除希望 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-396a2f211202dec747cc25a986bba78788d8ede3">戻る ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="103-jp.html#id-ff23247c645ee78274d42ae7b3e67e47edf0d426"><span class="number">4.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="103-jp.html#id-c690e1e10f78476319f6261645bc6eeace9ef1b5"><span class="number">4.4.</span>退会エラー 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#id-bf09550bc6c41743b90e2131db761e1713a07c53"><span class="number">4.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-7e4d33ee0ab8bd38d55e0f42358b0a2c0170976c">リトライ ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-ce444e6c73a1d44be9309e9ee123409552fb60a6">退会手続きを中止する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="103-jp.html#id-44ffd98073b53ee20ef25cd3bea431b23ed85645"><span class="number">4.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="103-jp.html#id-ea80baef80371cae839e037aba2bb5b36d49cfcd"><span class="number">4.5.</span>アカウント削除リクエスト 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#id-32058958f6e61b22d0005948c3af829d7f6b78de"><span class="number">4.5.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-fd8295cb1653a5246bc58dc3f90e7de98f798a00">アカウント削除をリクエスト ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-45932d72d0b42f78b3198a276640036f8f8a4845">キャンセル ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="103-jp.html#id-17e1ecb397d622e8a7c18aabcda8357c498ca122"><span class="number">4.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="103-jp.html#id-020059b35587d02e90f8fcd5c58c2df46a3a2b7b"><span class="number">4.6.</span>アカウント削除リクエストのキャンセル 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="103-jp.html#id-ebb6ec97c23c5574c0189b8c12c134f4a1ef37bd"><span class="number">4.6.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-8b89e594eae79ad0bbcd5ad22cfdad5d8781b906">削除リクエストをキャンセル ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="103-jp.html#id-92dc703b5780116c4c4e86df8044345c4221367b">キャンセル ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="103-jp.html#id-bc4cc4099d6080baa10b6ee41b15c0ffde7525ec"><span class="number">4.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="105-jp.html" data-alt-hash="mb--home--menu"><span class="number">5.</span>【MB】 ホーム＆メーニュー Home &amp; Menu</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="105-jp.html#----"><span class="number">5.1.</span>ホーム - ビジター用 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-183670a8e32b5fe4c83d123efe146b5d1b77abf2"><span class="number">5.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#-">お知らせ一覧 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-20686521b77fb26637e7b0a28c18d34bcbeec9ba">設定画面 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-46259bdaa2048f0bf935362fac93ed3d105e1185">プラン契約へすすむ ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#hp-">HPで詳細を確認する ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#--">下部のナビゲーション メニュー ナビゲーション</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-24e43d919aee5ad53c5c8edd438b0ce1791035d1">オリエンテーションビデオ 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#error-list"><span class="number">5.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-4d058451ee8b8c10c46ecb996c0effc2ec4f493f"><span class="number">5.2.</span>ホーム 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-8fe18082ef91f05648e9f6ff1deeadae26e7d95b"><span class="number">5.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="105-jp.html#id-5ae60ad0f4d6c95739f16d5b95e8d338093e9f46"><span class="number">5.2.1.1.</span>お知らせ一覧 ボタン</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-ab50a07809abebb9a4254807a7b18573bac8eaa0">設定画面 ボタン</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#qr">ユーザーのQRコード区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#qrtap-">カメラでQRコードを読み取る場合はこちらをTAP ボタン</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-1b83d67a394ca593e0c8039131f6ea9ce3d75459">現在お客様がご利用中の月額プラン 区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-a48f16b9b6c73de13762ce1ce88a0c1d14f6d26f">現在お客様がご利用中の月額プラン-基本料金 区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-2cd78367de27ce77757b23cd715d74345410b2bc">現在お客様がご利用中の月額プラン-水素水・手ぶら 区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-aff521a7b77ac4699e42f56ad24a3d631f9d512c">ジム利用料金 区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-b9cb5e5a6b99d070d91d815ae3aca8d3f6ddbc9c">オリエンテーションビデオ 区画</a></li>
+                          <li class="unnumbered invisible"><a href="105-jp.html#id-b4d2fb4f2911222ebb7f8ec6317132023d52c5f0">トレーニングモードに戻る ボタン</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-ab423655405832a7f2c756f458bf4af1005891b9"><span class="number">5.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-474bd845894fa348ecab2c106eabfe75e3ceac82"><span class="number">5.3.</span>お知らせ一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-cac085718596af2da6fb15bef35ebeee2c6ae86f"><span class="number">5.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-81d4140c2c3ed4b215dcb9b7dd1da49b349a82e8">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-f4b185e53a2677c379f212e209b7516c970d1abe">今週のお知らせ一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-956a1a42f792c3296d448cc66eb3257c79a4df97">先週以降のお知らせ一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-5f82090678de10c01635c2d54d4a3603c02fe9f6">各のお知らせ 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-9b04dc62a97fb7b59dd171c24d87c217a4de206d"><span class="number">5.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-7659a4005de38f2d741224c1b8843481851e076d"><span class="number">5.4.</span>お知らせ詳細 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-848f1accafbb9e87cc2060619016eb5198fd4ff9"><span class="number">5.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-775a9a28c354b26deab05ccee506d2d4bf58801a">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-3a889fe97ec795bf2f29c5c3acabd54cb9cc2131">お知らせ詳細 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#line--">Line で直接相談する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-777f9b11ef747ee4214b5e8d2e317f5df3ee73fe"><span class="number">5.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-cb0c2a9322ad7d4713c1af2e972d5036caf0eda3"><span class="number">5.5.</span>料金の確認 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-1d8858bb5d096c25beb4ff2e11578e913c6d79e8"><span class="number">5.5.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-5d41a6c177b4979f01e5a2c339bb87d025513c86">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-d8471069c7fe664db06d701f228a6bacdf9eb947">月一覧 スライダー</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-657437e4f2c278fb2cb7e718be1c62a72e03d9ce">合計金額 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-6fac30aa31dfaac001900fa56b8c2714da3aa577">定額プラン 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-d39cf8109d0afce3ee58fad26af1fec5b73bcec7">ジム利用料・その他 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-8ff6c00111c5df4cb9bbd96302b1d54e5f9e2e46"><span class="number">5.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-f15504fe2b91074bdc696ca13327ba6edaf985d5"><span class="number">5.6.</span>設定画面 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-1111e0933bfb02ebdb33577c26427f3870cd3d9c"><span class="number">5.6.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-ed7fcaceaf094a9aeacba1d96aead5cfb8e515a3">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-0a4c95ebbaababe234cea2edcec5a4a89e9b0844">カスタマーサポート ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-19a82eb7364fa8a9034aee829a41a966e63f4d72">アカウント情報の確認/変更 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-f7963d3bd0569c29f7a6b711fb82d72cc9fc41be">プランの変更 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-6dc9628b6781257fbc7f9d60b9743c0f1426a78d">パスワードの変更 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-d2990d56c580c5624c2d55545c4d90f401a103da">クレジットカードの変更 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-bde2b90f21d5be27eccd72394241179e4edd11ad">電話番号の変更 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-acf4da7fc4212e4be527b6272534da5826e28277">利用規約 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-306cd1a2c136ff129c9966264187026b18e09f73">プライバシーポリシー ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-e74b964efb5588ca5c855b2b7bafe08118a0ae9b">ログアウト ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-cbc60ad88d2e4833663fb016bf1eba31050792c5">バージョン番号 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-12b5254049121499fa092741b4947ace90709321"><span class="number">5.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-06b69a4618c9dcf47003b409fdfb67434313d10e"><span class="number">5.7.</span>カスタマーサポート 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-f106fafb2706601912c8b591154e502924c943cd"><span class="number">5.7.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-2d543dfdf1a651bbd4a436784b3607b45264422b">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-e5013d14703608b8fc7a95563b6d57a81b064359">Line で直接相談する ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#faq-">FAQカテゴリ一覧 スライダー</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-720f76ce53f5827e0faf030843d0f19a80b11894">FAQ 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-05e280bbac1f261d1f77886ed60a45c033383014"><span class="number">5.7.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-ac6e77955faf93bcb633132f9f9f61131d3e0515"><span class="number">5.8.</span>アカウント情報の確認/変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-6dc445e8f8f12559de84176a628e2995a8fd783e"><span class="number">5.8.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-1e42ef5779e0fdad88e6738acf2f826f17d35976">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-b89dbe704914d3359d38eb7bd003088aec33e6f4">ユーザー情報 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-3c8ae54e289ac85fe7f6a80bff385f1a0c36b585">住所 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-618546f592bce4e49a36f9ba09d883327fc26acc">住所の更新 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-01e93ef76cbc63ab0ed5c7bbcb15ac542b11133e"><span class="number">5.8.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="105-jp.html#item-error"><span class="number">5.8.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="105-jp.html#-address-text">住所 Address Text</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-ba813867fd4b5fe12ba6077504d3cb0e524a4a92"><span class="number">5.9.</span>プランの変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-f53aef73a8b683a44d1c0eb7c450c015219cf366"><span class="number">5.9.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-e30d6876876e3da646d912bdfa0beebec8585079">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-246b572c43fb68a4fa24bb693529ce9cc6bbd9db">オプション 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-e49ebff943e2f4c8ec148c942d9e27af0c2ca7aa">プランの変更 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-108c3c5c5a604489c31623229183691a6c7e91f9"><span class="number">5.9.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-e81e1debdd984cdf4a16d426244ad361d8d67f91"><span class="number">5.10.</span>パスワードの変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-8e4f0e63f2858d2eca8cf399417893bc795eb07b"><span class="number">5.10.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-2e1353c516efeb2afe820a868277aaffc3ecf40a">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-0dc2f6b496730dc832dca3272c42228fde250af9">以前のパスワード インプット</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-db5860daeac253ec4237839e0f9b7740da704353">新しいパスワード インプット</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-6846d140f1bc464c82c6e27ec3a955add19f2b65">目アイコン ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-1abe8d058d69cadeeee49ae2a8086f2a7649f3e1">パスワードの変更 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-4e795b4551e7e2d4dbcbfd63a48fd99045ac326d"><span class="number">5.10.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="105-jp.html#id-69c4894d18b7f2696cd79a41dfb5933af4b5b41b"><span class="number">5.10.2.1.</span>項目エラー（Item Error）</a></li>
+                      <li class="numbered invisible"><a href="105-jp.html#screen-error"><span class="number">5.10.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-3185f0228e3138a703105444253d7c6c20e1ecd8"><span class="number">5.11.</span>クレジットカードの変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-5d6b78b1f3fc2a4183e241490dad883b2c35fa88"><span class="number">5.11.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-c7bdcba02db6f1fae2d03ed4fb5ddfb2e645d28b">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-b3f740db7abee37fa6a1b727c76f0116db2350fa">メインカード 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-b59a8c5f3bcecbf628c9324f53a6225a1fb01e72">サブカード一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-0d1f4500ceec594b3314a161ef2fcea7754ef1bd">新しいカードを追加 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-f3eff8ece3fbcb0f9cb3a6015df06975b8075ea1"><span class="number">5.11.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-7a4251bf209f498612c193003f4447323a986a98"><span class="number">5.12.</span>クレカ変更・追加フォーム 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-13607dbdfc0c8b5b1c008a92715a4f33dad59c4e"><span class="number">5.12.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-daf8509f6cf4f51b00557774784cb5a71101190c">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-670be7a31ea2a4c5dc5266511a5c891be1102203">フォームタイトル 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-3828daf14a80e2e9abd7c7dabff78bf601f96bc7">入力フォーム 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-192dcd27aa66f931ead90af286b1178fedc5754d">登録・変更 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-42224062dde2e519a0178b4db36255e37055a3a9"><span class="number">5.12.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-cd0b99c44cdeeb32ac1f73e94bbc615365c985fc"><span class="number">5.13.</span>サブカードの変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-1e7e0376e6c24671f90be17fb6f1badaa2597c1d"><span class="number">5.13.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-0300f716779de7fd1d90aa01030c6ee42de08408">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-37cc4e3c28b7ce00a64d93cc62809191582f6abd">サブカード 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-2930be064fc00f7e549c2311e4975c3eddc0b8f3">メインカードに変更する ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-9ce6158cc096da6f4b7b066e8d3ab722bbea502f">サブカードを削除する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-f79139b4b3f8a9f02aab9f5f21f8dd25779a84e9"><span class="number">5.13.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-09eaed2cb2e3df20bfe1bb305a09d0973bd1abee"><span class="number">5.14.</span>電話番号の変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-b97a1f0c1be477b05c16156bb576447f326d97b1"><span class="number">5.14.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-70e805ee74e0412dcc1cc6e5887bea0919eafb72">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-66440f31a40ff78a74b64f80a0416a1d1a7536b7">古い電話番号 インプット</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-a4fe5c3b8d9ad650b53d5c499557693c15ba8581">新しい電話番号 インプット</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-9b78aca50151d0af5b0a491f713e97e7e0ab9e14">電話番号を更新する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-95dc4459504731266101e8be887741593b801cc7"><span class="number">5.14.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="105-jp.html#id-5ae76502ddd1b79954919105530e6998609747f3"><span class="number">5.14.2.1.</span>項目エラー（Item Error）</a></li>
+                      <li class="numbered invisible"><a href="105-jp.html#id-48acd56d9a7993807fc630aa64e60800c529c5ac"><span class="number">5.14.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-fb9ef0f1ee638a3ae7b7f80bef3f4256204edd7a"><span class="number">5.15.</span>認証コード確認 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-12641b91b84ea2cadcf10653b0862037d50af376"><span class="number">5.15.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-61d747a8c8ef64fd479440c25f9c153d01610653">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-4da4784855b87ea46a671e9419e1d72eed837575">電話番号 区画</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-f792a57dd2b713e423a5a5dad7a22805048a2f2c">認証コード インプット</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-42f0e0fbdf5d47927d752c547a0c1509d940e0b8">認証コードが送信できた アラート</a></li>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-02e8d8d77c1f72142922b404d9b6c85c1cd6e01e">コードの再送信 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-03a3e53636c48fa7d37766a9877957afb987a10e"><span class="number">5.15.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="105-jp.html#id-bacd908df23a097866928c6df405d399c4928e03"><span class="number">5.15.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="105-jp.html#id-93d80c833f5b23665b164fa66e12a03d0965ed88"><span class="number">5.16.</span>ブロックユーザー 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="105-jp.html#id-09e9b0f28e6b274a6dbbf4609e3073f0ff4f8882"><span class="number">5.16.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="105-jp.html#id-736102766ab2696c44dba0f1ad619fa24655ca9a">サポート問い合わせ先 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="105-jp.html#id-f0705dcd01088734e750195d13fbc3dc91129a24"><span class="number">5.16.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="106-jp.html" data-alt-hash="mb--gym-information"><span class="number">6.</span>【MB】 ジム情報 Gym Information</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="106-jp.html#-"><span class="number">6.1.</span>店舗詳細 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="106-jp.html#id-102748e3bdecab9ce3e6e5d1209f7bd3eb1774fc"><span class="number">6.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="106-jp.html#---2------">タブバー - 2 つのタブ項目 - ​​店舗詳細 と店舗一覧 が含まれる</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#--">店舗画像 ページインジケーター付きの店舗画像のスライダーが含まれています 画像スライダー</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-98c3120a64f2917f63d1c5a18519167c5a7489f8">店舗情報 区画</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-ec97ce7c7d8d9c3c6db7cf5900afc1701eefdbc5">閉じる 店舗画像ポップアップスライダーを閉じる ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="106-jp.html#error-list"><span class="number">6.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="106-jp.html#id-81faa3de4a089ff9924c9bbfad7586a467c99dc9"><span class="number">6.2.</span>店舗一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="106-jp.html#id-8b2ac8d0485a014da131488f51a707b24ba46039"><span class="number">6.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-e2f6792e22c8ba18c4f566260d3bc1de9d763cd6">タブバー - 2 つのタブ項目 - ​​店舗詳細 と店舗一覧 が含まれる</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-760abf97d7be950ad62686edd916cf81dd8ce85c">マップから店舗を探す ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-623dc3ecd68567a68acdd88ad715c4907b46e9ab">お気に入り店舗一覧 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="106-jp.html#id-776bf844f835c8b7bc37265fe3e497f940764498"><span class="number">6.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="106-jp.html#id-285986057a24da8526cc1dbba6cad6a3365721f8"><span class="number">6.3.</span>マップ 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="106-jp.html#id-bc0419759db99dddd3eb7121cffca43972b7a316"><span class="number">6.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-00b63ed7576acd8fb9fafdc351d7a93a733661cc">タブバー - 2 つのタブ項目 - ​​店舗詳細 と店舗一覧 が含まれる</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-5f4d01f483b7559ed745c2df688a4ea13bb9605d">お気に入り店舗一覧へ戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-229afc01b3fd6e07ab4fe99491f9fb073b8751c0">マップ 区画</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-73f56c58c4db7b7dd7411820e51ed31701651def">お気に入り登録店舗 区画</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-da456afffc17d915f6977198753e2e3a673f585f">お気に入り未登録店舗 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="106-jp.html#id-7ddd3815a11670e86ce0591a1de935ef2d039101"><span class="number">6.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="106-jp.html#_2-"><span class="number">6.4.</span>店舗詳細_2 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="106-jp.html#id-5c7484ce4786f3c14b7d7beb25b2462f4dff2256"><span class="number">6.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-37f2abf199ddc55f974a5c6f46e98df5fe483d8c">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-4a222ae33570478bf4143b66744a2cc742e20a77">店舗画像 ページインジケーター付きの店舗画像のスライダーが含まれています 画像スライダー</a></li>
+                      <li class="unnumbered invisible"><a href="106-jp.html#id-94872b2d0ce7b866f83f09ea9699240f129a6742">店舗情報 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="106-jp.html#id-919edef504d407e461c65f6f559a67371aaaadfa"><span class="number">6.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="107-jp.html" data-alt-hash="mb--check-in"><span class="number">7.</span>【MB】 チェックイン Check-in</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="107-jp.html#qr-"><span class="number">7.1.</span>QRコードスキャン 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-c17c2ed95af71cf570b0f05bcdc1c271a8073a14"><span class="number">7.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-fda998fba1df2d381b33a0ca416c9156a96da492">戻るボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#qr">QRコードスキャンフレームフレーム</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#error-list"><span class="number">7.1.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="107-jp.html#screen-error"><span class="number">7.1.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="107-jp.html#--"><span class="number">7.2.</span>サービス利用確認 (入れ口) 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-8812ed0007d582d31e2f4fc1f68313494a9395dd"><span class="number">7.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-d68541a1382dce68c87574253105cf32fb372b05">店舗情報　区画</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-44488de77db17b3f0970c552b8f602112603f985">入室確認情報　青い背景区画</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-f261c2ae37c941d7f1fc811277d601bc201ba5eb">上限金額情報　緑背景区画</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-3d62522f091b6796ee4b86a7c44dad8539f1072a">入室するボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-e9cb16a198085dda3dcabfb03168c66220cb776a">戻るボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="107-jp.html#id-7e1f8b3fa4d6c55895aeaa825c5c62c058cfb19e"><span class="number">7.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="107-jp.html#-"><span class="number">7.3.</span>処理エラー 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-e365834533df224d511aa9800a261ec507e58333"><span class="number">7.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-ef4e6e28f3d0b0061c932bfb80210bacd70cfaa5">戻るボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-d75289d691043c83ec290a8b99b8d4a55b01f13f">エラーメッセージ　区画</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-a277a129f3405ad7a167e0f7c406fee69bbb46d2">再試行する　ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-ff662eab46a39a43572657cbb2b0c8262d155061"><span class="number">7.3.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="107-jp.html#id-a80b1811ffd1d0f754874b5e298164fee704615b"><span class="number">7.3.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="107-jp.html#id-48b63ad2c5a3009bd8c0fa17f35b90b8371ba418"><span class="number">7.4.</span>サービス利用確認 (手ぶら) 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-c2ee3186660138486f1fab3f5f66a381329bad1f"><span class="number">7.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-ac563534fdeeeb497f961042f0a94e1da0c1dcdd">理容料金　区画</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-45ffcfe1341e4571f71b63b4c3b3675107cecca7">プラン変更　ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-9fd0d3a8aa086d8c7ef11f1199115999f90114ce">使用するボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-e554cc9bdf3b78af1051ce04af97360ba20f0467">戻るボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="107-jp.html#id-508433616ee44117a46213af62715d8b19e8dae6"><span class="number">7.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="107-jp.html#id-d24d46da1224298720cfab70c383990dfee5f98e"><span class="number">7.5.</span>サービス利用確認 (水素水) 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-3411d460e6126ca34b5290cbe41a09661b5a5379"><span class="number">7.5.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-c7e9509ccaef704ce529e47eb0050dde94607850">使用するボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-23edcb7c282f5cd194df5bd060094bc5371b6af9">戻るボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="107-jp.html#id-19a85afee8726e20d4ff94c4ceedb12ff558d293"><span class="number">7.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="107-jp.html#id-53cbd216c2f67b4987ce381b719eaf35b43f75c7"><span class="number">7.6.</span>サービス利用確認 (出口) 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="107-jp.html#id-3f9ce35a1ff8250e516b001feb1e10a83ecb12ba"><span class="number">7.6.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-517f8e7ae85690a75b5de4c07dc06dd0b7213439">使用するボタン</a></li>
+                      <li class="unnumbered invisible"><a href="107-jp.html#id-81533a08d9b0e017f8ef1c2f4ff386f83cc97bd1">戻るボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="107-jp.html#id-e8646bb0a4a35e40b4ff1f2fde67fe556e719229"><span class="number">7.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="108-jp.html" data-alt-hash="mb--training-menu"><span class="number">8.</span>【MB】 本日のトレーニングメーニュー Training menu</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="108-jp.html#-"><span class="number">8.1.</span>トレーニングメーニュー作成 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-7125f7db27daaa5c1db4e5ddfd77228f4f988767"><span class="number">8.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-b835478f652c136082b6adeae0a0772f9b7cd3a6">トレーニングメニューを作成する ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-24e74c5e1cf3a51b2b84b4f940796cadf27300a7">作成せずに自分でトレーニングをする ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-04ce6a43cfea91364a78f940dfb1ae034f6d6ef8"><span class="number">8.1.2.</span>裏での処理</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-acde193df05cb742848305ecae80189e739ab4b9">自動的にホーム画面に戻る</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#error-list"><span class="number">8.1.3.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="108-jp.html#id-32dd43c6553ce44885f6ee22e7bda2396ba1dd1f"><span class="number">8.2.</span>プラン質問 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#--"><span class="number">8.2.1.</span>質問１- 項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6e8627e4f1d2300f79af9b7336af0f81c556f250">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-554d6f227e10fc4d2a1ea0166b47fa87923433d3">質問１の回答 選択肢</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-fa685195b915dab11f963a7b7ee4d33dcfdfa7a5">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-d0c79210ec6bf28aff5cfcc0e0c8c4dfe92ab0f2"><span class="number">8.2.2.</span>質問２- 項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6d1f2f4b3e53f71f1170ca4c35c4af2bda12bec2">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-654168e866fe1051ebac8635a37379e7cd90d472">質問２の回答 選択肢</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-548cf8499e796ba93e7b2709272ed5baa0508190">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-08eca9c86d1cbe100b75fa1c07aa37517cf58234"><span class="number">8.2.3.</span>質問３- 項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-a834134cbbdf61a3e517ddb70feb0e6eeb7e0616">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-42818a61bd6f1cddf90c59d3053bca0ef44583af">質問３の回答 選択肢</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-10425fb909279da72d167177ae9ae1cd495d1aa5">次へ進む ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-030f20a3fb4d8c5a33132782a65f9628e7455835"><span class="number">8.2.4.</span>参考データ</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-fad895f3031561dc1f0a103d680b0e9321e25dc4">質問マッピング`</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#id-62143bba4de7ec4b57ba94650cc75770d5dd84a9"><span class="number">8.2.5.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="108-jp.html#id-2ec43a04c3029b43d28a3da4e4b21ae58fe4ca9f"><span class="number">8.3.</span>利用ガイド 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-c7123c9186b40ec61e126bc797343a3fc5e4a5b1"><span class="number">8.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6631229a40dad1d1e728f5067853f0e1112a3f58">戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6fb706fe6b4d585c4d041da9489964b4fe48c5aa">トレーニングメーニュー 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-dcb8845474423f1569616dea1d5cbd8b10f5e43d">使い方 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-8552edaf7e172773b1b70d8a97d3f3011735339a">チュートリアルビデオ 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-09490fac021f6793dcc45294707a9e44b03dea27">トレーニングスタート ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#id-d728283ced7ec59f639aa4f7eaa58a9c2f7f9255"><span class="number">8.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="108-jp.html#id-83438bccd84de7adf0d860aaa8c7b6e4b06b6d6b"><span class="number">8.4.</span>トレーニング１種目目 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-1552fde9ccdd5f1bb50022f2e9437f752ba17bac"><span class="number">8.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6ad37445d5e99234434cc178b830f24d7cf803ef">種目情報 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6e01fd33fe3eb0304b9c3e75d7c04ee8c578d8cc">マシンの重量設定 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-9add4207218f60ca529a656e9ee9baa49908b34f">種目一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-dfa9dec74719ce2b0e92e89f8d9516d40ab257d1">トレーニング条件 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-9699c5107639ac6ae0e39dab70179cb06fcbc170">お腹のトレーニングへ進む ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-4ecbda7fd842f4a412e0e4a4720f13d8d3f4984f">トレーニングを終了する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#id-8811771bc3a0ca92f5ccd6ee4e76b8f47211f17b"><span class="number">8.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="108-jp.html#id-309bf83106d83ee4260f31b4f4408f0b9655e227"><span class="number">8.5.</span>トレーニング２種目目 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-7a294f8d79d96bc55234f3291864ea1ef5853c7b"><span class="number">8.5.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-98b5071171f7144a5443cac718fa5a6b2138aae5">種目情報 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-0c33bce137d86be955d6645ced8fe12e17e8cc61">マシンの重量設定 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-ad87bbeaf45ea406dd58696601fb128d71ac60ef">種目一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-422829e8e7948256249a178c953f0b849c2a6806">トレーニング条件 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-f027a705c3b3e785d33c8aef9d2ff0c2d932a886">トレーニングを終了する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#id-522d79fa4f7fa093f4854ea79b1fd807e5270816"><span class="number">8.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="108-jp.html#id-610ab3745a7703fe11b666fec87f7ce897d8c4cb"><span class="number">8.6.</span>有酸素トレーニング確認 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-8b38e965db74a7693e8ff2831b660df636d031f1"><span class="number">8.6.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-7b8058534950aea52122e519f31cda36be41ba6a">体力に余裕があるので有酸素トレーニングを行う ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-717f824fe58aaee7b8e5d83c62b866a1af673e23">作成せずに自分でトレーニングをする ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#id-70723b8fa8a0d2e6093ea5d7e8390deadfc5f4ba"><span class="number">8.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="108-jp.html#id-96edc9dd9fdce236b683f8e693dca1f4dc893033"><span class="number">8.7.</span>有酸素トレーニングスタート 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="108-jp.html#id-7d35c9bd273fc550c8bd1ee9c75d031d927a66cb"><span class="number">8.7.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-58cb4f43ddcd30c302f0ded4f7ebbb1976b1ddaf">種目情報 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-6fec89d136a41129aeb0cbc1be2a9c3d011ed438">種目一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="108-jp.html#id-d9116f36b5d2e100c24201dd16631a97b59e1d3b">トレーニングを終了する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="108-jp.html#id-b4244f4b7c82d9c5f104c71b8eacb715892a7600"><span class="number">8.7.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="109-jp.html" data-alt-hash="mb--online-video"><span class="number">9.</span>【MB】 オンラインビデオ Online video</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="109-jp.html#-"><span class="number">9.1.</span>ビデオ一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="109-jp.html#id-f1e3aa35ae95c5ae73d716d1b03e1ee375a41a79"><span class="number">9.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-d2a6ab488e268f6db60b27c94c12a0752118e9ea">レベル区画</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-4298d68415fcaf73a2fe04afd22edc2114548724">ラベルスライダー</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-1bfdded62b815f6f44c8a10dd0a97d4adcdb5334">ビデオ一覧 区画</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-eddff69a7b4ce1a91882d54220c14a95eed52bcb">ビデオ 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="109-jp.html#error-list"><span class="number">9.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="109-jp.html#id-d87c031ca608de87770166eba49dd65fabe7fdb4"><span class="number">9.2.</span>ビデオ詳細 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="109-jp.html#id-b0dbbf70a8c280a09dce12bde3b4eec3ec370dff"><span class="number">9.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-f3535e65b6b66b8c03f0c5c7645679fc5a3713a1">ビデオ一覧 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#---">ビデオサムネイル + 再生アイコン 区画</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-a8e0dd28f7fd4a8515e6d38c53d9afbe940d4248">ビデオ詳細 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="109-jp.html#id-cb37a2793a2046a1fcf59f3dbb79fcae83a05056"><span class="number">9.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="109-jp.html#id-1eebadf4e1f3ab44092cc455aacb23abd659fe14"><span class="number">9.3.</span>ビデオ全画面表示 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="109-jp.html#id-4e7dae366be16a8b9c46a627bcbfe89eabcb68d9"><span class="number">9.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-6a65b7639c956d75664d90ac3dc2f3ad4a40ed95">ビデオフレーム フレーム</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-c33d697fcbd07c10f49d427dcff2cde200bf3863">動画終了 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-f7c467c6cfd86ed31d21fe209391953326518708">一時停止・再生 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#10-">次の10秒 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-d8e4b4b9282d45d0e1aa48ef109f5ea115d92b5f">10秒前 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-e7fbc6f86f167e07cd7418659cb980790ac7eda8">次のビデオ ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-6f69b0905f3057e7dbedb6dffe61f64d10f9239e">前のビデオ ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-eb844dc209e67299663ae7c6ee8b1ccd5031f57d">その他のチャプター スライダー</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-c3b7e1a8b18f3071cd3db7043bfa7f3553eba7de">その他のチャプター閉じる ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="109-jp.html#id-b417eb6e5b855dc931fba76204f8c51e06414aad"><span class="number">9.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="109-jp.html#id-844e560ff17c122e21a86b673d25c57a38d48936"><span class="number">9.4.</span>動画終了 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="109-jp.html#id-d3257931195c2ba9b55a43dd41018fe636403cbf"><span class="number">9.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-80634540dd4136fa43a8f0ee67a052ecc409b8ec">次の動画 区画</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-84f498e927e0a1959a7eacc8105708c40034b7d9">再生 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="109-jp.html#id-5d61c25ac97c01d6a1004ab9e70c11ea5ae2c048">終了 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="109-jp.html#id-582dcd58c509bdb1af8a8d594cdd75d01f86a786"><span class="number">9.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="199-jp.html" data-alt-hash="mb--side-function"><span class="number">10.</span>【MB】 サイド機能 Side function</a>
+            <ul>
+              <li class="numbered invisible"><a href="199-jp.html#-"><span class="number">10.1.</span>強制アップデート 機能</a></li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="200.html" data-alt-hash="tb--login"><span class="number">11.</span>【TB】 ログイン機能 Login</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="200.html#-enter-telmail"><span class="number">11.1.</span>電話番号・メース入力 Enter tel／mail</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="200.html#item-event-definition"><span class="number">11.1.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="200.html#-phone-number-number">携帯番号 Phone number Number</a></li>
+                      <li class="unnumbered invisible"><a href="200.html#-password-text">パスワード Password Text</a></li>
+                      <li class="unnumbered invisible"><a href="200.html#-password-hidereveal-icon">パスワード隠れ・パスワード明らか Password hide/reveal Icon</a></li>
+                      <li class="unnumbered invisible"><a href="200.html#-login-button">ログインする Login Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="200.html#error-list"><span class="number">11.1.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="200.html#item-error"><span class="number">11.1.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="200.html#-phone-number--number">電話番号 Phone number ** Number**</a></li>
+                          <li class="unnumbered invisible"><a href="200.html#-password--text">パスワード Password ** Text**</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="200.html#screen-error"><span class="number">11.1.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="201.html" data-alt-hash="tb--machine-setting"><span class="number">12.</span>【TB】 マシン設定 Machine setting</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="201.html#-enter-machine-number"><span class="number">12.1.</span>マシン番号入力 Enter machine number</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#item-event-definition"><span class="number">12.1.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-machine-number-number">マシン番号 Machine number Number</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-setting-button">設定する Setting Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#qr-scan-qr-code-button-icon">QRコードスキャン Scan QR code Button icon</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="201.html#error-list"><span class="number">12.1.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="201.html#screen-error"><span class="number">12.1.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-request-for-camera-permission"><span class="number">12.2.</span>カメラ許可のリクエスト Request for camera permission</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-972a21f927138b1631113951fe9c8a79a329e656"><span class="number">12.2.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-allowed-button">許可する Allowed Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-not-allowed-button">許可しない Not allowed Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-b8b94108b0996e87ed06f5c8d2dd6f081dd94ba7"><span class="number">12.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#qr-scan-qr-code"><span class="number">12.3.</span>QRコードスキャン Scan QR code</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-2e60342db0577b5e7fe7a07daadc8d33cd506f5f"><span class="number">12.3.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#qr-scan-qr-code-frame-frame">QRコードスキャンフレーム Scan QR code frame Frame</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-cancel-button">キャンセル Cancel Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-a85df29ca803fe4c2f8f253eae23292dc8f5c3a0"><span class="number">12.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-machine-confirmation"><span class="number">12.4.</span>マシン番号設定確認 Machine confirmation</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-bd2a07e9fe96878f122f17689d8bb85695d285c9"><span class="number">12.4.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#id-aa47604def5b4f0c44a9c803c39064d6140f2391">設定する Setting Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-back-button">戻る Back Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-48104baf97f385f6734d88a39d309d835b2081d1"><span class="number">12.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-downloading-video"><span class="number">12.5.</span>動画ダウンロード中 Downloading video</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-91ae20730b4ba72b8961f40e609278ee0ef96c93"><span class="number">12.5.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-dashboard-button">ダッシュボード Dashboard Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-downloaded-video-block">ダウンロードした動画 Downloaded video Block</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-downloading-video-block">ダウンロードした動画 Downloading video Block</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-error-during-video-download-block">動画のダウンロード中にエラーが発生しました error during video download Block</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-09aef7e25215035b242d06470f554cd8f85fe689"><span class="number">12.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-dashboard"><span class="number">12.6.</span>ダッシュボード Dashboard</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-febefc31c286bca59d52de5a7c1d7832ae2c02a4"><span class="number">12.6.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#dynamic-data">Dynamic data</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-back-icon-button">戻る Back Icon Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-enter-kiosk-mode-button">キオスクモード開始 Enter Kiosk mode Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-change-sequence-number-button">マシン番号を変更する Change sequence number Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#-delete-button">削除する Delete Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-e137e02c409ac443a1b2a8e7fa7c8c6919e306a8"><span class="number">12.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-enter-machine-sequence-number"><span class="number">12.7.</span>マシンシーケンス番号入力 Enter machine sequence number</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-3b8a724f533c633d031aecdbdcbe3695b73b1e91"><span class="number">12.7.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-machine-sequence-number-number">マシン番号 Machine sequence number Number</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#id-aceb026d52fbfffc1b512e36fb4557b0d7deeeb0">設定する Setting Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-3f57070d4948242770a5fa0b1e86ff9b472d2aa5"><span class="number">12.7.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="201.html#id-95ee5785347da06b2214902525987f91bad7f7ec"><span class="number">12.7.2.1.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-machine-sequence-number-setting-successful"><span class="number">12.8.</span>マシン番号設定成功 Machine sequence number setting successful</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-c2020a7fb4ab1bd549850a8b37773f46aa353b56"><span class="number">12.8.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-done-button">完了 Done Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-03dbf93345364ccb807dcdac043ee8c6933c1c00"><span class="number">12.8.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-video-delete-confirmation"><span class="number">12.9.</span>動画削除確認 Video delete confirmation</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-35bd060490476a303d687b5e075904dc9e1fc8da"><span class="number">12.9.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-delete-video-button">削除 Delete video Button</a></li>
+                      <li class="unnumbered invisible"><a href="201.html#id-c223938f2c768f7fb5120747859115e975b1f2e5">キャンセル Cancel Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-b3b5f001418a4a2abf4ae682f383a09dc04acdd0"><span class="number">12.9.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="201.html#-video-delete-sucessful"><span class="number">12.10.</span>動画削除成功 Video delete sucessful</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="201.html#id-5eeeeead663f15936eb7b6ec99e49a09e4bca702"><span class="number">12.10.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="201.html#-go-to-setting-screen-button">設定画面へ Go to setting screen Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="201.html#id-47bd20cc599d662221de66373893fe35254faf3d"><span class="number">12.10.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="202.html" data-alt-hash="tb-kiosk-kiosk-mode-operation"><span class="number">13.</span>【TB】 Kioskモードオペレーション Kiosk mode operation</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="202.html#-home"><span class="number">13.1.</span>ホーム Home</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#item-event-definition"><span class="number">13.1.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#-logo-icon-button">ロゴ Logo Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-report-machine-issue-button">マシンに不具合があった場合はこちらをタップ Report machine issue Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-open-video-button">ビデオを開く Open video Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-start-stop-watch-button">タイマーを開始 Start stop watch Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#error-list"><span class="number">13.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-exit-kiosk-mode"><span class="number">13.2.</span>キオスクモード終了 Exit Kiosk mode</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-63b6fcc18a6e083a005a5c310162774b7a2704d2"><span class="number">13.2.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#-password-text">パスワード Password Text</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-cancel-button">キャンセル Cancel Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-exit-button">終了 Exit Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-d84d27877e87715f35ca677556377d0a93b135a4"><span class="number">13.2.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="202.html#item-error"><span class="number">13.2.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="202.html#id-27525d0e1a58e575685a614054f14f6482864a49">パスワード Password Text</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="202.html#screen-error"><span class="number">13.2.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-report-machine-issue"><span class="number">13.3.</span>不具合報告 Report machine issue</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-c7fe43a49a068ab292c14ce7a2e72a9d438f4036"><span class="number">13.3.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#-back-icon-button">戻る Back Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-issue-detail-list-of-button">不具合内容 Issue detail List of button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-06fcc8a6baeb087ce4acf823ff1e76d22d15e86f"><span class="number">13.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-maintenance"><span class="number">13.4.</span>メンテナンス Maintenance</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-f97e3d0589aacdc0adc46c0d633ace221c4bfb35"><span class="number">13.4.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#id-cacc6809919c1b6af8ff60995ca7ceb5016560a6">ロゴ Logo Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-issue-detail-block">不具合内容 Issue detail Block</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-df365c0c95738cec9a1bae3446fe267c96581251"><span class="number">13.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-confirm-password"><span class="number">13.5.</span>パスワード確認 Confirm password</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-78efd6ec4ee5f8b3f8120651d3b30f2e11643a6f"><span class="number">13.5.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#id-a74cb1c934ec7faf452240934b511bda70a5508f">パスワード Password Text</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#id-63bd68c3ca63f91d017f1621ddb84085f79ead25">キャンセル Cancel Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-confirm-button">確認 Confirm Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-bf3d0efc1bde0b8336308973b2f0376c76061336"><span class="number">13.5.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="202.html#id-184b443ecdd2bbdb4b8acac6875f411443865c8b"><span class="number">13.5.2.1.</span>項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="202.html#id-15996ded917a01f968407177ecc812b744f7451e">パスワード Password Text</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="202.html#id-9f0fe1cc27978064933e22de1c060b0f78a3f76e"><span class="number">13.5.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-repair-completed"><span class="number">13.6.</span>修理完了 Repair completed</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-5490dc7779c7b25e343a218aa38b0b74fef263ed"><span class="number">13.6.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#dynamic-data">Dynamic data</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-repair-completed-button">修理完了 Repair completed Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-back-button">戻る Back Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-a001092b58683732d9ca40dc056d3680e5b8fa26"><span class="number">13.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-video-list"><span class="number">13.7.</span>動画一覧 Video List</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-6be1987dcebc8080a521bb3d027d42e70ad0a80c"><span class="number">13.7.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#id-36cbee9c0ebc7aaa6e994758af26dfce4e5c76b7">マシンに不具合があった場合はこちらをタップ Report machine issue Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-back-to-home-icon-button">ホーム画面に戻る Back to home Icon Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-list-video-tags-block">動画タッグリスト List video tags Block</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-list-video-block">動画一覧 List video Block</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-video-block">動画 Video Block</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-play-video-button">動画再生 Play Video Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-121208cdceed2cc3ee71cc00b99bb6061f2d86cf"><span class="number">13.7.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-video-playing-in-fullscreen"><span class="number">13.8.</span>動画再生中 Video playing in fullscreen</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-b63cf2f4cd0652d9663f8b1bb42c106b655caaff"><span class="number">13.8.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#-video-frame-frame">動画フレーム Video Frame Frame</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-stop-video-icon-button">動画終了 Stop video Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#10-next-10s-icon-button">次の10秒 Next 10s Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#10-previous-10s-icon-button">10秒前 Previous 10s Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-pause-play-icon-button">一時停止・再生 Pause/ Play Icon button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-chapter-button">チャプター Chapter button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-other-chapter-button">その他のチャプター Other Chapter Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-close-other-chapter--button">その他のチャプター閉じる Close other chapter ** Button**</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-73d777ab0445f270c5dec9a0bc036962b2a3aea5"><span class="number">13.8.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-end-of-video"><span class="number">13.9.</span>動画終了 End of video</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-c933a301d13b0a106a78497a344afb99dcbe2386"><span class="number">13.9.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#-next-video--block">次の動画 Next video ** Block**</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-replay-video-button">再生 Replay video button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-close-video-button">終了 Close video button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-17cfa2810945318391e34d71015194ba46cdba7c"><span class="number">13.9.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="202.html#-stop-watch"><span class="number">13.10.</span>ストップウォッチ Stop watch</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="202.html#id-46dc003769fb616c1d7d076d8a6067a4dc962cbb"><span class="number">13.10.1.</span>項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="202.html#id-9dd981f2110f8c5eb1d04f3bf200224b2598665b">マシンに不具合があった場合はこちらをタップ Report machine issue Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#id-00f5b654e6c87f0424642548be41dce6164e3f39">ホーム画面に戻る Back to home Icon Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-start-icon-button">始める Start Icon Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-reset-icon-button">リセット Reset Icon Button</a></li>
+                      <li class="unnumbered invisible"><a href="202.html#-pause-icon-button">止まる Pause Icon Button</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="202.html#id-2daa34e35762655aa21f33da94a771dd7b829b36"><span class="number">13.10.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="299-jp.html" data-alt-hash="tb-"><span class="number">14.</span>【TB】 サイド機能</a>
+            <ul>
+              <li class="numbered invisible"><a href="299-jp.html#-"><span class="number">14.1.</span>ホーム画面に自動的に戻る 機能</a></li>
+              <li class="numbered invisible"><a href="299-jp.html#id-96466d2757f2a72464b9e2c16992e7daa0c688d3"><span class="number">14.2.</span>ビデオ自動更新 機能</a></li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="300-jp.html" data-alt-hash="cms--"><span class="number">15.</span>【CMS】 アプリのアップデート 画面</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="300-jp.html#-iosandroid"><span class="number">15.1.1.</span>① アプリのiOS・Androidバージョン情報を表示する画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="300-jp.html#11-"><span class="number">15.1.1.1.</span>1.1 項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="300-jp.html#ios">iOS情報エリア</a></li>
+                      <li class="unnumbered invisible"><a href="300-jp.html#android">Android情報エリア</a></li>
+                      <li class="unnumbered invisible"><a href="300-jp.html#-">変更 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="300-jp.html#12-error-list"><span class="number">15.1.1.2.</span>1.2 エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="300-jp.html#id-5c7a329304b4fe5faca8f25de3ca5544c2f901d4"><span class="number">15.1.2.</span>② バージョン情報の更新画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="300-jp.html#21-"><span class="number">15.1.2.1.</span>2.1 項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="300-jp.html#id-99d7462fca04a2fe42846a9f71076cce11896dd5">iOS情報エリア</a></li>
+                      <li class="unnumbered invisible"><a href="300-jp.html#id-492828eeb8a0ed8e43ff1445e80ef845ae23eabd">Android情報エリア</a></li>
+                      <li class="unnumbered invisible"><a href="300-jp.html#id-05d73ecb1977e9d60042f20482bfc651b8649c51">保存せずに戻る ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="300-jp.html#id-d67841d53b681f10e4715eb84408b0fc0fad9c4d">保存 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="300-jp.html#22-error-list"><span class="number">15.1.2.2.</span>2.2 エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="300-jp.html#id-843ac66af04f0dadeb456bfa324297cc432a1a8d">iOS情報エリア</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="300-jp.html#id-0a79cf91e35a1101a3ff6dcddc358c2c09503eed"><span class="number">15.1.2.3.</span>　未入力の場合</a></li>
+                  <li class="numbered invisible"><a href="300-jp.html#id-d8fc9e72705c8ddff8a2c650b2aa66ec38af4327"><span class="number">15.1.2.4.</span>　入力文字数の制限を超えた場合</a></li>
+                  <li class="numbered invisible">
+                    <a href="300-jp.html#id-89fb25e7e424d2e6678c996bf27df535320e577a"><span class="number">15.1.2.5.</span>　※注意</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="300-jp.html#id-9c83aade0d060ae5f09ff86c314c5e0711f2bdc7">Android情報エリア</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="300-jp.html#id-0a79cf91e35a1101a3ff6dcddc358c2c09503eed"><span class="number">15.1.2.6.</span>　未入力の場合</a></li>
+                  <li class="numbered invisible"><a href="300-jp.html#id-d8fc9e72705c8ddff8a2c650b2aa66ec38af4327"><span class="number">15.1.2.7.</span>　入力文字数の制限を超えた場合</a></li>
+                  <li class="numbered invisible"><a href="300-jp.html#id-89fb25e7e424d2e6678c996bf27df535320e577a"><span class="number">15.1.2.8.</span>　※注意</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="301-jp.html" data-alt-hash="cms-faq-"><span class="number">16.</span>【CMS】 FAQ 画面</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="301-jp.html#1"><span class="number">16.1.</span>　1．カテゴリー画面</a>
+                <ul>
+                  <li class="numbered invisible"><a href="301-jp.html#id-4bea4112e717c5bef1a16494f20ee66c6bea42dc"><span class="number">16.1.1.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#-"><span class="number">16.1.1.2.</span>すべて表示する ボタン</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-6c373545976bf975c952991fc7d9b4f4bcc4a35b"><span class="number">16.1.1.3.</span>新規作成 ボタン</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="301-jp.html#2"><span class="number">16.2.</span>　2．カテゴリー詳細画面</a>
+                <ul>
+                  <li class="numbered invisible"><a href="301-jp.html#id-47fac9fc07efc65858048f69a0c314c281a60bbd"><span class="number">16.2.1.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-04b1ca2f130707a250365ab04a97dcab2f2c9e13"><span class="number">16.2.1.2.</span>戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-0d4a3de000d8a78afecd9fefca8c1a258e4a0693"><span class="number">16.2.1.3.</span>変更 ボタン</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-6d4eaa9e697784f5c4d365a9c1525ab6485e55d7"><span class="number">16.2.1.4.</span>新規作成 ボタン</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-09fe184bc86af446b800c03d571192ea9e1922c6"><span class="number">16.2.1.5.</span>削除 ボタン</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="301-jp.html#3faq"><span class="number">16.3.</span>　3．FAQ詳細画面</a>
+                <ul>
+                  <li class="numbered invisible"><a href="301-jp.html#id-8106e6311e8597cbce134fd47f37e6ee08715e3a"><span class="number">16.3.1.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-22cb29006f31ad1124a35c1a32e4b916387fafd6"><span class="number">16.3.1.2.</span>←戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-3461b581330064e4a06c0b1282c99d4f7bf75d64"><span class="number">16.3.1.3.</span>変更 ボタン</a></li>
+                  <li class="numbered invisible"><a href="301-jp.html#id-4d0d19658772d6ffc383300bb0a0771825e413a1"><span class="number">16.3.1.4.</span>削除 ボタン</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="302-jp.html" data-alt-hash="cms--"><span class="number">17.</span>【CMS】 ジム一覧 画面</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="302-jp.html#1"><span class="number">17.1.</span>　1．ジム一覧画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="302-jp.html#id-72333d8b38bfa67b244144bcefdbe71a1277088d"><span class="number">17.1.1.</span>一覧表示モードの項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="302-jp.html#api"><span class="number">17.1.1.1.</span>APIデータ：</a></li>
+                      <li class="numbered invisible"><a href="302-jp.html#--"><span class="number">17.1.1.2.</span>①　ジム一覧をリストモードで表示させる ボタン、②　ジム一覧をマップモードで表示させる ボタン</a></li>
+                      <li class="numbered invisible"><a href="302-jp.html#-"><span class="number">17.1.1.3.</span>③　新規店舗作成 ボタン</a></li>
+                      <li class="numbered invisible"><a href="302-jp.html#id-f7aebc7478a452cbdad882754f94004c1943b447"><span class="number">17.1.1.4.</span>④　下書きを編集 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-c8bbd66c8c4db44be6273bc1918f6b8d2a13df83"><span class="number">17.1.2.</span>マップ表示モードの項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#error-list"><span class="number">17.1.3.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#2"><span class="number">17.2.</span>　2．ジム詳細一覧画面</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-eb62b4b68f3d52753eefc93cf46181efe8916e36"><span class="number">17.2.1.1.</span>店舗名区画</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-886a95ec45f3fd6a57e12c9d5bb78643eb32ce42"><span class="number">17.2.1.2.</span>イメージ区画</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-cb69f7b58e8d112472c8cb81db0e4b3d70bd61ec"><span class="number">17.2.1.3.</span>ジム詳細区画</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-786e891b710e6d6558ef936735bd97cdbcc08ad0"><span class="number">17.2.1.4.</span>プラン区画</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-f7fd43f340b2ca8ebe0cb6d270247918ec502125"><span class="number">17.2.1.5.</span>オプション区画</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-91e800b2312210d262c832921a7080a8ac062eeb"><span class="number">17.2.1.6.</span>プライシング設計エリア</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-2a35970c998d968c1265c071755b005dbcc61460"><span class="number">17.2.1.7.</span>会員一覧エリア</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-340abc454dac5500c85b25b87457cc99ca15ec8f"><span class="number">17.2.1.8.</span>トレーニングマシンエリア</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-4a805ed2802dcef1365ba37d6b81ef8efddd5f4c"><span class="number">17.2.1.9.</span>トレーニング種目一覧エリア</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#3_step1"><span class="number">17.3.</span>　3．ジム基本情報入力_STEP1</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="302-jp.html#id-3f642b483243caf43d965674f8315f2a7a454c06"><span class="number">17.3.1.</span>表示モードの項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="302-jp.html#id-8d815b9ab4aa56aa67dc5dda25c59e2eaadc8db0"><span class="number">17.3.1.1.</span>ステップバー</a></li>
+                      <li class="numbered invisible"><a href="302-jp.html#id-d828857531c8136644f8e010ee0f551024e1ffa9"><span class="number">17.3.1.2.</span>入力エリア</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="302-jp.html#x-"><span class="number">17.3.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-e66a6998c57fa771eee246dac92bfbfb0bba47fc"><span class="number">17.3.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-27ec1885e8e91e3c482e0cdfa2a40ed6ce2e1c32"><span class="number">17.3.4.</span>次へ ボタン</a></li>
+                  <li class="numbered invisible">
+                    <a href="302-jp.html#33-"><span class="number">17.3.5.</span>3.3 エラー一覧</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="302-jp.html#id-f90fe7dcbd720eabda3b33d855512b96a49b57b9"><span class="number">17.3.5.1.</span>　必須入力のエラー</a></li>
+                      <li class="numbered invisible"><a href="302-jp.html#id-3e2c7ed7f9ff9d094ef35e89b522f924aeb137ae"><span class="number">17.3.5.2.</span>　有効チェック</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#4_step2"><span class="number">17.4.</span>　4．メディア入力_STEP2</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-7c5b2fef698e534dc25f0ca2aee970278f2324a2"><span class="number">17.4.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-882a6b08962e389eed55865770bc8eafb3a19db2"><span class="number">17.4.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-372352d0e3cd21566128fc49375b6a77238d0d8f"><span class="number">17.4.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-d1733767e5ae983fb20c344e8049401cab833948"><span class="number">17.4.4.</span>次へ ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-de265439f5de678f7df8ac1bef3c69426d9d10f9"><span class="number">17.4.5.</span>戻るボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-d46371f4765b430e2e920d4d6b751fd9f8ab0eeb"><span class="number">17.4.6.</span>エラー一覧</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#5_step3"><span class="number">17.5.</span>　5．その他のご案内入力_STEP3</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-3ef059cbad4622b37b551065fe375a1cffc08581"><span class="number">17.5.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-91dda1ff942d692890a7047274cb9ec690ab79f3"><span class="number">17.5.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-fadbd0f849111c7c0d41d1000fd0ddf8ea24055e"><span class="number">17.5.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-0dadf7a9fbed07f98cdfe216905e3fbebc88fc16"><span class="number">17.5.4.</span>次へ ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-b9430357f30dd8079689905a17d8ab7cc708af86"><span class="number">17.5.5.</span>戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#53-"><span class="number">17.5.6.</span>5.3 エラー一覧</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#6_step4"><span class="number">17.6.</span>　6．プラン入力_STEP4</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-0a40a3dddedc6ea701512b94dd95ef25ed21fbe3"><span class="number">17.6.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-96ab7cb12158ba87fbb21f4c445d4f238766c154"><span class="number">17.6.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-5c97d2fb38d062111039a886834824b89bcc34a8"><span class="number">17.6.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-9b7d7f184543de03defdab5faf21ec4c90b1e4c0"><span class="number">17.6.4.</span>次へ ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-ec91d895c09187c618eb62c38efd91518c406ba0"><span class="number">17.6.5.</span>戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-4b8915439267b227d545bab922c2f3686b955e20"><span class="number">17.6.6.</span>エラー一覧</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#7_step5"><span class="number">17.7.</span>　7．設備入力_STEP5</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-6c6471b4b5e6a7a9db5ea91d60f98941964ebbe5"><span class="number">17.7.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-4b81eec94b03f3ac23f2716f1da881310fd00893"><span class="number">17.7.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-cc18f3454d1143144c40557314f9e02fea5e6c30"><span class="number">17.7.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-115b6e64925058b8dff41a014a0aaa7680505b22"><span class="number">17.7.4.</span>次へ ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-d8facb1e3ef9eda58e6effb49fc3614099df6f0d"><span class="number">17.7.5.</span>戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-e48a6ac8ff76e5a91c2020f1c5bad84b7d2703ac"><span class="number">17.7.6.</span>エラー一覧</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#8_step6"><span class="number">17.8.</span>　8．設備入力_STEP6</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-fb5863a06469e89b4fcaa677d5ccf6819d58a193"><span class="number">17.8.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-37bce3df8e56472418bf7f8a08cf76d8fd1bd0de"><span class="number">17.8.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-0a7ad90b35895a6882be1effc1518df888c44aa0"><span class="number">17.8.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-1127c3e0a53cee25c89e1ce636e4d109d4dd298b"><span class="number">17.8.4.</span>次へ ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-0fa5ee858923bf4262d0874851c92a65753bbde9"><span class="number">17.8.5.</span>戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-1860f3bf66e0c94ab538631475e3a85b37d4de00"><span class="number">17.8.6.</span>詳細を見る→ ボタン</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="302-jp.html#9_step7"><span class="number">17.9.</span>　9．単価入力_STEP7</a>
+                <ul>
+                  <li class="numbered invisible"><a href="302-jp.html#id-df3bf91b2ab032ab19a6f05dc5e0ee1713ff0f95"><span class="number">17.9.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-761e99973711f31fd4b41a03f39923b0e86bd3dd"><span class="number">17.9.2.</span>X ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-4ec33d77ea661041702c0f230936053fcabe7566"><span class="number">17.9.3.</span>一時保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-a3342bf412d6f223bfef023a623ca36888f7cf1e"><span class="number">17.9.4.</span>保存 ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#id-6a65b93caf693bba2aa6bb97a4f1165d7c2c14cf"><span class="number">17.9.5.</span>戻る ボタン</a></li>
+                  <li class="numbered invisible"><a href="302-jp.html#93-"><span class="number">17.9.6.</span>9.3 エラー一覧</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="303-jp.html" data-alt-hash="cms-manager--training-machine"><span class="number">18.</span>【CMS-MANAGER】 トレーニングマシン Training machine</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="303-jp.html#-"><span class="number">18.1.</span>マシン一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="303-jp.html#id-d5b4628d8301cb9cff6e908a86189a1becf4bfdf"><span class="number">18.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="303-jp.html#id-a73d20cf1fc46959aeecc58fb2093095c37cee96"><span class="number">18.1.1.1.</span>新規作成 ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-a2595cfec08bc099d6b45ac3a453a66fe7ea1567"><span class="number">18.1.1.2.</span>現在利用中のマシン一覧 区画</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-d34807bc0a09882abbf902f895081682f38fa615"><span class="number">18.1.1.3.</span>削除されたマシン一覧 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="303-jp.html#error-list"><span class="number">18.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="303-jp.html#id-55b48c0c0066ae60a4f7e7ffc28ff3cd13ba76c2"><span class="number">18.2.</span>トレートレーニングマシン詳細 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="303-jp.html#id-55aeac03472fc5ba94138bf85ca36046bcaee674"><span class="number">18.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="303-jp.html#id-e56ea4756836381f678622c59c7781af16757b8c"><span class="number">18.2.1.1.</span>トレーニングマシン一覧に戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-ebe1ab3a7ff1808486380a8c51fdafb0d83d9910"><span class="number">18.2.1.2.</span>変更 ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-7b9716ed65add044bb6bcd0784f35181d6206715"><span class="number">18.2.1.3.</span>削除 ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-88baccf63951faf973f72a063d1ba730a39a0aab"><span class="number">18.2.1.4.</span>利用中に戻す ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-a373a0bb1198bcac2981542e6861cf99acd86854"><span class="number">18.2.1.5.</span>完全に削除する ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-bb98cd4daf206ee5c2f48224a4706c9c7d3fd6b8"><span class="number">18.2.1.6.</span>マシン詳細 区画</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-e34edf212199363aaf91e8e7581eae5e2c1b21cc"><span class="number">18.2.1.7.</span>マシンとリンクされた動画一覧 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="303-jp.html#id-bc9d1b84132542cd3c27574b537b449ccc2f6328"><span class="number">18.2.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="303-jp.html#id-2bc1f94919917d15900dcbdea1f6c78846e9e30c"><span class="number">18.3.</span>マシン新規追加 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="303-jp.html#id-ced77772a0d185d7831346e9b52a234f7dfacc3b"><span class="number">18.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="303-jp.html#id-56a357c0dde8f38efbedf7dfa1cafd2939a3a39c"><span class="number">18.3.1.1.</span>トレーニングマシンを新規追加する ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-2822397009932082f889ed68afe5e8693016ec81"><span class="number">18.3.1.2.</span>有酸素マシンを新規追加する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="303-jp.html#id-1b5c101375e766cedfe1c26d6586f72c1c2a4a0b"><span class="number">18.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="303-jp.html#id-7e41fc23c96d6024ceabda49ced6eca85e12f780"><span class="number">18.4.</span>トレーニングマシン追加・変更 フォーム</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="303-jp.html#id-0092a691fbfdc3c69b0eaab4e447128a264665ce"><span class="number">18.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="303-jp.html#id-ba0a7879848f7d18d9826116396b60b166cc9464"><span class="number">18.4.1.1.</span>画像追加 ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-2529512d154bb3ee7fa52163c79f1539d3ed57c9"><span class="number">18.4.1.2.</span>マシン名 インプット</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-d5a0ca64afabae2ce1ccb0d700a33501c987fb27"><span class="number">18.4.1.3.</span>モデル インプット</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-a9fe9b39089820415080844a3f122ca518513cfc"><span class="number">18.4.1.4.</span>詳細 インプット</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-078f0ff03ba7da09e2cdb4f86d7235e828b3c3de"><span class="number">18.4.1.5.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="303-jp.html#id-d541ebabf30d78898f65094f50208d0394f79c7b"><span class="number">18.4.1.6.</span>保存 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="303-jp.html#id-d50a100bce9fa0cba4e09eff5590d0ce64a6e248"><span class="number">18.4.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="303-jp.html#item-error"><span class="number">18.4.2.1.</span>項目エラー（Item Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="304-jp.html" data-alt-hash="cms-manager--training-video"><span class="number">19.</span>【CMS-MANAGER】 トレーニングビデオ Training video</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="304-jp.html#1--"><span class="number">19.1.</span>1. トレーニングビデオ一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-2dc2eabff3dd3ed4aa0b87d08db09d91d70c584f"><span class="number">19.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#-"><span class="number">19.1.1.1.</span>新規作成 ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-fc66dff83bac282b2576df94100d1dbe093847a8"><span class="number">19.1.1.2.</span>発行中 区画</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-eb0bac866c18b320dbbf4ca6c7c67761e757cd37"><span class="number">19.1.1.3.</span>アクティブなビデオ 区画</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-af144c52f1c710b32d62315d43dc7d0be3dcf220"><span class="number">19.1.1.4.</span>削除済みビデオ 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="304-jp.html#error-list"><span class="number">19.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="304-jp.html#2-step1--"><span class="number">19.2.</span>2. STEP1 ビデオインフォメーション 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-9e4dc94000b0c3c6a0154c0705ba85621f0f9a0e"><span class="number">19.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#x-"><span class="number">19.2.1.1.</span>X ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-9468b5fa639e6e8400a4d420b427c5e42ad9eca5"><span class="number">19.2.1.2.</span>サムネイル 区画</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-315ff2dda5cc2ecbfbae08aee60d5f4f45cd3436"><span class="number">19.2.1.3.</span>種目名 インプット</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-412a99d9094c6ea924ea8f42ace1016d1b782d6d"><span class="number">19.2.1.4.</span>説明 インプット</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-df9598ec5f2c882cb67c9910c1d25aa5f7943458"><span class="number">19.2.1.5.</span>一時保存 ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-4d4c9771380d14abe6f9d86d13b3e49dc479e779"><span class="number">19.2.1.6.</span>次へ ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-26c4dbe3d5cd6a30dcffb4c0bc9eecd91935e239"><span class="number">19.2.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-9e0a178ac31e9bfb6ef80f77b8feab705caf9414"><span class="number">19.2.2.1.</span>サムネイル</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-d46a4affe2bc40661813e6da691fc67f6afe2bf5"><span class="number">19.2.2.2.</span>種目名</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-aac51c409e05589c828d3375f60cfc57ace8d632"><span class="number">19.2.2.3.</span>説明</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="304-jp.html#3-step2--"><span class="number">19.3.</span>3. STEP2 ビデオインフォメーション 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-b6e08f5f37bfaf75d7e8d5a23bee6ff02e804859"><span class="number">19.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-4abb2b446b76309c9402ee73b43d27ff082f96d9"><span class="number">19.3.1.1.</span>右上のX ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-7f69cdbd574d73377db1aa2707a3fae6ac6da271"><span class="number">19.3.1.2.</span>チャプター 区画</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-62b47f57f6578a55e81054c620c5e722bd1c66dd"><span class="number">19.3.1.3.</span>X ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-299bd245870a5ba8ef4a215e44b3b3c7d3ae5fec"><span class="number">19.3.1.4.</span>タイトル インプット</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-65d075fb755a3a98bff47631df0d32c0f23d4d3f"><span class="number">19.3.1.5.</span>開始時間 インプット</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-359a24446fe523bd30490c6e5f88cd273d62a51d"><span class="number">19.3.1.6.</span>終了時間 インプット</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-1ccc1888764f4e0346d9b4e8b59839b87a766348"><span class="number">19.3.1.7.</span>※開始時間と終了時間の関係：</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-fa8c3712f4ebdc9641d53c5e76b3c99033bacd40"><span class="number">19.3.1.8.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-6ae6087d7d3f6c24310934c70018e1b46cac7fbf"><span class="number">19.3.1.9.</span>一時保存 ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-519446beee6bb2594644770b0f7756eb9e92bed4"><span class="number">19.3.1.10.</span>次へ ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-117da82c134bfa8e1e89f3a6a7c937626558fb36"><span class="number">19.3.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-2b623cb06ae6cccfc5f8db2a3a3052ae6227938e"><span class="number">19.3.2.1.</span>画像</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-607e814a3e6e14440efe392b6fc191ae8b759a81"><span class="number">19.3.2.2.</span>タイトル</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-a34a766cc5faabaa6e827d88c95e5738c577a427"><span class="number">19.3.2.3.</span>開始時間</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-2d6f2c31882d6ccd62c683a89d22f903fe0fd736"><span class="number">19.3.2.4.</span>終了時間</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="304-jp.html#4-step3--"><span class="number">19.4.</span>4. STEP3 アクティブなマシン 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-85e1f113a4294ec9c1da62e68596e9e44937f7eb"><span class="number">19.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-785b3a48bf6399480ba1c9a67b4a350f07b4331f"><span class="number">19.4.1.1.</span>右上のX ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-390551308d59f4a82dd21d01202637ed2ab62363"><span class="number">19.4.1.2.</span>選択 チェックボックス</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#api"><span class="number">19.4.1.3.</span>APIデータ</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-4c33e195e52660c9bff593b957dd17a985bf78b1"><span class="number">19.4.1.4.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-07368a19bce12bf2f424129882c7b31fd2d631d6"><span class="number">19.4.1.5.</span>一時保存 ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-5709dbad4576f4f76494054e6192b622df7eae96"><span class="number">19.4.1.6.</span>次へ ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="304-jp.html#id-d75a56cb8e7bae16269cb004f37ac92701455808"><span class="number">19.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="304-jp.html#5-step4--"><span class="number">19.5.</span>5. STEP4 鍛える部位 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-7f380ad90c6ebaec352a47811acf7d2781d08d9d"><span class="number">19.5.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-591b7a8f04fcf10d86715bdc775b117929739a26"><span class="number">19.5.1.1.</span>右上のX ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-9c3244ee1738f4d788a7f63d58a170fc919caa69"><span class="number">19.5.1.2.</span>選択 チェックボックス</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-547f6208cd9468f6162c63147f741b3668c63fb6"><span class="number">19.5.1.3.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-d68fa94e20e5deece5f31f18faa78fcf0db9c5e0"><span class="number">19.5.1.4.</span>保存 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="304-jp.html#id-2598b58a44c75bf3a24b4c8b613b2e95eb699a94"><span class="number">19.5.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="304-jp.html#6--"><span class="number">19.6.</span>6. トレーニングビデオ詳細 画面①</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-34ede8e16818ee6083bc9dec7efb17db4322239e"><span class="number">19.6.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-73ec2723e29c8ab89907ac42a8109532460689a7"><span class="number">19.6.1.1.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-88cd5cb895889be876e81079e05629e5c1293651"><span class="number">19.6.1.2.</span>編集 ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-b50d60748521c72c29abb823fd59404eccdf3f94"><span class="number">19.6.1.3.</span>ビデオを削除 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="304-jp.html#id-561fc5cf705db9dd7303806b55a583d2dc67c57a"><span class="number">19.6.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="304-jp.html#7--"><span class="number">19.7.</span>7. トレーニングビデオ詳細 画面②</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="304-jp.html#id-4f94501042d50eabfcc37fb968f7d02433c61640"><span class="number">19.7.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="304-jp.html#id-317ba63751d62fdf4ac8e059b81522ec9b2107ff"><span class="number">19.7.1.1.</span>利用中に戻す ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-8dc3bcbdbb9441706e3a0e230577ec0c340d52a9"><span class="number">19.7.1.2.</span>ビデオを削除 ボタン</a></li>
+                      <li class="numbered invisible"><a href="304-jp.html#id-37a114d51f531d176105e225461cd1aea1c0bea4"><span class="number">19.7.1.3.</span>　それ以外</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="304-jp.html#id-473d6f276a41e88f1b0f8a47a7f5824fe8ffb27c"><span class="number">19.7.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="306-jp.html" data-alt-hash="cms-manager--coupon"><span class="number">20.</span>【CMS-MANAGER】 クーポン Coupon</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="306-jp.html#-"><span class="number">20.1.</span>クーポン一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="306-jp.html#id-fa5d9527cf024da9089db59a3b6a0c2f4540dc0a"><span class="number">20.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="306-jp.html#id-97e024be611b448866850fb8def00428cbc204cb"><span class="number">20.1.1.1.</span>店舗フィルター フィルター</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-50526e596c71d584c0112bc35763e1b539d79a93"><span class="number">20.1.1.2.</span>新しいクーポンを作成 ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-31bad1b50c73d03c10ff7f2dd5e5a24dc4d6324c"><span class="number">20.1.1.3.</span>合計クーポン数 区画</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-5b1f2eb0def61d6e3caa5203bee8fcf868847505"><span class="number">20.1.1.4.</span>実施前のクーポン 区画</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-55959017fae897afcdf50ea4c35accd015891648"><span class="number">20.1.1.5.</span>実施中のクーポン 区画</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-48fe9e8626df8b46b43c54c0620a6ce03a7dd98c"><span class="number">20.1.1.6.</span>期限切れのクーポン 区画</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-7786ca7ece8a8b5c0a9475b00b01faaf90a5cbdc"><span class="number">20.1.1.7.</span>クーポン一覧 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="306-jp.html#error-list"><span class="number">20.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="306-jp.html#id-4a00af643867b211338f3b966b5a413b06b52e39"><span class="number">20.2.</span>クーポン追加・変更ステップ１ 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="306-jp.html#id-03083b3ccbaf03526a9d14d0874e7eee06998b2e"><span class="number">20.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="306-jp.html#id-aea9fb4555a0726be9fe439771aec7be76bd6ec2"><span class="number">20.2.1.1.</span>ステップバー</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#x-"><span class="number">20.2.1.2.</span>X ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-24be4f52eb2f02d29bd7f12ce96566713c23b9b3"><span class="number">20.2.1.3.</span>適応対象 チェックボックス</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-535a9ce1ad843d19bd565b6f38e247cb9f7abb3d"><span class="number">20.2.1.4.</span>クーポン名 インプット</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#30180-"><span class="number">20.2.1.5.</span>利用開始日からのジム利用料金無料日数を選択してください(30~180日） 選択肢</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-a58e306dbceaf4c8b2af376e2bfc5ef5d05b1f7a"><span class="number">20.2.1.6.</span>クーポン開始日 インプット</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-6b937bd976bb84b22551b6778398729aa83e89a0"><span class="number">20.2.1.7.</span>クーポン終了日 インプット</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-78ef7b2160f3f28569a80fcf6c68172e84d2c7dd"><span class="number">20.2.1.8.</span>詳細 インプット</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-f340154340c093a831a2c67dc047fab3c3858a78"><span class="number">20.2.1.9.</span>次へ ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="306-jp.html#id-df2519827436c9d16265a1de9f6d61589e157113"><span class="number">20.2.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="306-jp.html#item-error"><span class="number">20.2.2.1.</span>項目エラー（Item Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="306-jp.html#id-5d935330442137ec41545894ccb8f3604fc4cf33"><span class="number">20.3.</span>クーポン追加・変更ステップ２ 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="306-jp.html#id-b51cc8be89e0119b73bc5c7dd6a12abd7bc7c9ec"><span class="number">20.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="306-jp.html#id-90acad53bd2088844f9c2a5dc133691e8efd5004"><span class="number">20.3.1.1.</span>ステップバー</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-ac60e234fd647fc7adf10b080a801984fd6dce33"><span class="number">20.3.1.2.</span>X ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-7ba4080e463285ed55c37a79c3afc1c4afb50dda"><span class="number">20.3.1.3.</span>店舗選択 選択肢</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-4ce71738be5b0b89f3f7773b5ddd9626d68994d2"><span class="number">20.3.1.4.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-918f780cc56e1fa6c8909e04f523db4ad6caf04c"><span class="number">20.3.1.5.</span>クーポンを発行する ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="306-jp.html#id-6ad190671b06c6ad52e80f778450d16769150684"><span class="number">20.3.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="306-jp.html#id-489a6636002dd1f6bf45b336415fa1f522dd41fe"><span class="number">20.4.</span>クーポン詳細 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="306-jp.html#id-7357f192dbb11d9ae06c1c490708bca5ec7c3637"><span class="number">20.4.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="306-jp.html#id-e52311e04e4759a561505717f15d60f498f05472"><span class="number">20.4.1.1.</span>戻る ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-0fe3a52049b945bbc6699c457c11a6934398f7f2"><span class="number">20.4.1.2.</span>編集 ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-458071ddf3f696c46cca1a92129dda04ca1c5fe3"><span class="number">20.4.1.3.</span>クーポンを削除 ボタン</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#id-ffd0fe47bd5f40aba7aca64b20d95b800cabd0f0"><span class="number">20.4.1.4.</span>クーポン詳細 区画</a></li>
+                      <li class="numbered invisible"><a href="306-jp.html#qr-"><span class="number">20.4.1.5.</span>QR画像を保存 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="306-jp.html#id-51568943eab9da38feef51a85f1489f39bb99163"><span class="number">20.4.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="307-jp.html" data-alt-hash="cms-manager-iot-iot"><span class="number">21.</span>【CMS-MANAGER】 IoT IoT</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="307-jp.html#-"><span class="number">21.1.</span>デバイスとゲート一覧 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="307-jp.html#id-10801556a79f3109e0c1bd572169834709017fd9"><span class="number">21.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="307-jp.html#id-72dcecfcceb74b2c07082b8db70145140b8f644a"><span class="number">21.1.1.1.</span>店舗フィルター フィルター</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#iot-"><span class="number">21.1.1.2.</span>新しいIoTデバイスを作成 ボタン</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#iot"><span class="number">21.1.1.3.</span>IoTデバイスを変更ボタン</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-26cf85c98826da9e7e5d89672c224c900581aaf8"><span class="number">21.1.1.4.</span>デバイス一覧 区画</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-47ab96193f05b3ba7367d401d72a485898f0918f"><span class="number">21.1.1.5.</span>新しいゲートを作成 ボタン</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-beb830092a68d503a33e4c806c1ba6200f958b40"><span class="number">21.1.1.6.</span>ゲート一覧 区画</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#--"><span class="number">21.1.1.7.</span>ログ アクティビティ一覧 区画</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="307-jp.html#error-list"><span class="number">21.1.2.</span>エラー一覧（Error List）</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="307-jp.html#id-8e11792132401bfccd4da8a9119250b460905570"><span class="number">21.2.</span>デバイス追加・変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="307-jp.html#id-5a6df1c355d4b0ec11af314f349affabfdb52508"><span class="number">21.2.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="307-jp.html#x-"><span class="number">21.2.1.1.</span>X ボタン</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-70e15c630d8947a38b27a63a2a9ef284c989c668"><span class="number">21.2.1.2.</span>店舗名 インプット</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-e71ec83c9e33fa15d2fc9d6c37f5a38672c32e7e"><span class="number">21.2.1.3.</span>主要デバイス名 インプット</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-63c37ec6c42cb620d52a884a7bb25e8b6fd7ef91"><span class="number">21.2.1.4.</span>バックアップデバイス名 インプット</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-48a7bd92a73324a0bd51469961b3d4a139d72494"><span class="number">21.2.1.5.</span>登録 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="307-jp.html#id-376132dd84d8ebb1ddfe52ed63bd406ed0ef23d4"><span class="number">21.2.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="307-jp.html#item-error"><span class="number">21.2.2.1.</span>項目エラー（Item Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="307-jp.html#id-3628664c9c14bcb5d658d28fa50924f58dbba8c5"><span class="number">21.3.</span>ゲート追加・変更 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="307-jp.html#id-8f0e822469b5f9464e533013724af0bd8137117e"><span class="number">21.3.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="307-jp.html#id-faa756f033de4d3d33c15b8f3265377c6722008c"><span class="number">21.3.1.1.</span>X ボタン</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-c565ff1df746a8678edcd08c75e84c8901b5796d"><span class="number">21.3.1.2.</span>店舗名 インプット</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-dfb5d75a9aa303bc12b09202c2c2933439567381"><span class="number">21.3.1.3.</span>ゲート名 インプット</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-a4371924415feecf9135b4b809f9ed7a10743f87"><span class="number">21.3.1.4.</span>種類 選択ボックス</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-33cb91e612b0bfed0740e1d8c79461a3a034f54e"><span class="number">21.3.1.5.</span>扉 選択ボックス</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-7f6771c9f43d3bae64e9e5cc65e805d8c68cdbcf"><span class="number">21.3.1.6.</span>リレー番号 選択肢</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#id-50cfe3cc6724a8c40cf66bc587a09a1a27d9acd2"><span class="number">21.3.1.7.</span>登録 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="307-jp.html#id-ef3ab2324868b4545a5e278b2afe965928e06e5b"><span class="number">21.3.2.</span>エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="307-jp.html#id-bbfb81176a7f0393efed83a4adc13660ed4831b6"><span class="number">21.3.2.1.</span>項目エラー（Item Error）</a></li>
+                      <li class="numbered invisible"><a href="307-jp.html#screen-error"><span class="number">21.3.2.2.</span>画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="400-jp.html" data-alt-hash="door-man--log-in"><span class="number">22.</span>【DOOR-MAN】 ログイン Log in</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="400-jp.html#-"><span class="number">22.1.</span>ログイン 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="400-jp.html#id-85071cf26fe304a5dd388f3aa8355dd1f57ba3d4"><span class="number">22.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="400-jp.html#id-c12e243bf9d3a1f7a08bfa7dd6388da461281d45">メール インプット</a></li>
+                      <li class="unnumbered invisible"><a href="400-jp.html#id-1933cc024602a3974e32f05dd2f5ae288d1b75ee">パスワード インプット</a></li>
+                      <li class="unnumbered invisible"><a href="400-jp.html#id-976feeabe30aca7f53d9fd41c3dda9e4eb1478e8">パスワード表示・非表示 ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="400-jp.html#id-9ee60ec05ea42712b8f9cbe2fed5f7d7d834a5a5">ログイン ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible">
+                    <a href="400-jp.html#id-9eed3b90c6f46c44a63fe6843bffbb50a9695756"><span class="number">22.1.2.</span>エラー一覧</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="400-jp.html#id-bd38ca2cf604613edcbc0beeebbe5cdc683e6c50"><span class="number">22.1.2.1.</span>　項目エラー</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="400-jp.html#id-6bbe8653a7a756a646d1763c5ddfb1a989e41a6d">メール インプット</a></li>
+                          <li class="unnumbered invisible"><a href="400-jp.html#id-2f02cc536a91057f25b1e757bc8026b6cc57eec1">パスワード インプット</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="400-jp.html#id-384d0055b087ebfeaacbd12c0189f6a1311d69e9"><span class="number">22.1.2.2.</span>画面エラー</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="401-jp.html" data-alt-hash="door-man--door-setting"><span class="number">23.</span>【DOOR-MAN】 施設設定 Door Setting</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="401-jp.html#-"><span class="number">23.1.</span>施設を選択 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="401-jp.html#id-2253e543e2b253974a955a9faffe7dc9d43e0579"><span class="number">23.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="401-jp.html#api">APIデータ</a></li>
+                      <li class="unnumbered invisible"><a href="401-jp.html#id-9ceb9cba0c2b08bb071aa60d62be3cef689225e6">リセット ボタン</a></li>
+                      <li class="unnumbered invisible"><a href="401-jp.html#id-bc841253352c123d591a8055adf054b69a1e5436">設定 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="401-jp.html#id-e9160185abd7f963e5c7246910e30b2f7a532acf"><span class="number">23.1.2.</span>エラー一覧</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="401-jp.html#qr-"><span class="number">23.2.</span>QRコード表示 画面</a>
+                <ul>
+                  <li class="numbered invisible"><a href="401-jp.html#id-71a5d719718b967a6059538074ec2a9ff0a92611"><span class="number">23.2.1.</span>項目／イベント定義</a></li>
+                  <li class="numbered invisible"><a href="401-jp.html#qr"><span class="number">23.2.2.</span>QRコードをスキャンした後の動き</a></li>
+                  <li class="numbered invisible"><a href="401-jp.html#id-74dec5b2b21742a74dc6d9b6e6010cb097f377cc"><span class="number">23.2.3.</span>エラー一覧</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible"><a href="401-jp.html#id-0cb9ace43921ba3436679ee085289031f4d3bae7"><span class="number">23.3.</span>ロックが解除された の通知画面</a></li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="402-jp.html" data-alt-hash="door-man--exit-kiosk-mode"><span class="number">24.</span>【DOOR-MAN】 キオスクモード終了 Exit kiosk mode</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="402-jp.html#-"><span class="number">24.1.</span>キオスクモードを終了する 画面</a>
+                <ul>
+                  <li class="numbered invisible">
+                    <a href="402-jp.html#id-d9bb5bd7f0717d3350b61e73f63912f4426ec695"><span class="number">24.1.1.</span>項目／イベント定義</a>
+                    <ul>
+                      <li class="numbered invisible"><a href="402-jp.html#id-5c467dbcd467b7f4deccb7e3afb01f3a0e252fc0"><span class="number">24.1.1.1.</span>パスワード インプット</a></li>
+                      <li class="numbered invisible"><a href="402-jp.html#id-18a93e1b08dc5910a93f9a82b74d2dbb5042c81f"><span class="number">24.1.1.2.</span>キャンセル ボタン</a></li>
+                      <li class="numbered invisible"><a href="402-jp.html#id-624c56da1480a9ce005e35641067dc37ab5cf9a8"><span class="number">24.1.1.3.</span>終了 ボタン</a></li>
+                    </ul>
+                  </li>
+                  <li class="numbered invisible"><a href="402-jp.html#id-81feb7afddbf89779bbaee025a5fdc20bd3a9d43"><span class="number">24.1.2.</span>エラー一覧</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="numbered visible">
+            <a href="900.html" data-alt-hash="tabletgate-kepper--door-man"><span class="number">25.</span>【TABLET】Gate-Kepper &amp; Door Man</a>
+            <ul>
+              <li class="numbered invisible">
+                <a href="900.html#cmcmain"><span class="number">25.1.</span>【CMC】四万十店（Main）</a>
+                <ul>
+                  <li class="numbered invisible"><a href="900.html#-entry"><span class="number">25.1.1.</span>入れ口 Entry</a></li>
+                  <li class="numbered invisible"><a href="900.html#-tebura"><span class="number">25.1.2.</span>手ぶら Tebura</a></li>
+                  <li class="numbered invisible"><a href="900.html#-water"><span class="number">25.1.3.</span>水素水 Water</a></li>
+                  <li class="numbered invisible"><a href="900.html#-exit"><span class="number">25.1.4.</span>出口 Exit</a></li>
+                </ul>
+              </li>
+              <li class="numbered invisible">
+                <a href="900.html#id-f10e7896c764ab070b0a60ae33a46d179404da68"><span class="number">25.2.</span>【CMC】四万十店（Main）</a>
+                <ul>
+                  <li class="numbered invisible"><a href="900.html#id-4d0cadf64bcd632ba9ee535f4cdb0c5755a256c2"><span class="number">25.2.1.</span>入れ口 Entry</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="unnumbered visible">
+            <a href="999.html" data-alt-hash="temp">【TEMP】テンプレート画面</a>
+            <ul>
+              <li class="unnumbered invisible">
+                <a href="999.html#screenname">「Screen＿Name」</a>
+                <ul>
+                  <li class="unnumbered invisible">
+                    <a href="999.html#item-event-definition">項目／イベント定義（Item Event Definition）</a>
+                    <ul>
+                      <li class="unnumbered invisible"><a href="999.html#-fieldname-fieldtype">項目名 Field＿Name field＿type</a></li>
+                    </ul>
+                  </li>
+                  <li class="unnumbered invisible">
+                    <a href="999.html#error-list">エラー一覧（Error List）</a>
+                    <ul>
+                      <li class="unnumbered invisible">
+                        <a href="999.html#item-error">項目エラー（Item Error）</a>
+                        <ul>
+                          <li class="unnumbered invisible"><a href="999.html#-full_name-text">名前（漢字） Full_name TEXT</a></li>
+                        </ul>
+                      </li>
+                      <li class="unnumbered invisible"><a href="999.html#screen-error">画面エラー（Screen Error）</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content-handle"></div>
+        <div class="content-container">
+          <div class="content-nav content-nav-top">
+            <a class="prev-page" href="401-jp.html">
+            <i class="fa fa-angle-left"></i>
+            <span class="number">23.</span>
+            ゲート設定
+            </a>
+            <a class="next-page" href="900.html">
+            <span class="number">25.</span>
+            Gate-Kepper&DoorMan
+            <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+          <div class="page-toc">
+            <ul>
+              <li class="numbered visible">
+                <a href="#door-man--exit-kiosk-mode"><span class="number">24.</span>【DOOR-MAN】 キオスクモード終了 Exit kiosk mode</a>
+                <ul>
+                  <li class="numbered visible">
+                    <a href="#-"><span class="number">24.1.</span>キオスクモードを終了する 画面</a>
+                    <ul>
+                      <li class="numbered invisible">
+                        <a href="#id-d9bb5bd7f0717d3350b61e73f63912f4426ec695"><span class="number">24.1.1.</span>項目／イベント定義</a>
+                        <ul>
+                          <li class="numbered invisible"><a href="#id-5c467dbcd467b7f4deccb7e3afb01f3a0e252fc0"><span class="number">24.1.1.1.</span>パスワード インプット</a></li>
+                          <li class="numbered invisible"><a href="#id-18a93e1b08dc5910a93f9a82b74d2dbb5042c81f"><span class="number">24.1.1.2.</span>キャンセル ボタン</a></li>
+                          <li class="numbered invisible"><a href="#id-624c56da1480a9ce005e35641067dc37ab5cf9a8"><span class="number">24.1.1.3.</span>終了 ボタン</a></li>
+                        </ul>
+                      </li>
+                      <li class="numbered invisible"><a href="#id-81feb7afddbf89779bbaee025a5fdc20bd3a9d43"><span class="number">24.1.2.</span>エラー一覧</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="main-content">
+            <h1 id="door-man--exit-kiosk-mode"><span class="number">24.</span>【DOOR-MAN】 <strong>キオスクモード終了</strong> <code>Exit kiosk mode</code></h1>
+            <h2 id="-"><span class="number">24.1.</span><strong>キオスクモードを終了する</strong> 画面</h2>
+            <p>パスワードを入力して、キオスクモードを終了する画面。</p>
+            <p><img src="image\jp\dm\400doorman\input-password.png" alt="nf"/></p>
+            <h3 id="id-d9bb5bd7f0717d3350b61e73f63912f4426ec695"><span class="number">24.1.1.</span>項目／イベント定義</h3>
+            <h4 id="id-5c467dbcd467b7f4deccb7e3afb01f3a0e252fc0"><span class="number">24.1.1.1.</span>パスワード <code>インプット</code></h4>
+            <ul>
+              <li>必須入力。Char型（大文字、小文字、数字が含まれる）。8桁以上20桁以内。</li>
+            </ul>
+            <h4 id="id-18a93e1b08dc5910a93f9a82b74d2dbb5042c81f"><span class="number">24.1.1.2.</span>キャンセル <code>ボタン</code></h4>
+            <ul>
+              <li>押下すると、**QRコード表示** 画面に遷移する。</li>
+            </ul>
+            <h4 id="id-624c56da1480a9ce005e35641067dc37ab5cf9a8"><span class="number">24.1.1.3.</span>終了 <code>ボタン</code></h4>
+            <ul>
+              <li>押下すると、入力した情報のバリデーションチェックを行う。</li>
+              <li>エラーがない場合、 <strong>施設を選択</strong> 画面に遷移する。</li>
+              <li>エラーがある場合、エラーメッセージを表示し、**キオスクモードを終了する** 画面にリメインする。</li>
+            </ul>
+            <h3 id="id-81feb7afddbf89779bbaee025a5fdc20bd3a9d43"><span class="number">24.1.2.</span>エラー一覧</h3>
+            <p>未入力  <code>パスワードを入力してください。 これは必須です。</code></p>
+            <p>無効のフォーマット  <code>パスワードのフォーマットが無効です。</code></p>
+            <p>8桁以上20桁以内の桁数制限  <code>パスワードは8~20文字以内で入力してください。</code></p>
+            <p>パスワードが間違っている  <code>パスワードが間違っています。 もう一度やり直してください。</code></p>
+          </div>
+          <div class="content-nav content-nav-bottom">
+            <a class="prev-page" href="401-jp.html">
+            <i class="fa fa-angle-left"></i>
+            <span class="number">23.</span>
+            ゲート設定
+            </a>
+            <a class="next-page" href="900.html">
+            <span class="number">25.</span>
+            Gate-Kepper&DoorMan
+            <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+          <div class="footer">
+            <p class="credit text-muted">Powered by <a href="https://github.com/kobo/gaiden">Gaiden</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js\jquery-2.1.1.min.js"></script>
+    <script src="js\highlight.js"></script>
+    <script src="js\application.js"></script>
+    <script src="js\my.js"></script>
+  </body>
+</html>
