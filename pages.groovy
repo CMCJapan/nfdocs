@@ -23,6 +23,12 @@
 "303-jp.md"(title: "トレーニングマシン", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "304-jp.md"(title: "トレーニングビデオ", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 "306-jp.md"(title: "クーポン", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"307-jp.md"(title: "IoT", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+
+// Door man app
+"400-jp.md"(title: "ログイン", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"401-jp.md"(title: "ゲート設定", numbering: true, documentTocDepth: 1, pageTocDepth:2)
+"402-jp.md"(title: "Kioskモードオペレーション", numbering: true, documentTocDepth: 1, pageTocDepth:2)
 
 "900.md"(title: "Gate-Kepper&DoorMan", numbering: true, documentTocDepth: 1, pageTocDepth:3)
 "999.md"(title: "ホーム&メニュー(Template)", numbering: false, documentTocDepth: 1, pageTocDepth:3)
