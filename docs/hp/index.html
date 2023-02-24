@@ -10,10 +10,20 @@
 
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/pocket/favicon.svg" rel="icon">
 
-  <!-- Vendor CSS Files -->
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style">
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style">
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style">
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style">
+  <link rel="preload" href="assets/vendor/remixicon/remixicon.css" as="style">
+  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style">
+
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="preload" href="assets/css/ld-index.css" as="style">
+  <link rel="preload" href="assets/css/icons.min.css" as="style">
+
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -21,20 +31,23 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/ld-index.css" rel="stylesheet">
   <link href="assets/css/icons.min.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FlexStart - v1.12.0
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- /End Preloader -->
 
   <!-- ======= Header ======= -->
   <div class="hero header">
@@ -42,21 +55,62 @@
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
   
         <a href="index.html" class="logo d-flex align-items-center">
-          <img class="main-logo" src="assets/img/pocket/header-logo.png" alt="">
-          <img class="mini-logo" src="assets/img/pocket/logo-mini.png" alt="">
+          <img class="main-logo" src="assets/img/pocket/header-logo.svg" alt="">
+          <img class="mini-logo" src="assets/img/pocket/logo-mini.svg" alt="">
         </a>
 
-        <div class="d-flex">
-          <a class="getstarted scrollto" href="#about">会員の方はこちら</a>
+        <div class="d-flex flex-row-reverse flex-xl-row">
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto" href="#about">店舗一覧</a></li>
-              <li><a class="nav-link scrollto" href="#services">利用規約</a></li>
-              <li><a class="nav-link scrollto" href="#portfolio">個人情報</a></li>
-              <li><a class="nav-link scrollto" href="#team">特定商取引法</a></li>
+              <li>
+                <a class="nav-link scrollto" href="#">
+                  <img class="d-none" src="assets/img/pocket/gym-icon.svg" alt="">
+                  <div>
+                    <span>店舗一覧</span>
+                    <span class="note-text d-none">全店舗情報</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#">
+                  <img class="d-none" src="assets/img/pocket/faq-icon.svg" alt="">
+                  <div>
+                    <span>FAQ</span>
+                    <span class="note-text d-none">よくある質問</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#">
+                  <img class="d-none" src="assets/img/pocket/term-icon.svg" alt="">
+                  <div>
+                    <span>利用規約</span>
+                    <span class="note-text d-none">Pocket Fitness 会員規約</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#">
+                  <img class="d-none" src="assets/img/pocket/profile-icon.svg" alt="">
+                  <div>
+                    <span>個人情報</span>
+                    <span class="note-text d-none">個人情報の取り扱について</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#">
+                  <img class="d-none" src="assets/img/pocket/payment-icon.svg" alt="">
+                  <div>
+                    <span>特定商取引法</span>
+                    <span class="note-text d-none">特定商取引法に基づく表記</span>
+                  </div>
+                </a>
+              </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
+          <a class="getstarted scrollto" href="#">会員の方はこちら</a>
         </div>
       </div>
     </header><!-- End Header -->
@@ -75,7 +129,7 @@
             </div>
           </div>
           <div class="col-lg-5 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/pocket/header-phone.png" class="img-fluid" alt="">
+            <img src="assets/img/pocket/header-phone.svg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -224,9 +278,7 @@
                 </div>
                 <div class="col-lg-6 right">
                   <div>
-                    <img src="assets/img/pocket/hydro-machine.png" class="img-fluid" alt="">
-                    <img class="mini-top" src="assets/img/pocket/mini-top.png" class="img-fluid" alt="">
-                    <img class="mini-bot" src="assets/img/pocket/mini-bot.png" class="img-fluid" alt="">
+                    <img src="assets/img/pocket/hydro-machine.svg" class="img-fluid" alt="">
                   </div>
                 </div>
               </div><!-- End Feature Tabs -->
@@ -262,7 +314,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <img src="assets/img/pocket/counts-icon1.png" alt="">
+              <img src="assets/img/pocket/counts-icon1.svg" alt="">
               <div>
                 <p>全国のPocketFitness店舗へチェックイン</p>
               </div>
@@ -271,7 +323,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <img src="assets/img/pocket/counts-icon2.png" alt="">
+              <img src="assets/img/pocket/counts-icon2.svg" alt="">
               <div>
                 <p>世界的に有名なレズミルズを臨場感あふれる専用スタジオで</p>
               </div>
@@ -280,7 +332,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <img src="assets/img/pocket/counts-icon3.png" alt="">
+              <img src="assets/img/pocket/counts-icon3.svg" alt="">
               <div>
                 <p>3D Body Scanで自分の身体の状態を記録</p>
               </div>
@@ -289,7 +341,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <img src="assets/img/pocket/counts-icon4.png" alt="">
+              <img src="assets/img/pocket/counts-icon4.svg" alt="">
               <div>
                 <p>店舗毎に違う特別な施設オプションをご用意</p>
               </div>
@@ -355,7 +407,7 @@
             <div class="box">
               <div class="title">
                 <h3>ゴールド</h3>
-                <img src="assets/img/pocket/values-icon1.png" class="img-fluid" alt="">
+                <img src="assets/img/pocket/values-icon1.svg" class="img-fluid" alt="">
               </div>
               <h4>入会金、セキュリティ料金無料</h4>
               <p class="p-title"><span>5,000円</span> キャッシュバック</p>
@@ -369,7 +421,7 @@
             <div class="box">
               <div class="title">
                 <h3>シルバー</h3>
-                <img src="assets/img/pocket/values-icon2.png" class="img-fluid" alt="">
+                <img src="assets/img/pocket/values-icon2.svg" class="img-fluid" alt="">
               </div>
               <h4>入会金無料</h4>
               <p class="p-title">2,000円 キャッシュバック!</p>
@@ -383,7 +435,7 @@
             <div class="box">
               <div class="title">
                 <h3>ブロンズ</h3>
-                <img src="assets/img/pocket/values-icon3.png" class="img-fluid" alt="">
+                <img src="assets/img/pocket/values-icon3.svg" class="img-fluid" alt="">
               </div>
               <h4>キャンペーンを利用しない</h4>
               <p>入会金の2,000円<br>
@@ -408,7 +460,7 @@
 
         <div class="row gy-4 event-content">
 
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch box" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 col-xl-6 d-flex align-items-stretch box" data-aos="fade-up" data-aos-delay="100">
             <div class="member mb-first">
               <div class="member-info">
                 <h4>水素水飲み放題/月額900円
@@ -421,13 +473,13 @@
               </div>
               <div class="member-img">
                 <div>
-                  <img src="assets/img/pocket/option-img1.png" class="img-fluid" alt="">
+                  <img src="assets/img/pocket/option-img1.svg" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch box" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 col-xl-6 d-flex align-items-stretch box" data-aos="fade-up" data-aos-delay="200">
             <div class="member mb-last">
               <div class="member-info">
                 <h4>プレミアオプション/月額1500円
@@ -439,7 +491,7 @@
               </div>
               <div class="member-img">
                 <div>
-                  <img src="assets/img/pocket/option-img2.png" class="img-fluid" alt="">
+                  <img src="assets/img/pocket/option-img2.svg" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
@@ -525,7 +577,7 @@
 
               <div class="right">
                 <div class="" style="height: 300px; width: 300px;">
-                  <img src="assets/img/pocket/stripe.png" class="img-fluid" alt="">
+                  <img src="assets/img/pocket/stripe.svg" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
@@ -535,7 +587,7 @@
           <div class="col-lg-6 d-flex align-items-stretch box" data-aos="fade-up" data-aos-delay="100">
             <div class="member mb-first">
               <div class="member-img">
-                <img src="assets/img/pocket/aws.png" class="img-fluid" alt="">
+                <img src="assets/img/pocket/aws.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>セキュアなクラウドシステム</h4>
@@ -547,7 +599,7 @@
           <div class="col-lg-6 d-flex align-items-stretch box" data-aos="fade-up" data-aos-delay="200">
             <div class="member mb-last">
               <div class="member-img">
-                <img src="assets/img/pocket/ppt.png" class="img-fluid" alt="">
+                <img src="assets/img/pocket/ppt.svg" class="img-fluid" alt="">
               </div>
               <div >
                 <h4>個人情報の完全な抹消</h4>
@@ -583,10 +635,19 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    window.onload = function () {
+      window.setTimeout(fadeout, 3000);
+    }
+
+    function fadeout() {
+      document.querySelector('.preloader').style.opacity = '0';
+      document.querySelector('.preloader').style.display = 'none';
+    }
+  </script>
 
 </body>
 

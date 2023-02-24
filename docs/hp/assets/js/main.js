@@ -1,9 +1,3 @@
-/**
-* Template Name: FlexStart - v1.12.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -286,6 +280,10 @@
       },
       1280: {
         slidesPerView: 3,
+        spaceBetween: 0
+      },
+      1400: {
+        slidesPerView: 4,
         spaceBetween: 0
       }
     }

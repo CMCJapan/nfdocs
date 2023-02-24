@@ -1,13 +1,3 @@
-/**
-* Template Name: FlexStart - v1.12.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
 }
@@ -15,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  padding: 20px;
 }
 
 a {
@@ -449,11 +440,11 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  background: url(../img/pocket/hero-bg.png) top center no-repeat;
+  background: url(../img/pocket/hero-bg.svg) top center no-repeat;
   background-size: cover;
   max-width: 1880px;
-  margin: 0px auto;
-  margin-top: 20px;
+  margin: auto;
+  /* margin-top: 20px; */
   border-radius: 60px;
   height: 100%;
 }
@@ -505,7 +496,7 @@ section {
 
 @media (min-width: 1024px) {
   .hero {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 }
 
